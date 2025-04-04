@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import img1 from '../../assets/images/illustrations/feature-illustration-1-blue.svg';
+import img2 from '../../assets/images/illustrations/feature-illustration-2-blue.svg';
+import img3 from '../../assets/images/illustrations/feature-illustration-3-blue.svg';
 
 const featuresData = [
   {
@@ -12,7 +15,7 @@ const featuresData = [
       "Let's Communicate with your customers with emotions",
       "Use visuals like images, videos, or infographics to make your content more engaging",
     ],
-    image: "src/assets/images/illustrations/feature-illustration-1-blue.svg",
+    image: img1,
     linkText: "Get Started Free",
     linkHref: "/login",
   },
@@ -21,8 +24,8 @@ const featuresData = [
     title: "A Magical Tool To Optimize Your Content For First Page Rankings",
     description:
       "A Magical Tool to Optimize you content for the first know who you're targeting. Identify your target audience and understand their needs, interests, and pain points.",
-    image: "src/assets/images/illustrations/feature-illustration-2-blue.svg",
-    linkText: "Request A Demo",
+      image: img1,
+      linkText: "Request A Demo",
     linkHref: "/login",
   },
   {
@@ -35,7 +38,7 @@ const featuresData = [
       "Let's Communicate with your customers with emotions",
       "Use visuals like images, videos, or infographics to make your content more engaging",
     ],
-    image: "src/assets/images/illustrations/feature-illustration-3-blue.svg",
+    image: img1,
     linkText: "Get Started Free",
     linkHref: "/login",
   },

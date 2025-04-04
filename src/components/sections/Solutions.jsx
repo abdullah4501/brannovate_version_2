@@ -1,120 +1,344 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck, faPlus } from '@fortawesome/free-solid-svg-icons';
 
-const featuresData = [
-  {
-    id: 1,
-    title: "Let's Create LinkedIn Posts With Single Click",
-    description:
-      "To craft engaging LinkedIn posts, you must know your audience. Our AI tool lets you choose a topic and instantly generate a post that captivates.",
-    points: [
-      "Instant topic selection for LinkedIn",
-      "Real-time trending news integration",
-      "Direct posting or scheduling options",
-    ],
-    image: "src/assets/images/illustrations/feature-illustration-1-blue.svg",
-    linkText: "Get Started Free",
-    linkHref: "/login",
-  },
-  {
-    id: 2,
-    title:
-      "A Magical Tool To Optimize Your LinkedIn Presence For Maximum Engagement",
-    description:
-      "A magical solution to enhance your LinkedIn presence. Identify your audience, optimize your messaging, and achieve first-rate engagement that propels your professional profile.",
-    image: "src/assets/images/illustrations/feature-illustration-2-blue.svg",
-    linkText: "Request A Demo",
-    linkHref: "/login",
-  },
-  {
-    id: 3,
-    title: "Write Authentic LinkedIn Posts, Articles, & Updates With BrandBot",
-    description:
-      "To produce engaging LinkedIn posts, you must know your audience. Our tool analyzes trends and crafts posts that resonate with your professional network.",
-    points: [
-      "Generate high-quality posts instantly",
-      "Boost engagement with trending insights",
-      "Customize with your own prompts if needed",
-    ],
-    image: "src/assets/images/illustrations/feature-illustration-3-blue.svg",
-    linkText: "Get Started Free",
-    linkHref: "/login",
-  },
-];
+// Import images used in this component
+import shapeOne from "../../assets/images/shapes/solutions-two-shape-1.png";
+import solutions1 from "../../assets/images/shapes/solutions-two-shape-2.png";
+import solutions2 from "../../assets/images/resource/solutions-two-content-one-img-1.jpg";
+import solutions3 from "../../assets/images/shapes/solutions-two-content-two-shape-1.png";
+import solutions4 from "../../assets/images/resource/solutions-two-content-two-img-1.jpg";
+import solutions5 from "../../assets/images/resource/solutions-two-content-two-img-2.jpg";
+import shapeContentThree from "../../assets/images/shapes/solutions-two-content-three-shape-1.png";
 
-const Features = ({ extraClassList = "" }) => {
+// Content Three image list imports
+import solThreeImg1 from "../../assets/images/resource/solutions-two-content-three-img-1-1.jpg";
+import solThreeImg2 from "../../assets/images/resource/solutions-two-content-three-img-1-2.jpg";
+import solThreeImg3 from "../../assets/images/resource/solutions-two-content-three-img-1-3.jpg";
+import solThreeImg4 from "../../assets/images/resource/solutions-two-content-three-img-1-4.jpg";
+import solThreeImg5 from "../../assets/images/resource/solutions-two-content-three-img-1-5.jpg";
+import solThreeImg6 from "../../assets/images/resource/solutions-two-content-three-img-1-6.jpg";
+import solThreeImg7 from "../../assets/images/resource/solutions-two-content-three-img-1-7.jpg";
+import solThreeImg8 from "../../assets/images/resource/solutions-two-content-three-img-1-8.jpg";
+import solThreeImg9 from "../../assets/images/resource/solutions-two-content-three-img-1-9.jpg";
+import solThreeImg10 from "../../assets/images/resource/solutions-two-content-three-img-1-10.jpg";
+
+// Rating logos
+import reviewLogo1 from "../../assets/images/review-logos/trustpilot_reviews_2.svg";
+import reviewLogo2 from "../../assets/images/review-logos/capterra_reviews_2.svg";
+
+const Solutions = () => {
   return (
-    <section className={`py-10 py-lg-15 ${extraClassList}`}>
+    <section className="solutions-two" id="tools">
       <div className="container">
-        {featuresData.map((feature, index) => (
+        {/* Section Title */}
+        <div className="section-title text-center">
+          <div className="section-title__tagline-box">
+            <span className="section-title__tagline">Pur AI Solutions</span>
+          </div>
+          <h2 className="section-title__title">
+            Generative AI Designed for creators. Make <br /> your Life Easier with <span>AIMug</span>
+          </h2>
+        </div>
+
+        {/* Content One */}
+        <div className="solutions-two__content-one wow fadeInUp" data-wow-delay="100ms">
           <div
-            key={feature.id}
-            className={`row g-6 gx-lg-14 gx-xl-20 align-center mt-10 ${
-              index === 1 ? "flex-row-reverse" : ""
-            }`}
-          >
-            <div className="col-lg-6" data-aos="fade-up-sm" data-aos-delay="150">
-              <div className="content">
-                <p className="text-primary">Features {feature.id}</p>
-                <h1 className="mb-8">{feature.title}</h1>
-                <p className="mb-6">{feature.description}</p>
-                {feature.points && (
-                  <ul className="list-unstyled list-check mb-8">
-                    {feature.points.map((point, i) => (
-                      <li key={i}>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 18 18"
-                          className="icon"
-                        >
-                          <g>
-                            <path
-                              stroke="currentColor"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="1.5"
-                              d="m3.75 9 3.75 3.75 7.5-7.5"
-                            />
-                          </g>
-                        </svg>
-                        <span>{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-                <Link
-                  to={feature.linkHref}
-                  className="arrow-link arrow-link-primary text-primary gap-3"
-                >
-                  <span>{feature.linkText}</span>
-                  <svg
-                    className="icon"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4 12.6667L12.6667 4M12.6667 4V12.32M12.6667 4H4.34667"
-                      stroke="currentColor"
-                      strokeWidth="1.21"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </Link>
+            className="solutions-two__shape-1"
+            style={{ backgroundImage: `url(${shapeOne})` }}
+          ></div>
+          <div className="row">
+            <div className="col-xl-6 col-lg-6">
+              <div className="solutions-two__content-one-left">
+                <div className="solutions-two__shape-2 zoominout">
+                  <img src={solutions1} alt="" />
+                </div>
+                <div className="solutions-two__content-one-title-box">
+                  <p>AI Writing Tools</p>
+                  <h3>
+                    Write ✍️ Better Content Faster, The Future of AI Writing Tools is Finally here
+                  </h3>
+                </div>
+                <p className="solutions-two__content-one-text-1">
+                  Mastering the Art of AI Content Writing: Unleashing the <br />
+                  Power of Automated Creativity"
+                </p>
+                <ul className="solutions-two__content-one-points">
+                  <li>
+                    <div className="icon">
+                      <FontAwesomeIcon icon={faCheck} />
+                    </div>
+                    <div className="text">
+                      <p>
+                        There are more than <span>60+</span> use cases and templates to pick from to meet all of your writing demands.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="icon">
+                      <FontAwesomeIcon icon={faCheck} />
+                    </div>
+                    <div className="text">
+                      <p>Let's Communicate with your customers with emotions</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="icon">
+                      <FontAwesomeIcon icon={faCheck} />
+                    </div>
+                    <div className="text">
+                      <p>Choose the best AI copy for your message &amp; save as a document</p>
+                    </div>
+                  </li>
+                </ul>
+                <div className="solutions-two__content-one-btn-box">
+                  <Link to="/about" className="thm-btn solutions-two__content-one-btn">
+                    <FontAwesomeIcon icon={faPlus} /> Get Started
+                  </Link>
+                </div>
               </div>
             </div>
-            <div className="col-lg-6" data-aos="fade-up-sm" data-aos-delay="250">
-              <div className="feature-img">
-                <img src={feature.image} alt="Feature" className="img-fluid" />
+            <div className="col-xl-6 col-lg-6">
+              <div className="solutions-two__content-one-right">
+                <div className="solutions-two__content-one-img-box">
+                  <div className="solutions-two__content-one-img">
+                    <img src={solutions2} alt="" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        ))}
+        </div>
+
+        {/* Content Two */}
+        <div className="solutions-two__content-two">
+          <div className="row">
+            {/* Solutions Two Single Start */}
+            <div className="col-xl-6 col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+              <div className="solutions-two__content-two-single">
+                <div className="solutions-two__content-two-top">
+                  <div className="solutions-two__content-two-title-box">
+                    <p>AI Chat Bot</p>
+                    <h3>With FlowAI, you can chat 🤖 smarter, not harder.</h3>
+                  </div>
+                  <p className="solutions-two__content-two-text-1">
+                    Mastering the Art of AI Content Writing: Unleashing the Power of Automated Creativity"
+                  </p>
+                  <div className="solutions-two__content-two-btn">
+                    <Link to="/contact">
+                      Start Chat<span className="icon-up-right-arrow"></span>
+                    </Link>
+                  </div>
+                </div>
+                <div className="solutions-two__content-two-img-box">
+                  <div className="solutions-two__content-two-shape-1">
+                    <img src={solutions3} alt="" />
+                  </div>
+                  <div className="solutions-two__content-two-img">
+                    <img src={solutions4} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Solutions Two Single End */}
+
+            {/* Solutions Two Single Start */}
+            <div className="col-xl-6 col-lg-6 wow fadeInRight" data-wow-delay="100ms">
+              <div className="solutions-two__content-two-single solutions-two__content-two-single-2">
+                <div className="solutions-two__content-two-top">
+                  <div className="solutions-two__content-two-title-box">
+                    <p>AI Video Generator</p>
+                    <h3>A wonderful video may be created by anyone. That includes you.</h3>
+                  </div>
+                  <p className="solutions-two__content-two-text-1">
+                    By listening to our leading AI text to speech reader, you can breeze through papers, articles, PDFs, and emails.
+                  </p>
+                  <div className="solutions-two__content-two-btn">
+                    <Link to="/about">
+                      Try AI Video<span className="icon-up-right-arrow"></span>
+                    </Link>
+                  </div>
+                </div>
+                <div className="solutions-two__content-two-img-box">
+                  <div className="solutions-two__content-two-img">
+                    <img src={solutions5} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Solutions Two Single End */}
+          </div>
+        </div>
+
+        {/* Content Three */}
+        <div className="solutions-two__content-three wow fadeInUp" data-wow-delay="100ms">
+          <div
+            className="solutions-two__content-three-shape-1"
+            style={{ backgroundImage: `url(${shapeContentThree})` }}
+          ></div>
+          <div className="row">
+            <div className="col-xl-6">
+              <div className="solutions-two__content-three-left">
+                <ul className="solutions-two__browser-dot">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <div className="solutions-two__content-three-shape-2"></div>
+                <ul className="row solutions-two__content-three-img-list">
+                  <li className="col-xl-3 col-lg-3 col-md-3">
+                    <div className="solutions-two__content-three-img-single">
+                      <div className="solutions-two__content-three-img">
+                        <img src={solThreeImg1} alt="" />
+                      </div>
+                    </div>
+                    <div className="solutions-two__content-three-img-single">
+                      <div className="solutions-two__content-three-img">
+                        <img src={solThreeImg2} alt="" />
+                      </div>
+                    </div>
+                  </li>
+                  <li className="col-xl-3 col-lg-3 col-md-3">
+                    <div className="solutions-two__content-three-img-single">
+                      <div className="solutions-two__content-three-img">
+                        <img src={solThreeImg3} alt="" />
+                      </div>
+                    </div>
+                    <div className="solutions-two__content-three-img-single">
+                      <div className="solutions-two__content-three-img">
+                        <img src={solThreeImg4} alt="" />
+                      </div>
+                    </div>
+                    <div className="solutions-two__content-three-img-single">
+                      <div className="solutions-two__content-three-img">
+                        <img src={solThreeImg5} alt="" />
+                      </div>
+                    </div>
+                  </li>
+                  <li className="col-xl-3 col-lg-3 col-md-3">
+                    <div className="solutions-two__content-three-img-single">
+                      <div className="solutions-two__content-three-img">
+                        <img src={solThreeImg6} alt="" />
+                      </div>
+                    </div>
+                    <div className="solutions-two__content-three-img-single">
+                      <div className="solutions-two__content-three-img">
+                        <img src={solThreeImg7} alt="" />
+                      </div>
+                    </div>
+                    <div className="solutions-two__content-three-img-single">
+                      <div className="solutions-two__content-three-img">
+                        <img src={solThreeImg8} alt="" />
+                      </div>
+                    </div>
+                  </li>
+                  <li className="col-xl-3 col-lg-3 col-md-3">
+                    <div className="solutions-two__content-three-img-single">
+                      <div className="solutions-two__content-three-img">
+                        <img src={solThreeImg9} alt="" />
+                      </div>
+                    </div>
+                    <div className="solutions-two__content-three-img-single">
+                      <div className="solutions-two__content-three-img">
+                        <img src={solThreeImg10} alt="" />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-xl-6">
+              <div className="solutions-two__content-three-right">
+                <div className="solutions-two__content-three-title-box">
+                  <p>AI Writing Tools</p>
+                  <h3>Generate Outstanding AI Images Just Using Prompt 🌄</h3>
+                </div>
+                <p className="solutions-two__content-three-text-1">
+                  <span>AIMug</span> is an artificial art generator that turns your ideas into one-of-a kind artwork and photographs in seconds. Finally, you'll have the perfect image to go with your statement.
+                </p>
+                <div className="solutions-two__content-three-points-box">
+                  <ul className="solutions-two__content-three-points list-unstyled">
+                    <li>
+                      <div className="icon">
+                        <span className="icon-check"></span>
+                      </div>
+                      <div className="text">
+                        <p>1000+ Styles</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="icon">
+                        <span className="icon-check"></span>
+                      </div>
+                      <div className="text">
+                        <p>Custom Sizes</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="icon">
+                        <span className="icon-check"></span>
+                      </div>
+                      <div className="text">
+                        <p>Oil Painting</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="icon">
+                        <span className="icon-check"></span>
+                      </div>
+                      <div className="text">
+                        <p>+ And Much More</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul className="solutions-two__content-three-points solutions-two__content-three-points-2 list-unstyled">
+                    <li>
+                      <div className="icon">
+                        <span className="icon-check"></span>
+                      </div>
+                      <div className="text">
+                        <p>Photo-realistic scenes</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="icon">
+                        <span className="icon-check"></span>
+                      </div>
+                      <div className="text">
+                        <p>Graphics</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="icon">
+                        <span className="icon-check"></span>
+                      </div>
+                      <div className="text">
+                        <p>Isometric Vector Graphics</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div className="solutions-two__content-three-btn-box">
+                  <Link to="/about" className="thm-btn solutions-two__content-three-btn">
+                    <FontAwesomeIcon icon={faPlus} /> Generate AI Image
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Rating Box */}
+        <div className="feature-one__rating-box">
+          <div className="d-flex gap-8 align-center justify-center mt-12 review-badges">
+            <img className="img-fluid" src={reviewLogo1} alt="" />
+            <img className="img-fluid" src={reviewLogo2} alt="" />
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
-export default Features;
+export default Solutions;

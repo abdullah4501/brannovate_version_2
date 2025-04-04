@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Headroom from 'headroom.js';
+import logo from '../../assets/images/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,7 +65,7 @@ const Navbar = () => {
     >
       <div className="container">
         <Link className="navbar-brand" to="/">
-          <img src="/src/assets/images/logo.png" alt="" />
+          <img src={logo} alt="" />
         </Link>
 
         <button

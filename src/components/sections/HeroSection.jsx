@@ -2,7 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import AOS from 'aos';
 import Typed from 'typed.js';
 import 'aos/dist/aos.css';
-
+import image from '../../assets/images/screens/screen-6.png';
+import svg from '../../assets/images/shapes/blurry-shape-1.svg';
 const HeroSection = () => {
   // Create a ref for the element that will be typed
   const typedElement = useRef(null);
@@ -77,14 +78,14 @@ const HeroSection = () => {
               <div data-aos="fade-up-sm" data-aos-delay="300">
                 <div className="image-with-shape">
                   <img
-                    src="src/assets/images/shapes/blurry-shape-1.svg"
+                    src={svg}
                     alt=""
                     className="shape animate-scale"
                   />
                   <div className="mt-12 rounded-5 border border-primary shadow-lg overflow-hidden position-relative z-1">
                     <img
                       className="img-fluid d-inline-block"
-                      src="src/assets/images/screens/screen-6.png"
+                      src={image}
                       alt=""
                     />
                   </div>

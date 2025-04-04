@@ -3,14 +3,21 @@ import OwlCarousel from "react-owl-carousel3";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
+// Import all images from assets
+import aiSpeechIcon from "../../assets/images/icons/ai-speech.png";
+import aiContentWritingIcon from "../../assets/images/icons/ai-content-writing.png";
+import aiChatIcon from "../../assets/images/icons/ai-chat.png";
+import aiImageGeneratorIcon from "../../assets/images/icons/ai-image.png";
+import aiAudioIcon from "../../assets/images/icons/ai-audio.png";
+import aiCodeGeneratorIcon from "../../assets/images/icons/ai-code.png";
 
 const solutions = [
-  { img: "src/assets/images/icons/ai-speech.png", title: "Speech To Text" },
-  { img: "src/assets/images/icons/ai-content-writing.png", title: "AI Writing Tools" },
-  { img: "src/assets/images/icons/ai-chat.png", title: "AI Chat Bot" },
-  { img: "src/assets/images/icons/ai-image.png", title: "AI Image Generator" },
-  { img: "src/assets/images/icons/ai-audio.png", title: "Text To Audio" },
-  { img: "src/assets/images/icons/ai-code.png", title: "AI Code Generator" },
+  { img: aiSpeechIcon, title: "Speech To Text" },
+  { img: aiContentWritingIcon, title: "AI Writing Tools" },
+  { img: aiChatIcon, title: "AI Chat Bot" },
+  { img: aiImageGeneratorIcon, title: "AI Image Generator" },
+  { img: aiAudioIcon, title: "Text To Audio" },
+  { img: aiCodeGeneratorIcon, title: "AI Code Generator" },
 ];
 
 const Carousel = () => {

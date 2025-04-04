@@ -1,6 +1,12 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import icon1 from "../../assets/images/icons/ai-content-writing.png";
+import icon2 from "../../assets/images/icons/ai-image.png";
+import icon3 from "../../assets/images/icons/ai-code.png";
+import icon4 from "../../assets/images/icons/cpu.png";
+import icon5 from "../../assets/images/icons/ai-chat.png";
+// import icon1 from "../../assets/images/icons/ai-content-writing.png";
 
 const FeatureOne = () => {
   useEffect(() => {
@@ -23,13 +29,12 @@ const FeatureOne = () => {
             <div className="feature-one__color-overly-1 flaot-bob-y"></div>
             <div className="feature-one__color-overly-2 flaot-bob-x"></div>
             <div className="feature-one__color-overly-3 img-bounce"></div>
-            {/* Top Section */}
             <div className="feature-one__main-content-top">
               <ul className="feature-one__list">
                 <li>
                   <div className="feature-one__single">
                     <div className="feature-one__icon">
-                      <img src="src/assets/images/icons/ai-content-writing.png" alt="" />
+                      <img src={icon1} alt="" />
                     </div>
                     <h5 className="feature-one__title-2">
                       <a href="about.html">Write LinkedIn Posts</a>
@@ -39,7 +44,7 @@ const FeatureOne = () => {
                 <li>
                   <div className="feature-one__single">
                     <div className="feature-one__icon">
-                      <img src="src/assets/images/icons/ai-image.png" alt="" />
+                      <img src={icon2} alt="" />
                     </div>
                     <h5 className="feature-one__title-2">
                       <a href="about.html">Schedule Posts</a>
@@ -62,7 +67,7 @@ const FeatureOne = () => {
                 <li>
                   <div className="feature-one__single">
                     <div className="feature-one__icon">
-                      <img src="src/assets/images/icons/ai-code.png" alt="" />
+                      <img src={icon3} alt="" />
                     </div>
                     <h5 className="feature-one__title-2">
                       <a href="about.html">Select Any Topic</a>
@@ -71,13 +76,13 @@ const FeatureOne = () => {
                 </li>
                 <li>
                   <div className="feature-one__cpu-icon-box">
-                    <img src="src/assets/images/icons/cpu.png" alt="" />
+                    <img src={icon4} alt="" />
                   </div>
                 </li>
                 <li>
                   <div className="feature-one__single">
                     <div className="feature-one__icon">
-                      <img src="src/assets/images/icons/ai-chat.png" alt="" />
+                      <img src={icon5} alt="" />
                     </div>
                     <h5 className="feature-one__title-2">
                       <a href="about.html">Pick Trending News</a>

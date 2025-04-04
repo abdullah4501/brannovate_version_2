@@ -1,0 +1,8 @@
+/* Base styles */
+@import url('assets/css/style.css');
+@import url('assets/css/responsive.css');
+@import url('assets/css/plugins.css');
+@import url('assets/css/color-themes/default-color.css');
+
+
+/* Add all other global styles here */

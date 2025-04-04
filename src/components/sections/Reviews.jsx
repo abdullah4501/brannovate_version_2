@@ -5,7 +5,10 @@ import 'swiper/css/bundle';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import image from '../../assets/images/icons/star.png';
+import image from '../../assets/images/review/1.png';
+import image2 from '../../assets/images/review/2.png';
+import image3 from '../../assets/images/review/3.png';
+import image4 from '../../assets/images/review/4.png';
 
 const Review = () => {
   useEffect(() => {
@@ -90,35 +93,35 @@ const Review = () => {
       name: "Wade Warrent",
       role: "Marketing Coordinator",
       text: "This is the best thing that has happened to my team in a while! Makes post text something we barely need to think about!",
-      image: "src/assets/images/review/1.png"
+      image: image
     },
     {
       id: 2,
       name: "Dianne Russell",
       role: "Content Creator",
       text: "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
-      image: "src/assets/images/review/2.png"
+      image: image2
     },
     {
       id: 3,
       name: "Jenny Wilson",
       role: "Product Designer",
       text: "Comfortable to wear for long periods of time. The battery life is impressive, providing up to 8 hours of listening time on a single charge. The earbuds are also sweat.",
-      image: "src/assets/images/review/3.png"
+      image: image3
     },
     {
       id: 4,
       name: "Guy Hawkins",
       role: "Digital Marketer",
       text: "Through my interactions with users, I have seen how technology has made life easier and more convenient for people.",
-      image: "src/assets/images/review/4.png"
+      image: image4
     },
     {
       id: 5,
       name: "Bessie Cooper",
       role: "SEO Expert",
       text: "I feel proud to be part of this technological advancement and to be able to help people in their day-to-day activities. It is truly amazing how technology has the power to connect",
-      image: "src/assets/images/review/1.png"
+      image: image
     }
   ];
 

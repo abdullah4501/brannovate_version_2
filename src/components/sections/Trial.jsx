@@ -1,5 +1,8 @@
 import React from 'react';
-
+import image from "../../assets/images/shapes/free-trail-start-1.png";
+import image2 from "../../assets/images/shapes/free-trail-start-2.png";
+import image3 from "../../assets/images/shapes/free-trail-start-3.png";
+import image4 from "../../assets/images/shapes/free-trail-start-4.png";
 const Trial = () => {
   return (
     <section className="free-trail">
@@ -11,16 +14,16 @@ const Trial = () => {
           ></div>
           <div className="free-trail__shape-1 float-bob-x"></div>
           <div className="free-trail__start-1 zoominout">
-            <img src="src/assets/images/shapes/free-trail-start-1.png" alt="" />
+            <img src={image} alt="" />
           </div>
           <div className="free-trail__start-2 float-bob-y">
-            <img src="src/assets/images/shapes/free-trail-start-2.png" alt="" />
+            <img src={image2} alt="" />
           </div>
           <div className="free-trail__start-3 float-bob-x">
-            <img src="src/assets/images/shapes/free-trail-start-3.png" alt="" />
+            <img src={image3} alt="" />
           </div>
           <div className="free-trail__start-4 zoominout">
-            <img src="src/assets/images/shapes/free-trail-start-4.png" alt="" />
+            <img src={image4} alt="" />
           </div>
           <div className="free-trail__inner">
             <div className="section-title text-center">

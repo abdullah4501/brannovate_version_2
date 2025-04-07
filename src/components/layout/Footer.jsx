@@ -5,7 +5,17 @@ const Footer = () => {
     <footer className="footer bg-striped pt-10 pt-lg-15">
       <div className="container">
         <div className="row g-10">
-          <div className="col-lg-9 col-xl-8 order-lg-2">
+          <div className="col-lg-3 me-auto ">
+              <div className="footer-widget text-center text-lg-start">
+                <a href="">
+                  <img src="src/assets/images/logo.png" alt="" className="img-fluid" />
+                </a>
+                <p className="fs-sm mb-0 mt-4">
+                  A Magical Tool to Optimize you content for the first know who you're targeting. Identify your target audience.
+                </p>
+              </div>
+          </div>
+          <div className="col-lg-9 col-xl-8">
             <div className="row g-6">
               <div className="col-md-4 col-lg-4">
                 <div className="footer-widget text-center text-md-start">
@@ -168,21 +178,11 @@ const Footer = () => {
               </div>
               </div>
           </div>
-          <div className="col-lg-3 order-lg-1 me-auto">
-            <div className="footer-widget text-center text-lg-start">
-              <a href="">
-                <img src="src/assets/images/logo.png" alt="" className="img-fluid" />
-              </a>
-              <p className="fs-sm mb-0 mt-4">
-                A Magical Tool to Optimize you content for the first know who you're targeting. Identify your target audience.
-              </p>
-            </div>
-          </div>
         </div>
 
         <div className="text-center py-6 mt-8">
           <p className="fs-sm mb-0">
-            Copyright <span className="text-primary">GenAI</span>. Design By Marvel_Theme
+            Copyright <span className="text-primary">Brannovate</span>. Design By Marvel_Theme
           </p>
         </div>
       </div>

@@ -163,8 +163,8 @@ const Review = () => {
           <div className="col-lg-9">
             <div className="text-center">
               <h1 data-aos="fade-up-sm" data-aos-delay="50">
-                <span className="text-primary">GenAI.</span>
-                Received <img src={star} alt="star" /> 4.8/5 Stars in Over 10,000+ Reviews.
+                <span className="text-primary">Brand<span style={{color: '#ff0000'}}>Bot </span></span>
+                 Received <img src={star} alt="star" /> 4.8/5 Stars in Over 10,000+ Reviews.
               </h1>
             </div>
           </div>

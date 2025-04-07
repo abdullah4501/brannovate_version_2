@@ -30,7 +30,7 @@ const featuresData = [
   },
   {
     id: 3,
-    title: "Write Blog Posts, Stories, & Even Books With GenAI.",
+    title: "Write Blog Posts, Stories, & Even Books With BrandBot.",
     description:
       "To create powerful content, you need to know who you're targeting. Identify your target audience and understand their needs, interests, and pain points.",
     points: [

@@ -54,7 +54,7 @@
 	width: 371px;
 	border-radius: 50%;
 	opacity: 0.3;
-	background: linear-gradient(93deg, #B324D7 7.07%, #FE577F 97.81%);
+	background: linear-gradient(93deg, #0000ff 7.07%, #272727 97.81%);
 	filter: blur(114px);
 	z-index: -1;
 }
@@ -67,7 +67,7 @@
 	width: 423px;
 	border-radius: 50%;
 	opacity: 0.3;
-	background: linear-gradient(180deg, #6243FF 0%, #FF2828 100%);
+	background: linear-gradient(180deg, #ff0000 0%, #d3d3d3 100%);
 	filter: blur(90px);
 	z-index: -1;
 }
@@ -80,7 +80,7 @@
 	width: 320px;
 	border-radius: 50%;
 	opacity: 0.3;
-	background: linear-gradient(208deg, #FFF855 19.19%, #00E3F2 70.68%);
+	background: linear-gradient(208deg, #404039 19.19%, var(--gen-yellow) 70.68%);
 	filter: blur(90px);
 	z-index: -1;
 }

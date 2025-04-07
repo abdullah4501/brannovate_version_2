@@ -53,7 +53,7 @@ const HeroSection = () => {
           <div className="col-lg-9">
             <div className="text-center">
               <div className="position-relative z-1">
-                <p className="text-primary" data-aos="fade-up-sm">
+                <p className="color-topheading" data-aos="fade-up-sm">
                   Best AI Copywriting Tool
                 </p>
                 <h1 className="text-dark mb-8" data-aos="fade-up-sm" data-aos-delay="150">

@@ -7,7 +7,7 @@ const PricingSection = () => {
         <div className="row justify-center mb-18">
           <div className="col-lg-10">
             <div className="text-center">
-              <p className="text-primary" data-aos="fade-up-sm" data-aos-delay="50">
+              <p className="color-topheading" data-aos="fade-up-sm" data-aos-delay="50">
                 Pricing Plan
               </p>
               <h1 className="mb-5" data-aos="fade-up-sm" data-aos-delay="100">
@@ -24,7 +24,7 @@ const PricingSection = () => {
           <div className="col-md-6 col-lg-4" data-aos="fade-up-sm" data-aos-delay="50">
             <div className="pricing-card p-6 px-lg-10 py-lg-8 rounded-4 h-full bg-whitedark">
               <h3 className="text-primary fw-medium mb-0">Free</h3>
-              <h1 className="display-2 fw-semibold mb-0 mt-4">$00</h1>
+              <h1 className="display-2 fw-semibold mb-0 mt-4">$0</h1>
               <p className="lead fw-normal mt-4 mb-0">
                 A 10X faster way to writing your professional copy
               </p>

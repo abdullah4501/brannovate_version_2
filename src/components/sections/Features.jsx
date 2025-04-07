@@ -57,7 +57,7 @@ const Features = ({ extraClassList = "" }) => {
           >
             <div className="col-lg-6" data-aos="fade-up-sm" data-aos-delay="150">
               <div className="content">
-                <p className="text-primary">Features {feature.id}</p>
+                <p className="color-topheading">Features {feature.id}</p>
                 <h1 className="mb-8">{feature.title}</h1>
                 <p className="mb-6">{feature.description}</p>
                 {feature.points && (

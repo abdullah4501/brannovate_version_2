@@ -1091,9 +1091,6 @@
 		height: inherit !important;
 	}
 
-
-
-
 	.reset-password-page {
 		height: inherit !important;
 		padding-top: 100px;
@@ -1113,100 +1110,23 @@
 	}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 550px) {
 	.feature-one__list {
-		flex-direction: column;
+		flex-direction: row;
 	}
 
 	.feature-one__ai-pack {
 		display: none;
 	}
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-====================================================================
-====================================================================
-# Main Header All Responsive Css
-====================================================================
-====================================================================
-*/
-
-@media (max-width: 1199px) {
-
-
-
-	/* .main-header.fixed-header .header-lower {
-		position: static !important;
+@media only screen and (max-width: 767.98px) {
+	.sm-hide{
+		display: none !important;
 	}
-
-	.main-header.main-header-three.fixed-header .header-three-lower {
-		position: static !important;
-	}
-
-	.main-header.main-header-two.fixed-header .header-two-lower {
-		position: static !important;
-	} */
-
-
-
 }
 
 
@@ -1222,9 +1142,6 @@
 		margin-right: 60px;
 	}
 }
-
-
-
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1249,18 +1166,6 @@
 		display: none;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*

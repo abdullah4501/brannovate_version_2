@@ -15,7 +15,6 @@ const Navbar = () => {
       const headroom = new Headroom(navRef.current, {
         offset: { up: 100, down: 50 },
         tolerance: { up: 5, down: 0 },
-        // Remove the "initial" property so no empty token is added.
         classes: {
           pinned: 'headroom--pinned',
           unpinned: 'headroom--unpinned',
@@ -28,7 +27,7 @@ const Navbar = () => {
       });
       headroom.init();
 
-      // Set HTML padding-top equal to navbar height to avoid content overlap.
+      // Set HTML scrollPaddingTop equal to navbar height
       const htmlEl = document.querySelector('html');
       if (htmlEl) {
         const navHeight = navRef.current.offsetHeight;
@@ -36,14 +35,13 @@ const Navbar = () => {
       }
     }
 
-    // For small viewports (<= 991px), collapse the navbar on scroll if it's open.
+    // Collapse navbar on scroll for small viewports (<= 991px)
     const mediaQuery = window.matchMedia('(max-width: 991px)');
     const handleScroll = () => {
       if (togglerRef.current && collapseRef.current) {
-        const scrollY = window.scrollY;
         if (
           togglerRef.current.getAttribute('aria-expanded') === 'true' &&
-          scrollY > 0
+          window.scrollY > 0
         ) {
           collapseRef.current.classList.remove('show');
           togglerRef.current.setAttribute('aria-expanded', 'false');
@@ -54,9 +52,32 @@ const Navbar = () => {
 
     if (mediaQuery.matches) {
       window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
     }
-  }, []);
+
+    // Click-outside handler to close the navbar if open
+    const handleClickOutside = (event) => {
+      if (
+        isOpen &&
+        navRef.current &&
+        !navRef.current.contains(event.target)
+      ) {
+        // Close the navbar
+        collapseRef.current.classList.remove('show');
+        if (togglerRef.current) {
+          togglerRef.current.setAttribute('aria-expanded', 'false');
+        }
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    // Cleanup listeners on unmount
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isOpen]);
 
   return (
     <nav
@@ -65,7 +86,7 @@ const Navbar = () => {
     >
       <div className="container">
         <Link className="navbar-brand" to="/">
-          <img src={logo} alt="" />
+          <img src={logo} alt="Logo" />
         </Link>
 
         <button

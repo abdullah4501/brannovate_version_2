@@ -24,7 +24,7 @@ const featuresData = [
     title: "A Magical Tool To Optimize Your Content For First Page Rankings",
     description:
       "A Magical Tool to Optimize you content for the first know who you're targeting. Identify your target audience and understand their needs, interests, and pain points.",
-      image: img1,
+      image: img2,
       linkText: "Request A Demo",
     linkHref: "/login",
   },
@@ -38,7 +38,7 @@ const featuresData = [
       "Let's Communicate with your customers with emotions",
       "Use visuals like images, videos, or infographics to make your content more engaging",
     ],
-    image: img1,
+    image: img3,
     linkText: "Get Started Free",
     linkHref: "/login",
   },

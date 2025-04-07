@@ -450,7 +450,7 @@
 	content: "";
 	position: absolute;
 	top: -38px;
-	left: 65px;
+	left: 0;
 	right: -30px;
 	bottom: 45px;
 	border-radius: 16px;
@@ -637,8 +637,17 @@
 }
 
 
-
-
+@media screen and (max-width: 991.98px) {
+	.solutions-two__content-three-left:before{
+		bottom: 0;
+	}
+	.row.solutions-two__content-three-img-list li{
+		flex-direction: row;
+	}
+	.solutions-two__content-three-img-single{
+		margin: 4px;
+	}
+}
 
 
 

@@ -123,20 +123,6 @@ const FeatureOne = () => {
               </ul>
             </div>
           </div>
-          <div className="feature-one__rating-box">
-            <div className="d-flex gap-8 align-center justify-center mt-12 review-badges">
-              <img
-                className="img-fluid"
-                src="src/assets/images/review-logos/trustpilot_reviews_2.svg"
-                alt=""
-              />
-              <img
-                className="img-fluid"
-                src="src/assets/images/review-logos/capterra_reviews_2.svg"
-                alt=""
-              />
-            </div>
-          </div>
         </div>
       </div>
     </section>

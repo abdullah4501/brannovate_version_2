@@ -86,7 +86,7 @@
 	left: 0;
 	width: 660px;
 	height: 304px;
-	background: linear-gradient(98deg, #00E3F2 5.55%, #FF9B00 32.85%, #F00 57.49%, #BD00FF 86.75%);
+	/* background: linear-gradient(98deg, #00E3F2 5.55%, #FF9B00 32.85%, #F00 57.49%, #BD00FF 86.75%); */
 	opacity: 0.1;
 	filter: blur(75px);
 	z-index: -1;

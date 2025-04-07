@@ -5,6 +5,7 @@ import 'swiper/css/bundle';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import star from '../../assets/images/icons/star.png';
 import image from '../../assets/images/review/1.png';
 import image2 from '../../assets/images/review/2.png';
 import image3 from '../../assets/images/review/3.png';
@@ -163,7 +164,7 @@ const Review = () => {
             <div className="text-center">
               <h1 data-aos="fade-up-sm" data-aos-delay="50">
                 <span className="text-primary">GenAI.</span>
-                Received <img src={image} alt="star" /> 4.8/5 Stars in Over 10,000+ Reviews.
+                Received <img src={star} alt="star" /> 4.8/5 Stars in Over 10,000+ Reviews.
               </h1>
             </div>
           </div>

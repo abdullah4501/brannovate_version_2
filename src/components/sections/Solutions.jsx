@@ -67,7 +67,7 @@ const Solutions = () => {
                 <ul className="solutions-two__content-one-points">
                   <li>
                     <div className="icon">
-                      <FontAwesomeIcon icon={faCheck} />
+                      <i class="fa fa-check"> </i>
                     </div>
                     <div className="text">
                       <p>
@@ -77,7 +77,7 @@ const Solutions = () => {
                   </li>
                   <li>
                     <div className="icon">
-                      <FontAwesomeIcon icon={faCheck} />
+                      <i class="fa fa-check"> </i>
                     </div>
                     <div className="text">
                       <p>Let's Communicate with your customers with emotions</p>
@@ -85,7 +85,7 @@ const Solutions = () => {
                   </li>
                   <li>
                     <div className="icon">
-                      <FontAwesomeIcon icon={faCheck} />
+                      <i class="fa fa-check"> </i>
                     </div>
                     <div className="text">
                       <p>Choose the best AI copy for your message &amp; save as a document</p>

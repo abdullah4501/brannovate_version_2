@@ -60,7 +60,7 @@
 .page-title__sub-title {
     font-size: 14px;
     font-weight: 500;
-    color: var(--thm-base);
+    color: var(--gen-red);
     line-height: 14px;
     margin-bottom: 18px;
 }
@@ -68,11 +68,9 @@
 .page-title__title {
     font-size: 48px;
     font-weight: 600;
-    color: var(--thm-white);
     line-height: 68px;
 }
 
-.page-title__text {}
 
 
 

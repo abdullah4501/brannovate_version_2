@@ -8,8 +8,8 @@ const FAQSection = () => {
           <div className="col-lg-10">
             <div className="text-center">
               <h1 className="mb-0" data-aos="fade-up-sm" data-aos-delay="50">
-                Questions About our GenAI? <br className="d-none d-md-block" />
-                We have Answers!
+                Questions About Brannovate? <br className="d-none d-md-block" />
+                We Have Answers!
               </h1>
             </div>
           </div>
@@ -29,7 +29,7 @@ const FAQSection = () => {
                     aria-controls="faq-collapseOne"
                   >
                     <span className="icon"></span>
-                    What Is GenAI Content Writing Tool?
+                    How does it enhance my LinkedIn presence?
                   </button>
                 </h2>
                 <div
@@ -38,7 +38,7 @@ const FAQSection = () => {
                   data-bs-parent="#faqAccordion"
                 >
                   <div className="accordion-body">
-                    Once you know your audience, choose a topic that will resonate with them. Look for trending topics in your industry or address common questions or challenges your audience may be facing. Keep in mind that your topic should be both interesting and relevant to your audience
+                    Brannovate is an AI-powered tool that transforms your LinkedIn profile into a dynamic, engaging presence by generating, scheduling, and directly posting content optimized using trending news.
                   </div>
                 </div>
               </div>
@@ -54,7 +54,7 @@ const FAQSection = () => {
                     aria-controls="faq-collapseTwo"
                   >
                     <span className="icon"></span>
-                    Is it helpful for Digital Marketer or Content Writer?
+                    Is Brannovate useful for Digital Marketers and Content Writers?
                   </button>
                 </h2>
                 <div
@@ -63,7 +63,7 @@ const FAQSection = () => {
                   data-bs-parent="#faqAccordion"
                 >
                   <div className="accordion-body">
-                    Once you know your audience, choose a topic that will resonate with them. Look for trending topics in your industry or address common questions or challenges your audience may be facing. Keep in mind that your topic should be both interesting and relevant to your audience
+                    Absolutely. Brannovate caters to both digital marketers and content writers by delivering data-driven, AI-generated posts that boost your engagement and help you stand out on LinkedIn.
                   </div>
                 </div>
               </div>
@@ -88,7 +88,7 @@ const FAQSection = () => {
                   data-bs-parent="#faqAccordion"
                 >
                   <div className="accordion-body">
-                    Once you know your audience, choose a topic that will resonate with them. Look for trending topics in your industry or address common questions or challenges your audience may be facing. Keep in mind that your topic should be both interesting and relevant to your audience
+                    There is no set limit. Brannovate’s AI can generate as many LinkedIn posts as you need, ensuring you consistently engage your audience.
                   </div>
                 </div>
               </div>
@@ -104,7 +104,7 @@ const FAQSection = () => {
                     aria-controls="faq-collapseFour"
                   >
                     <span className="icon"></span>
-                    What Languages does it supports?
+                    Which languages does Brannovate support?
                   </button>
                 </h2>
                 <div
@@ -113,7 +113,7 @@ const FAQSection = () => {
                   data-bs-parent="#faqAccordion"
                 >
                   <div className="accordion-body">
-                    Once you know your audience, choose a topic that will resonate with them. Look for trending topics in your industry or address common questions or challenges your audience may be facing. Keep in mind that your topic should be both interesting and relevant to your audience
+                    Brannovate supports multiple languages, so you can communicate with a global audience and build a truly international LinkedIn presence.
                   </div>
                 </div>
               </div>
@@ -129,7 +129,7 @@ const FAQSection = () => {
                     aria-controls="faq-collapseFive"
                   >
                     <span className="icon"></span>
-                    What is SEO Writing AI and how do I use it?
+                    What is the payment process to start using Brannovate?
                   </button>
                 </h2>
                 <div
@@ -138,7 +138,7 @@ const FAQSection = () => {
                   data-bs-parent="#faqAccordion"
                 >
                   <div className="accordion-body">
-                    Once you know your audience, choose a topic that will resonate with them. Look for trending topics in your industry or address common questions or challenges your audience may be facing. Keep in mind that your topic should be both interesting and relevant to your audience
+                    New users register via our signup form and are then redirected to a secure payment page. After completing payment, you’re taken to your dashboard where you can instantly connect your LinkedIn account and start generating, scheduling, and posting content.
                   </div>
                 </div>
               </div>

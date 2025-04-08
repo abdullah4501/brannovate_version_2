@@ -6,8 +6,8 @@ const FeaturesSection = () => {
       <div className="container">
         <div className="text-center mb-18">
           <h1 className="mb-0" data-aos="fade-up-sm" data-aos-delay="50">
-            Generate Creative LinkedIn Posts <br className="d-none d-lg-block" />
-            Across Your Favorite Tools
+            AI-Driven Personal Branding <br className="d-none d-lg-block" />
+            That Works for you
           </h1>
         </div>
 
@@ -28,7 +28,7 @@ const FeaturesSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a href="login.html" className="btn btn-primary">
+          <a href="https://ai.brannovate.com/" className="btn btn-primary">
             Try a demo
           </a>
         </div>
@@ -39,9 +39,9 @@ const FeaturesSection = () => {
 
 const features = [
   {
-    title: "Generates LinkedIn Posts",
+    title: "Strategic Content Architecture",
     description:
-      "Our AI tool analyzes your selected topic and instantly crafts quality LinkedIn posts in your unique voice.",
+      "Custom-crafted insights that position you as the authority your audience seeks.",
     icon: (
       <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
         <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
@@ -51,9 +51,9 @@ const features = [
     ),
   },
   {
-    title: "Provides Trending Insights",
+    title: "24/7 Digital Strategist",
     description:
-      "Integrating real-time news, our system offers timely suggestions to optimize your content strategy on LinkedIn.",
+      "Our AI Agent scours trending news and industry shifts to create high-impact content aligned with your voice.",
     icon: (
       <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
         <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
@@ -64,9 +64,9 @@ const features = [
     ),
   },
   {
-    title: "Boosts Engagement Metrics",
+    title: "Exponential Visibility",
     description:
-      "Our tool optimizes your posts to boost engagement—helping you post directly or schedule for peak performance.",
+      "Systematic amplification that transforms your expertise into influence that resonates industry-wide.",
     icon: (
       <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
         <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">

@@ -7,13 +7,13 @@ import img3 from '../../assets/images/illustrations/feature-illustration-3-blue.
 const featuresData = [
   {
     id: 1,
-    title: "Let's Create AI-Powered Content With A Single Click.",
+    title: "SMART START - Build Your Digital Presence with Ease",
     description:
-      "To create powerful content, you need to know who you're targeting. Identify your target audience and understand their needs, interests, and pain points.",
+      "Perfect for professionals looking to establish their voice online. Our AI-powered solution helps you:\n• Generate AI-curated posts based on trending news.\n• Optimize your LinkedIn presence with engaging content.\n• Schedule and publish seamlessly with our AI-powered automation.\n\nLet AI do the work for you!",
     points: [
-      "Start creating powerful content, for your next ads",
-      "Let's Communicate with your customers with emotions",
-      "Use visuals like images, videos, or infographics to make your content more engaging",
+      "Generate AI-curated posts based on trending news",
+      "Optimize your LinkedIn presence with engaging content",
+      "Schedule and publish seamlessly with our AI-powered automation",
     ],
     image: img1,
     linkText: "Get Started Free",
@@ -21,28 +21,30 @@ const featuresData = [
   },
   {
     id: 2,
-    title: "A Magical Tool To Optimize Your Content For First Page Rankings",
+    title: "THOUGHT LEADER - Own Your Niche & Stand Out",
     description:
-      "A Magical Tool to Optimize you content for the first know who you're targeting. Identify your target audience and understand their needs, interests, and pain points.",
-      image: img2,
-      linkText: "Request A Demo",
+      "For professionals ready to take the next step in personal branding. This package includes everything in Smart Start, plus:\n\n• AI-driven content strategy tailored to your industry.\n• Automated post scheduling to boost engagement.\n• Insights & analytics to refine your digital branding.\n\nPosition yourself as an authority in your field.",
+    // No 'points' array here to keep the same structure
+    image: img2,
+    linkText: "Request A Demo",
     linkHref: "/login",
   },
   {
     id: 3,
-    title: "Write Blog Posts, Stories, & Even Books With BrandBot.",
+    title: "INFLUENCE AMPLIFIER - Build a Lasting Digital Legacy",
     description:
-      "To create powerful content, you need to know who you're targeting. Identify your target audience and understand their needs, interests, and pain points.",
+      "For leaders and executives looking to cement their influence. Includes everything in Thought Leader, plus advanced AI-generated content and media strategies, VIP support for hands-free personal branding, and high-level engagement tools to ensure long-term impact. Transform your expertise into an enduring digital legacy.",
     points: [
-      "Start creating powerful content, for your next ads",
-      "Let's Communicate with your customers with emotions",
-      "Use visuals like images, videos, or infographics to make your content more engaging",
+      "Advanced AI-generated content and media strategies",
+      "VIP support for hands-free personal branding",
+      "High-level engagement tools to ensure long-term impact",
     ],
     image: img3,
     linkText: "Get Started Free",
     linkHref: "/login",
   },
 ];
+
 
 const Features = ({ extraClassList = "" }) => {
   return (
@@ -57,7 +59,7 @@ const Features = ({ extraClassList = "" }) => {
           >
             <div className="col-lg-6" data-aos="fade-up-sm" data-aos-delay="150">
               <div className="content">
-                <p className="color-topheading">Features {feature.id}</p>
+                <p className="color-topheading">Service {feature.id}</p>
                 <h1 className="mb-8">{feature.title}</h1>
                 <p className="mb-6">{feature.description}</p>
                 {feature.points && (

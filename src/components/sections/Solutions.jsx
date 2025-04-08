@@ -6,10 +6,10 @@ import { faCheck, faPlus } from '@fortawesome/free-solid-svg-icons';
 // Import images used in this component
 import shapeOne from "../../assets/images/shapes/solutions-two-shape-1.png";
 import solutions1 from "../../assets/images/shapes/solutions-two-shape-2.png";
-import solutions2 from "../../assets/images/resource/solutions-two-content-one-img-1.jpg";
+import solutions2 from "../../assets/images/screens/screen-2.png";
 import solutions3 from "../../assets/images/shapes/solutions-two-content-two-shape-1.png";
-import solutions4 from "../../assets/images/resource/solutions-two-content-two-img-1.jpg";
-import solutions5 from "../../assets/images/resource/solutions-two-content-two-img-2.jpg";
+import solutions4 from "../../assets/images/screens/screen-1.png";
+import solutions5 from "../../assets/images/screens/screen-3.png";
 import shapeContentThree from "../../assets/images/shapes/solutions-two-content-three-shape-1.png";
 
 // Content Three image list imports
@@ -35,10 +35,10 @@ const Solutions = () => {
         {/* Section Title */}
         <div className="section-title text-center">
           <div className="section-title__tagline-box">
-            <span className="section-title__tagline">Pur AI Solutions</span>
+            <span className="section-title__tagline">Dominate LinkedIn</span>
           </div>
           <h2 className="section-title__title">
-            Generative AI Designed for creators. Make <br /> your Life Easier with <span>AIMug</span>
+            Generate, Schedule, and Preview<br />Your LinkedIn Posts Instantly with <span>Brannovate</span>
           </h2>
         </div>
 
@@ -49,56 +49,59 @@ const Solutions = () => {
             style={{ backgroundImage: `url(${shapeOne})` }}
           ></div>
           <div className="row">
-            <div className="col-xl-6 col-lg-6">
-              <div className="solutions-two__content-one-left">
-                <div className="solutions-two__shape-2 zoominout">
-                  <img src={solutions1} alt="" />
-                </div>
-                <div className="solutions-two__content-one-title-box">
-                  <p>AI Writing Tools</p>
-                  <h3>
-                    Write ✍️ Better Content Faster, The Future of AI Writing Tools is Finally here
-                  </h3>
-                </div>
-                <p className="solutions-two__content-one-text-1">
-                  Mastering the Art of AI Content Writing: Unleashing the <br />
-                  Power of Automated Creativity"
-                </p>
-                <ul className="solutions-two__content-one-points">
-                  <li>
-                    <div className="icon">
-                      <i class="fa fa-check"> </i>
-                    </div>
-                    <div className="text">
-                      <p>
-                        There are more than <span>60+</span> use cases and templates to pick from to meet all of your writing demands.
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="icon">
-                      <i class="fa fa-check"> </i>
-                    </div>
-                    <div className="text">
-                      <p>Let's Communicate with your customers with emotions</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="icon">
-                      <i class="fa fa-check"> </i>
-                    </div>
-                    <div className="text">
-                      <p>Choose the best AI copy for your message &amp; save as a document</p>
-                    </div>
-                  </li>
-                </ul>
-                <div className="solutions-two__content-one-btn-box">
-                  <Link to="/about" className="thm-btn solutions-two__content-one-btn">
-                    <FontAwesomeIcon icon={faPlus} /> Get Started
-                  </Link>
-                </div>
+          <div className="col-xl-6 col-lg-6">
+            <div className="solutions-two__content-one-left">
+              <div className="solutions-two__shape-2 zoominout">
+                <img src={solutions1} alt="" />
+              </div>
+              <div className="solutions-two__content-one-title-box">
+                <p>AI LinkedIn Presence</p>
+                <h3>
+                  Generate ✍️ Better LinkedIn Posts Instantly, The Future of AI-Powered Presence is Here
+                </h3>
+              </div>
+              <p className="solutions-two__content-one-text-1">
+                Mastering the Art of LinkedIn Engagement: Unleash AI to generate, schedule, and post directly while previewing content before it goes live.
+              </p>
+              <ul className="solutions-two__content-one-points">
+                <li>
+                  <div className="icon">
+                    <i className="fa fa-check"></i>
+                  </div>
+                  <div className="text">
+                    <p>
+                      Generate high-quality posts automatically from trending LinkedIn news.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div className="icon">
+                    <i className="fa fa-check"></i>
+                  </div>
+                  <div className="text">
+                    <p>
+                      Schedule and post directly to LinkedIn with just one click.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div className="icon">
+                    <i className="fa fa-check"></i>
+                  </div>
+                  <div className="text">
+                    <p>
+                      Preview and customize your post before publishing to ensure perfection.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <div className="solutions-two__content-one-btn-box">
+                <Link to="https://ai.brannovate.com/" className="thm-btn solutions-two__content-one-btn">
+                  <FontAwesomeIcon icon={faPlus} /> Get Started
+                </Link>
               </div>
             </div>
+          </div>
             <div className="col-xl-6 col-lg-6">
               <div className="solutions-two__content-one-right">
                 <div className="solutions-two__content-one-img-box">
@@ -112,9 +115,8 @@ const Solutions = () => {
         </div>
 
         {/* Content Two */}
-        <div className="solutions-two__content-two">
+        {/* <div className="solutions-two__content-two">
           <div className="row">
-            {/* Solutions Two Single Start */}
             <div className="col-xl-6 col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
               <div className="solutions-two__content-two-single">
                 <div className="solutions-two__content-two-top">
@@ -141,9 +143,7 @@ const Solutions = () => {
                 </div>
               </div>
             </div>
-            {/* Solutions Two Single End */}
 
-            {/* Solutions Two Single Start */}
             <div className="col-xl-6 col-lg-6 wow fadeInRight" data-wow-delay="100ms">
               <div className="solutions-two__content-two-single solutions-two__content-two-single-2">
                 <div className="solutions-two__content-two-top">
@@ -167,12 +167,11 @@ const Solutions = () => {
                 </div>
               </div>
             </div>
-            {/* Solutions Two Single End */}
           </div>
-        </div>
+        </div> */}
 
         {/* Content Three */}
-        <div className="solutions-two__content-three wow fadeInUp" data-wow-delay="100ms">
+        {/* <div className="solutions-two__content-three wow fadeInUp" data-wow-delay="100ms">
           <div
             className="solutions-two__content-three-shape-1"
             style={{ backgroundImage: `url(${shapeContentThree})` }}
@@ -327,7 +326,7 @@ const Solutions = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Rating Box */}
         <div className="feature-one__rating-box">

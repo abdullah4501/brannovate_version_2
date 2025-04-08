@@ -573,7 +573,7 @@ progress {
 }
 
 .lead {
-    font-size: 1.25rem;
+    font-size: 16px;
     font-weight: 300
 }
 
@@ -4650,4 +4650,16 @@ article img {
 }
 .color-topheading{
     color: #ff0000 !important;
+}
+.pricing-list{
+    padding: 0 !important;
+}
+.pricing-list li i{
+    color: #ff0000;
+    margin-right: 20px;
+}
+.pricing-list li{
+    font-size: 16px !important;
+    display: flex;
+    align-items: center;
 }

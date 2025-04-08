@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PricingSection = () => {
   return (
@@ -29,7 +30,7 @@ const PricingSection = () => {
                 <span style={{color:'#ff0000'}}>Perfect for: </span> Busy professionals dipping toes into personal branding
               </p>
               <a
-                href="pricing-plan.html"
+                href="http://127.0.0.1:8000/sign-up"
                 className="pricing-btn btn btn-lg w-full fs-4 lh-sm mt-9 btn-lite-blue-2"
               >
                 Choose AI Starter
@@ -48,12 +49,12 @@ const PricingSection = () => {
               <p className="lead fw-normal mt-4 mb-0">
               <span style={{color:'#ff0000'}}>Perfect for: </span> Leaders ready to stand out with hybrid AI + human brilliance
               </p>
-              <a
-                href="pricing-plan.html"
+              <Link
+                to="/contact"
                 className="pricing-btn btn btn-lg w-full fs-4 lh-sm mt-9 btn-lite-blue-2"
               >
                 Go Premium
-              </a>
+              </Link>
               <ul className="pricing-list d-flex flex-column gap-5 fs-lg mt-9 mb-0">
                 <li>
                   <i className="fa fa-check"></i>
@@ -97,12 +98,12 @@ const PricingSection = () => {
               <p className="lead fw-normal mt-4 mb-0">
               <span style={{color:'#ff0000'}}>Perfect for: </span> Visionaries cementing their legacy as industry icons.
               </p>
-              <a
-                href="pricing-plan.html"
+              <Link
+                to="/contact"
                 className="pricing-btn btn btn-lg w-full fs-4 lh-sm mt-9 btn-lite-blue-2"
               >
                 Claim Icon Suite
-              </a>
+              </Link>
               <ul className="pricing-list d-flex flex-column gap-5 fs-lg mt-9 mb-0">
                 <li>
                   <i className="fa fa-check"></i>

@@ -42,10 +42,10 @@ const Contact = () => {
                 <div className="contact-one__left">
                   <div className="contact-one__left-content">
                     <div className="contact-one__title-box">
-                      <h3>Drop A Line</h3>
+                      <h3>Drop A Message</h3>
                       <p>
-                        There are more than 80+ use cases and templates to pick from to meet all of your writing demands. Let’s Communicate with your customers with emotions
-                      </p>
+                        At Brannovate, we transform your professional narrative with AI-powered insights and tailored content strategies. Reach out today to discover how our innovative tools generate, schedule, and optimize your LinkedIn posts—ensuring you consistently stand out and engage your network.
+                    </p>
                     </div>
                     <ul className="contact-one__contact-list">
                       <li>

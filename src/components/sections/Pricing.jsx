@@ -30,7 +30,7 @@ const PricingSection = () => {
                 <span style={{color:'#ff0000'}}>Perfect for: </span> Busy professionals dipping toes into personal branding
               </p>
               <a
-                href="http://127.0.0.1:8000/sign-up"
+                href="https://ai.brannovate.com/sign-up"
                 className="pricing-btn btn btn-lg w-full fs-4 lh-sm mt-9 btn-lite-blue-2"
               >
                 Choose AI Starter

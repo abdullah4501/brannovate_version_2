@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
           <div className="col-lg-9 col-xl-8">
             <div className="row g-6">
-              <div className="col-md-4 col-lg-4">
+              <div className="col-md-6 col-lg-6">
                 <div className="footer-widget text-center text-md-start">
                   <h6 className=" mb-2">Links</h6>
                   <ul className="link-list list-unstyled mb-0">
@@ -36,29 +36,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-md-4 col-lg-4">
-                <div className="footer-widget text-center text-md-start">
-                  <h6 className=" mb-2">Use Cases</h6>
-                  <ul className="link-list list-unstyled mb-0">
-                    <li>
-                      <a href="use-cases-details.html">AI writer</a>
-                    </li>
-                    <li>
-                      <a href="use-cases-details.html">Businesses AI</a>
-                    </li>
-                    <li>
-                      <a href="use-cases-details.html">AI Blog writer</a>
-                    </li>
-                    <li>
-                      <a href="use-cases-details.html">AI Content Creator</a>
-                    </li>
-                    <li>
-                      <a href="use-cases-details.html">Article write</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md-4 col-lg-4">
+              <div className="col-md-6 col-lg-6">
                 <div className="footer-widget text-center text-md-start">
                   <h6 className=" mb-4">News & Update</h6>
                   <form action="#">

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import AOS from 'aos';
 import Typed from 'typed.js';
 import 'aos/dist/aos.css';
-import image from '../../assets/images/screens/screen-6.png';
+import image from '../../assets/images/screens/screen-1.png';
 import svg from '../../assets/images/shapes/blurry-shape-1.svg';
 const HeroSection = () => {
   // Create a ref for the element that will be typed
@@ -54,25 +54,25 @@ const HeroSection = () => {
             <div className="text-center">
               <div className="position-relative z-1">
                 <p className="color-topheading" data-aos="fade-up-sm">
-                  Best AI Copywriting Tool
+                Effortlessly Represent Yourself 
                 </p>
                 <h1 className="text-dark mb-8" data-aos="fade-up-sm" data-aos-delay="150">
-                  A 10X Faster Way To Write Your <br />
+                Your professional identity is just<br />a click away <br />
                   <span
                     ref={typedElement}
                     className="fw-bold text-gradient-1 typed-animation"
-                    data-strings='["Linkedin Posts", "News Article", "SEO Content", "Product Description"]'
+                    data-strings='["Providing Trending Ideas", "Effortless Content Generation", "Seamless Scheduling and Posting", "Exponential Visibility"]'
                   >
                     Product Description
                   </span>
                 </h1>
                 <a
-                  href="login.html"
+                  href="https://ai.brannovate.com/"
                   className="btn btn-lg btn-gradient-1"
                   data-aos="fade-up-sm"
                   data-aos-delay="200"
                 >
-                  Start Writing - It's Free
+                  Start Posting - It's Free
                 </a>
               </div>
               <div data-aos="fade-up-sm" data-aos-delay="300">
@@ -92,7 +92,7 @@ const HeroSection = () => {
                 </div>
               </div>
               <ul className="d-flex flex-wrap gap-4 gap-md-8 gap-lg-10 align-center justify-center mt-8 mb-0">
-                <li>Fetchi Trending News 10X Faster</li>
+                <li>Fetch Trending News 10X Faster</li>
                 <li>Write Higher Converting Linkedin Posts</li>
                 <li>Schedule Linkedin Posts</li>
               </ul>

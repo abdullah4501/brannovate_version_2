@@ -10,6 +10,7 @@ import image from '../../assets/images/review/1.png';
 import image2 from '../../assets/images/review/2.png';
 import image3 from '../../assets/images/review/3.png';
 import image4 from '../../assets/images/review/4.png';
+import image5 from '../../assets/images/review/5.png';
 
 const Review = () => {
   useEffect(() => {
@@ -93,36 +94,43 @@ const Review = () => {
       id: 1,
       name: "Wade Warrent",
       role: "Marketing Coordinator",
-      text: "This is the best thing that has happened to my team in a while! Makes post text something we barely need to think about!",
+      text: "We needed an app to streamline our operations, and Brannovate was perfect for the job. They delivered a powerful app with fantastic features, and our feedback was incorporated seamlessly. Couldn’t be happier!",
       image: image
     },
     {
       id: 2,
       name: "Dianne Russell",
       role: "Content Creator",
-      text: "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
+      text: "Elevate Brannovate was phenomenal. They were able to develop a robust e-commerce platform for us that has transformed our sales. Their studio team also created beautiful brand visuals. Their attention to detail is impeccable!",
       image: image2
     },
     {
       id: 3,
       name: "Jenny Wilson",
       role: "Product Designer",
-      text: "Comfortable to wear for long periods of time. The battery life is impressive, providing up to 8 hours of listening time on a single charge. The earbuds are also sweat.",
+      text: "From start to finish, working with Brannovate was smooth and efficient. They kept us updated throughout the project, and the final product surpassed our expectations. Would definitely recommend them!",
       image: image3
     },
     {
       id: 4,
       name: "Guy Hawkins",
       role: "Digital Marketer",
-      text: "Through my interactions with users, I have seen how technology has made life easier and more convenient for people.",
+      text: "Brannovate exceeded our expectations in every way. Their team turned our vision into a reality with an intuitive website and a sleek app. They were incredibly responsive, and the entire project stayed on schedule. I’d recommend them without hesitation",
       image: image4
     },
     {
       id: 5,
       name: "Bessie Cooper",
       role: "SEO Expert",
-      text: "I feel proud to be part of this technological advancement and to be able to help people in their day-to-day activities. It is truly amazing how technology has the power to connect",
+      text: "We had a complex project and needed expertise to pull it off. Brannovate team not only delivered but also helped us enhance our original ideas. The app they developed is high-performing and very user-friendly. Great service overall!",
       image: image
+    },
+    {
+      id: 6,
+      name: "Jessica Monroe",
+      role: "Marketing Expert",
+      text: "Working with Brannovate was a game-changer for our business. They designed a beautiful website that captures our brand perfectly, and their studio services added that extra touch to our promotional materials. Amazing team and exceptional quality.",
+      image: image5
     }
   ];
 
@@ -163,8 +171,8 @@ const Review = () => {
           <div className="col-lg-9">
             <div className="text-center">
               <h1 data-aos="fade-up-sm" data-aos-delay="50">
-                <span className="text-primary">Brand<span style={{color: '#ff0000'}}>Bot </span></span>
-                 Received <img src={star} alt="star" /> 4.8/5 Stars in Over 10,000+ Reviews.
+                <span className="text-primary">Brannovate </span>
+                 Received <img src={star} alt="star" /> 4.9/5 Stars in Over 10,000+ Reviews.
               </h1>
             </div>
           </div>

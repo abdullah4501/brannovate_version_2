@@ -11,7 +11,7 @@ const Footer = () => {
                   <img src="src/assets/images/logo.png" alt="" className="img-fluid" />
                 </a>
                 <p className="fs-sm mb-0 mt-4">
-                  A Magical Tool to Optimize you content for the first know who you're targeting. Identify your target audience.
+                Empowering brands with innovative digital solutions. Committed to excellence, dedicated to your growth. Partner with Brannovate for results that matter.
                 </p>
               </div>
           </div>
@@ -19,19 +19,16 @@ const Footer = () => {
             <div className="row g-6">
               <div className="col-md-4 col-lg-4">
                 <div className="footer-widget text-center text-md-start">
-                  <h6 className=" mb-2">Gen AI</h6>
+                  <h6 className=" mb-2">Links</h6>
                   <ul className="link-list list-unstyled mb-0">
                     <li>
-                      <a href="about.html">About</a>
+                      <a href="https://ai.brannovate.com/">BrandBot</a>
                     </li>
                     <li>
-                      <a href="blog.html">Blog</a>
+                      <a href="https://ai.brannovate.com/">Sign in</a>
                     </li>
                     <li>
-                      <a href="login.html">Sign in</a>
-                    </li>
-                    <li>
-                      <a href="register.html">Register</a>
+                      <a href="https://ai.brannovate.com/sign-up">Register</a>
                     </li>
                     <li>
                       <a href="contact.html">Contact</a>
@@ -182,7 +179,7 @@ const Footer = () => {
 
         <div className="text-center py-6 mt-8">
           <p className="fs-sm mb-0">
-            Copyright <span className="text-primary">Brannovate</span>. Design By Marvel_Theme
+            Copyright &copy; <span className="text-primary">Brannovate</span>. All Rights Reserved
           </p>
         </div>
       </div>

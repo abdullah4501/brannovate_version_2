@@ -45,10 +45,11 @@ const FeatureOne = () => {
       <div className="container">
         <div className="feature-one__inner">
           <h2 className="feature-one__title">
-            Transform Your LinkedIn Presence <br /> With Our 🤖 <span>AI Tool</span>
+            Unlock Your LinkedIn Content Potential <br />with <span>Brannovate</span>
           </h2>
+          <p className="text-center">Transform the way you engage on LinkedIn. Our AI tool delivers innovative post ideas<br />and curated trending topics—so you can create, schedule, and publish content that truly represents you.</p>
           <div className="feature-one__btn-box">
-            <a href="contact.html" className="thm-btn feature-one__btn">
+            <a href="https://ai.brannovate.com/" className="thm-btn feature-one__btn">
               <i className="fa fa-plus"></i> Get Started Free
             </a>
           </div>

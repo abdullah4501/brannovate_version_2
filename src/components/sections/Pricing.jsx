@@ -23,82 +23,129 @@ const PricingSection = () => {
         <div className="row g-6 pricing-table">
           <div className="col-md-6 col-lg-4" data-aos="fade-up-sm" data-aos-delay="50">
             <div className="pricing-card p-6 px-lg-10 py-lg-8 rounded-4 h-full bg-whitedark">
-              <h3 className="text-primary fw-medium mb-0">Free</h3>
-              <h1 className="display-2 fw-semibold mb-0 mt-4">$0</h1>
+              <h3 className="text-primary fw-medium mb-0">AI Starter</h3>
+              <h1 className="display-2 fw-semibold mb-0 mt-4">$1</h1>
               <p className="lead fw-normal mt-4 mb-0">
-                A 10X faster way to writing your professional copy
+                <span style={{color:'#ff0000'}}>Perfect for: </span> Busy professionals dipping toes into personal branding
               </p>
               <a
                 href="pricing-plan.html"
                 className="pricing-btn btn btn-lg w-full fs-4 lh-sm mt-9 btn-lite-blue-2"
               >
-                Start for Free
+                Choose AI Starter
               </a>
               <ul className="pricing-list d-flex flex-column gap-5 fs-lg mt-9 mb-0">
-                <li>Single seats</li>
-                <li>10,000 words per month</li>
-                <li>30+ AI writing tools</li>
-                <li>60+ Copywriting tools</li>
-                <li>10+ languages</li>
+                <li><i className='fa fa-check'></i><span><b>AI Generated Content:</b> 2 polished LinkedIn posts/week + 1 carousel.</span></li>
+                <li><i className='fa fa-check'></i><span><b>Trend Integration:</b> Auto- aligned with industry news.</span></li>
+                <li><i className='fa fa-check'></i><span><b>Basic Analytics:</b> Track engagement & growth.</span></li>
               </ul>
             </div>
           </div>
           <div className="col-md-6 col-lg-4" data-aos="fade-up-sm" data-aos-delay="100">
             <div className="pricing-card p-6 px-lg-10 py-lg-8 rounded-4 h-full bg-whitedark">
-              <h3 className="text-primary fw-medium mb-0">Starter</h3>
-              <h1 className="display-2 fw-semibold mb-0 mt-4">$29</h1>
+              <h3 className="text-primary fw-medium mb-0">Premium Accelerate</h3>
+              <h1 className="display-2 fw-semibold mb-0 mt-4">$250</h1>
               <p className="lead fw-normal mt-4 mb-0">
-                A 10X faster way to writing your professional copy
+              <span style={{color:'#ff0000'}}>Perfect for: </span> Leaders ready to stand out with hybrid AI + human brilliance
               </p>
               <a
                 href="pricing-plan.html"
                 className="pricing-btn btn btn-lg w-full fs-4 lh-sm mt-9 btn-lite-blue-2"
               >
-                Choose Plan
+                Go Premium
               </a>
               <ul className="pricing-list d-flex flex-column gap-5 fs-lg mt-9 mb-0">
-                <li>5 User seats</li>
                 <li>
-                  <strong className="fw-medium">50,000</strong> words per month
+                  <i className="fa fa-check"></i>
+                  <span>
+                    <b>Expert-Crafted Content:</b> 2 team-written posts + 1 carousel.
+                  </span>
                 </li>
                 <li>
-                  <strong className="fw-medium">70+</strong> AI writing tools
+                  <i className="fa fa-check"></i>
+                  <span>
+                    <b>Custom Request:</b> 1 tailored post/month (client-specified topic).
+                  </span>
                 </li>
                 <li>
-                  <strong className="fw-medium">100+</strong> Copywriting tools
+                  <i className="fa fa-check"></i>
+                  <span>
+                    <b>Cross-Platform Power:</b> 2 Twitter/X threads
+                  </span>
                 </li>
-                <li>Blog post wizard tool</li>
-                <li>25+ languages</li>
+                <li>
+                  <i className="fa fa-check"></i>
+                  <span>
+                    <b>Comment Management:</b> Proactive engagement & sentiment monitoring.
+                  </span>
+                </li>
+                <li>
+                  <i className="fa fa-check"></i>
+                  <span>
+                    <b>Audience Targeting:</b> Strategic connection growth.
+                  </span>
+                </li>
               </ul>
+
             </div>
           </div>
           <div className="col-md-6 col-lg-4" data-aos="fade-up-sm" data-aos-delay="150">
             <div className="pricing-card p-6 px-lg-10 py-lg-8 rounded-4 h-full bg-whitedark">
               <span className="badge text-bg-red px-4 py-2 rounded-end-0">Most Popular</span>
-              <h3 className="text-primary fw-medium mb-0">Enterprise</h3>
-              <h1 className="display-2 fw-semibold mb-0 mt-4">$119</h1>
+              <h3 className="text-primary fw-medium mb-0">Icon Suite</h3>
+              <h1 className="display-2 fw-semibold mb-0 mt-4">$1,500</h1>
               <p className="lead fw-normal mt-4 mb-0">
-                A 10X faster way to writing your professional copy
+              <span style={{color:'#ff0000'}}>Perfect for: </span> Visionaries cementing their legacy as industry icons.
               </p>
               <a
                 href="pricing-plan.html"
                 className="pricing-btn btn btn-lg w-full fs-4 lh-sm mt-9 btn-lite-blue-2"
               >
-                Choose Plan
+                Claim Icon Suite
               </a>
               <ul className="pricing-list d-flex flex-column gap-5 fs-lg mt-9 mb-0">
-                <li>Unlimited seats</li>
                 <li>
-                  <strong className="fw-medium">100,000</strong> words per month
+                  <i className="fa fa-check"></i>
+                  <span>
+                    <b>All-Inclusive Legacy:</b> Everything in Premium Accelerate
+                  </span>
                 </li>
                 <li>
-                  <strong className="fw-medium">100+</strong> AI writing tools
+                  <i className="fa fa-check"></i>
+                  <span>
+                    <b>LinkedIn Polls & Q&amp;A:</b> 2 interactive polls/week + monthly AMA sessions.
+                  </span>
                 </li>
                 <li>
-                  <strong className="fw-medium">200+</strong> Copywriting tools
+                  <i className="fa fa-check"></i>
+                  <span>
+                    <b>Video Content:</b> 1 long-form video/month
+                  </span>
                 </li>
-                <li>Blog post wizard tool</li>
-                <li>25+ languages</li>
+                <li>
+                  <i className="fa fa-check"></i>
+                  <span>
+                    <b>Long-Form Articles:</b> 1 ghostwritten article/month
+                  </span>
+                </li>
+                <li>
+                  <i className="fa fa-check"></i>
+                  <span>
+                    <b>Website Building:</b> Sleek, SEO-optimized personal site.
+                  </span>
+                </li>
+                <li>
+                  <i className="fa fa-check"></i>
+                  <span>
+                    <b>Expert-Led Podcast Management:</b> Quarterly episodes where you share your expertise &amp; vision, published &amp; promoted across platforms
+                  </span>
+                </li>
+                <li>
+                  <i className="fa fa-check"></i>
+                  <span>
+                    <b>Book/Bio Writing:</b> Ghostwrite your memoir, ebook, or biography.
+                  </span>
+                </li>
               </ul>
             </div>
           </div>

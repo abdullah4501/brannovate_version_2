@@ -62,20 +62,21 @@ const FeatureOne = () => {
                 <li>
                   <div className="feature-one__single">
                     <div className="feature-one__icon">
+                      <img src={icon5} alt="AI Chat Icon" />
+                    </div>
+                    <h5 className="feature-one__title-2">
+                      <a href="about.html">Pick Trending News</a>
+                    </h5>
+                  </div>
+                </li>
+
+                <li>
+                  <div className="feature-one__single">
+                    <div className="feature-one__icon">
                       <img src={icon1} alt="AI Content Writing Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
                       <a href="about.html">Write LinkedIn Posts</a>
-                    </h5>
-                  </div>
-                </li>
-                <li>
-                  <div className="feature-one__single">
-                    <div className="feature-one__icon">
-                      <img src={icon2} alt="AI Image Icon" />
-                    </div>
-                    <h5 className="feature-one__title-2">
-                      <a href="about.html">Schedule Posts</a>
                     </h5>
                   </div>
                 </li>
@@ -110,13 +111,33 @@ const FeatureOne = () => {
                 <li>
                   <div className="feature-one__single">
                     <div className="feature-one__icon">
+                      <img src={icon2} alt="AI Image Icon" />
+                    </div>
+                    <h5 className="feature-one__title-2">
+                      <a href="about.html">Schedule Posts</a>
+                    </h5>
+                  </div>
+                </li>
+                {/* <li>
+                  <div className="feature-one__single">
+                    <div className="feature-one__icon">
+                      <img src={icon1} alt="AI Content Writing Icon" />
+                    </div>
+                    <h5 className="feature-one__title-2">
+                      <a href="about.html">Write LinkedIn Posts</a>
+                    </h5>
+                  </div>
+                </li> */}
+                {/* <li>
+                  <div className="feature-one__single">
+                    <div className="feature-one__icon">
                       <img src={icon5} alt="AI Chat Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
                       <a href="about.html">Pick Trending News</a>
                     </h5>
                   </div>
-                </li>
+                </li> */}
               </ul>
             </div>
             {/* Bottom Section */}
@@ -133,6 +154,7 @@ const FeatureOne = () => {
                     <div className="feature-one__icon">
                       <img src={aiAudioIcon} alt="AI Audio Icon" />
                     </div>
+                    
                     <h5 className="feature-one__title-2">
                       <a href="about.html">AI Generates Posts</a>
                     </h5>

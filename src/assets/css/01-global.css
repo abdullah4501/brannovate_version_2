@@ -527,7 +527,7 @@ img {
     text-transform: capitalize;
     padding: 11px 30px 11px;
     border-radius: 8px;
-    background: linear-gradient(211deg, #0000ff 13.4%, #0000ffa3 118.74%);
+    background: linear-gradient(211deg, #ff0100 13.4%, #D60000 65%, #D60000 118.74%);
     box-shadow: 0px 20px 24px -10px #0B042F;
     background-size: 200% auto;
     font-family: var(--thm-font-two);
@@ -535,6 +535,7 @@ img {
     overflow: hidden;
     z-index: 1;
 }
+
 
 .thm-btn i {
     position: relative;

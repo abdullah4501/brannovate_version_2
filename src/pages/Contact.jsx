@@ -1,14 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import bgImg from '../assets/images/shapes/page-title-shape-1.png';
 import { FaLinkedin, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import toast, { Toaster } from 'react-hot-toast'; // Import react-hot-toast
 
 const Contact = () => {
+  // Local state for form data and submission status
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+  
+  // Handle input change events
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // Handle form submission, posting data to the API endpoint
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Optionally, add form validation here
+
+    try {
+      toast.loading("Sending...", { id: "loadingToast" });
+      const response = await fetch('https://ai.brannovate.com/api/send-email', { // Adjust to your API endpoint
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        toast.success("Email sent successfully!", { id: "loadingToast" });
+        // Clear form if needed
+        setFormData({
+          name: "",
+          email: "",
+          message: ""
+        });
+      } else {
+        toast.error("Something went wrong. Please try again.", { id: "loadingToast" });
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast.error("Error sending email. Please try later.", { id: "loadingToast" });
+    }
+  };
+
   return (
     <div className="wrapper d-flex flex-column justify-between">
       {/* Navbar */}
       <Navbar />
+
+      {/* Hot Toast container */}
+      <Toaster />
 
       <main className="flex-grow-1">
         {/* Page Title Start */}
@@ -26,8 +75,8 @@ const Contact = () => {
                 </h3>
               </div>
               <p className="page-title__text">
-              Discover how Brannovate transforms your professional image with effortless, data-driven AI content strategies.<br />
-              Let’s start your journey to dominating LinkedIn.
+                Discover how Brannovate transforms your professional image with effortless, data-driven AI content strategies.<br />
+                Let’s start your journey to dominating LinkedIn.
               </p>
             </div>
           </div>
@@ -42,9 +91,9 @@ const Contact = () => {
                 <div className="contact-one__left">
                   <div className="contact-one__left-content">
                     <div className="contact-one__title-box">
-                      <h3>Drop A Line</h3>
+                      <h3>Drop A Message</h3>
                       <p>
-                        There are more than 80+ use cases and templates to pick from to meet all of your writing demands. Let’s Communicate with your customers with emotions
+                        At Brannovate, we transform your professional narrative with AI-powered insights and tailored content strategies. Reach out today to discover how our innovative tools generate, schedule, and optimize your LinkedIn posts—ensuring you consistently stand out and engage your network.
                       </p>
                     </div>
                     <ul className="contact-one__contact-list">
@@ -64,7 +113,7 @@ const Contact = () => {
                         </div>
                         <div className="text">
                           <p>
-                          2785 E GRAND BLVD UNIT<br />653 DETROIT, MI 48211,<br />Detroit, Michigan US
+                            2785 E GRAND BLVD UNIT<br />653 DETROIT, MI 48211,<br />Detroit, Michigan US
                           </p>
                         </div>
                       </li>
@@ -79,20 +128,6 @@ const Contact = () => {
                         </div>
                       </li>
                     </ul>
-                    <div className="contact-one__social">
-                        <a href="https://www.linkedin.com/company/brannovate/" target="_blank" rel="noopener noreferrer">
-                            <FaLinkedin className="social-icon" />
-                        </a>
-                        <a href="https://www.facebook.com/Brannovate" target="_blank" rel="noopener noreferrer">
-                            <FaFacebookF className="social-icon" />
-                        </a>
-                        <a href="https://www.twitter.com/brannovate" target="_blank" rel="noopener noreferrer">
-                            <FaTwitter className="social-icon" />
-                        </a>
-                        <a href="https://www.instagram.com/brannovate/" target="_blank" rel="noopener noreferrer">
-                            <FaInstagram className="social-icon" />
-                        </a>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -100,35 +135,57 @@ const Contact = () => {
                 <div className="contact-one__right">
                   <div className="contact-one__form-box">
                     <h3 className="contact-one__form-title">Send us a message</h3>
-                    <form method="POST" action="inc/mail.php" id="contact-form">
+                    <form id="contact-form" onSubmit={handleSubmit}>
                       <div className="form-group">
                         <p className="contact-one__form-label">Name*</p>
-                        <input type="text" name="name" placeholder="John Smith" required />
+                        <input 
+                          type="text" 
+                          name="name" 
+                          placeholder="John Smith"
+                          value={formData.name}
+                          onChange={handleChange}
+                          required 
+                        />
                         <div className="contact-one__form-icon">
                           <i className="fas fa-user"></i>
                         </div>
                       </div>
                       <div className="form-group">
                         <p className="contact-one__form-label">Email*</p>
-                        <input type="email" name="email" placeholder="info@brannovate.com" required />
+                        <input 
+                          type="email" 
+                          name="email" 
+                          placeholder="info@brannovate.com"
+                          value={formData.email}
+                          onChange={handleChange}
+                          required 
+                        />
                         <div className="contact-one__form-icon">
                           <i className="far fa-envelope"></i>
                         </div>
                       </div>
                       <div className="form-group text-message-box">
                         <p className="contact-one__form-label">How can we help?</p>
-                        <textarea name="message" placeholder="Enter your message here"></textarea>
+                        <textarea 
+                          name="message" 
+                          placeholder="Enter your message here" 
+                          value={formData.message}
+                          onChange={handleChange}
+                        ></textarea>
                       </div>
                       <div className="form-group">
                         {/* Button Box */}
                         <div className="button-box">
-                          <button type="submit" className="thm-btn contact-one__btn" data-loading-text="Please wait...">
+                          <button 
+                            type="submit" 
+                            className="thm-btn contact-one__btn"
+                            data-loading-text="Please wait..."
+                          >
                             Submit Request
                           </button>
                         </div>
                       </div>
                     </form>
-                    <p className="ajax-response mb-0"></p>
                   </div>
                 </div>
               </div>

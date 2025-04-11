@@ -28,14 +28,14 @@ const Trial = () => {
           <div className="free-trail__inner">
             <div className="section-title text-center">
               <div className="section-title__tagline-box">
-                <span className="section-title__tagline-dark">14 Day’s Free Trail</span>
+                <span className="section-title__tagline-dark">14 Day’s Free Trial</span>
               </div>
               <h2 className="section-title__title2">
-                Be part of the future of BrandBot Let’s <br /> Create Something
+                Join the Future of LinkedIn Branding <br /> and Build Your Legacy
               </h2>
             </div>
             <p className="free-trail__text">
-              Choose a topic &amp; create something better than before, get started from today. <br />
+              Discover how effortless it is to create and schedule engaging LinkedIn posts with our AI-powered tool. <br />
               No Credit Card Required
             </p>
             <div className="free-trail__btn-box">
@@ -44,6 +44,7 @@ const Trial = () => {
               </a>
             </div>
           </div>
+
         </div>
       </div>
     </section>

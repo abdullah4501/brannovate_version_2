@@ -690,3 +690,8 @@ img {
 .hero_section_list{
     padding-left: 0;
 }
+@media screen and (max-width: 768px) {
+    h2{
+        font-size: 30px;
+    }
+}

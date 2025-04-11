@@ -91,7 +91,7 @@ const HeroSection = () => {
                   </div>
                 </div>
               </div>
-              <ul className="d-flex flex-wrap gap-4 gap-md-8 gap-lg-10 align-center justify-center mt-8 mb-0">
+              <ul className="d-flex flex-wrap gap-4 gap-md-8 gap-lg-10 align-center justify-center mt-8 mb-0 hero_section_list">
                 <li>Fetch Trending News 10X Faster</li>
                 <li>Write Higher Converting Linkedin Posts</li>
                 <li>Schedule Linkedin Posts</li>

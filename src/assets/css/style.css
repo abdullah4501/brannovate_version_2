@@ -3454,7 +3454,11 @@ a {
     background-clip: text;
     -webkit-background-clip: text
 }
-
+@media screen and (max-width: 420px) {
+    .text-gradient-1{
+        font-size: 20px;
+    }
+}
 .btn-gradient-1 {
     background: linear-gradient(92.73deg, #0000ff 7.07%, #ff00007a 97.81%);
     border: 0;

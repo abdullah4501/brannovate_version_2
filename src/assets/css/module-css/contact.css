@@ -125,8 +125,8 @@
 .contact-one__form-box {
     position: relative;
     display: block;
-    background-color: var(--thm-main-bg);
-    border: 1px solid #2E2F45;
+    /* background-color: var(--thm-main-bg); */
+    /* border: 1px solid #2E2F45; */
     border-radius: var(--thm-border-radius);
     padding: 93px 65px 100px;
 }
@@ -158,7 +158,7 @@
     height: 56px;
     width: 100%;
     background-color: transparent;
-    border: 1px solid #2E2F45;
+    border-bottom: 1px solid #C2C2C2;
     border-radius: var(--thm-border-radius);
     outline: none;
     padding-left: 60px;

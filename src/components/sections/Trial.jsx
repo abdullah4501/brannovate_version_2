@@ -28,7 +28,7 @@ const Trial = () => {
           <div className="free-trail__inner">
             <div className="section-title text-center">
               <div className="section-title__tagline-box">
-                <span className="section-title__tagline-dark">14 Day’s Free Trial</span>
+                <span className="section-title__tagline-dark">30 Day’s Free Trial</span>
               </div>
               <h2 className="section-title__title2">
                 Join the Future of LinkedIn Branding <br /> and Build Your Legacy

@@ -54,14 +54,14 @@ const HeroSection = () => {
             <div className="text-center">
               <div className="position-relative z-1">
                 <p className="color-topheading" data-aos="fade-up-sm">
-                Effortlessly Represent Yourself 
+                  Build Your LinkedIn Presence Without Overthinking
                 </p>
                 <h1 className="text-dark mb-8" data-aos="fade-up-sm" data-aos-delay="150">
-                Your professional identity is just<br />a click away <br />
+                  Your Brand. Your Voice.<br />One AI Agent to Make It All Happen. <br />
                   <span
                     ref={typedElement}
                     className="fw-bold text-gradient-1 typed-animation"
-                    data-strings='["Providing Trending Ideas", "Effortless Content Generation", "Seamless Scheduling and Posting", "Exponential Visibility"]'
+                    data-strings='["Stay Ahead with Trending Topics", "Instant Post Generation", "Effortless Scheduling & Instant Publishing"]'
                   >
                     Product Description
                   </span>
@@ -92,9 +92,9 @@ const HeroSection = () => {
                 </div>
               </div>
               <ul className="d-flex flex-wrap gap-4 gap-md-8 gap-lg-10 align-center justify-center mt-8 mb-0 hero_section_list">
-                <li>Fetch Trending News 10X Faster</li>
-                <li>Write Higher Converting Linkedin Posts</li>
-                <li>Schedule Linkedin Posts</li>
+                <li>Fetch Trending Topics Across 28+ Countries</li>
+                <li>Generate Posts in One Click</li>
+                <li>Schedule and Publish Posts Instantly</li>
               </ul>
             </div>
           </div>
@@ -102,6 +102,7 @@ const HeroSection = () => {
       </div>
     </section>
   );
+  
 };
 
 export default HeroSection;

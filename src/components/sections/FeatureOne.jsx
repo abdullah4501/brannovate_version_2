@@ -47,7 +47,10 @@ const FeatureOne = () => {
           <h2 className="feature-one__title">
             Unlock Your LinkedIn Content Potential <br />with <span>Brannovate</span>
           </h2>
-          <p className="text-center">Transform the way you engage on LinkedIn. Our AI tool delivers innovative post ideas<br />and curated trending topics—so you can create, schedule, and publish content that truly represents you.</p>
+          <p className="text-center">
+            Transform the way you engage on LinkedIn. Our AI tool delivers trending post ideas, <br />
+            generates content that truly reflects your voice, and allows seamless scheduling and publishing.
+          </p>
           <div className="feature-one__btn-box">
             <a href="https://ai.brannovate.com/" className="thm-btn feature-one__btn">
               <i className="fa fa-plus"></i> Get Started Free
@@ -62,21 +65,20 @@ const FeatureOne = () => {
                 <li>
                   <div className="feature-one__single">
                     <div className="feature-one__icon">
-                      <img src={icon5} alt="AI Chat Icon" />
+                      <img src={icon5} alt="Trending Topics Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
-                      <a href="about.html">Pick Trending News</a>
+                      <a href="about.html">Fetch Trending Topics</a>
                     </h5>
                   </div>
                 </li>
-
                 <li>
                   <div className="feature-one__single">
                     <div className="feature-one__icon">
-                      <img src={icon1} alt="AI Content Writing Icon" />
+                      <img src={icon1} alt="Content Generation Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
-                      <a href="about.html">Write LinkedIn Posts</a>
+                      <a href="about.html">Generate LinkedIn Posts</a>
                     </h5>
                   </div>
                 </li>
@@ -96,7 +98,7 @@ const FeatureOne = () => {
                 <li>
                   <div className="feature-one__single">
                     <div className="feature-one__icon">
-                      <img src={icon3} alt="AI Code Icon" />
+                      <img src={icon3} alt="Select Topic Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
                       <a href="about.html">Select Any Topic</a>
@@ -105,39 +107,19 @@ const FeatureOne = () => {
                 </li>
                 <li className="sm-hide">
                   <div className="feature-one__cpu-icon-box">
-                    <img src={icon4} alt="CPU Icon" />
+                    <img src={icon4} alt="Scheduling Icon" />
                   </div>
                 </li>
                 <li>
                   <div className="feature-one__single">
                     <div className="feature-one__icon">
-                      <img src={icon2} alt="AI Image Icon" />
+                      <img src={icon2} alt="Schedule Posts Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
                       <a href="about.html">Schedule Posts</a>
                     </h5>
                   </div>
                 </li>
-                {/* <li>
-                  <div className="feature-one__single">
-                    <div className="feature-one__icon">
-                      <img src={icon1} alt="AI Content Writing Icon" />
-                    </div>
-                    <h5 className="feature-one__title-2">
-                      <a href="about.html">Write LinkedIn Posts</a>
-                    </h5>
-                  </div>
-                </li> */}
-                {/* <li>
-                  <div className="feature-one__single">
-                    <div className="feature-one__icon">
-                      <img src={icon5} alt="AI Chat Icon" />
-                    </div>
-                    <h5 className="feature-one__title-2">
-                      <a href="about.html">Pick Trending News</a>
-                    </h5>
-                  </div>
-                </li> */}
               </ul>
             </div>
             {/* Bottom Section */}
@@ -152,9 +134,8 @@ const FeatureOne = () => {
                 <li>
                   <div className="feature-one__single">
                     <div className="feature-one__icon">
-                      <img src={aiAudioIcon} alt="AI Audio Icon" />
+                      <img src={aiAudioIcon} alt="Post Generation Icon" />
                     </div>
-                    
                     <h5 className="feature-one__title-2">
                       <a href="about.html">AI Generates Posts</a>
                     </h5>
@@ -163,7 +144,7 @@ const FeatureOne = () => {
                 <li>
                   <div className="feature-one__single">
                     <div className="feature-one__icon">
-                      <img src={aiSpeechIcon} alt="AI Speech Icon" />
+                      <img src={aiSpeechIcon} alt="Post Scheduling Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
                       <a href="about.html">Post Directly or Schedule</a>
@@ -177,6 +158,7 @@ const FeatureOne = () => {
       </div>
     </section>
   );
+  
 };
 
 export default FeatureOne;

@@ -41,7 +41,7 @@ const Solutions = () => {
             Generate, Schedule, and Preview<br />Your LinkedIn Posts Instantly with <span>Brannovate</span>
           </h2>
         </div>
-
+  
         {/* Content One */}
         <div className="solutions-two__content-one wow fadeInUp" data-wow-delay="100ms">
           <div
@@ -49,59 +49,59 @@ const Solutions = () => {
             style={{ backgroundImage: `url(${shapeOne})` }}
           ></div>
           <div className="row">
-          <div className="col-xl-6 col-lg-6">
-            <div className="solutions-two__content-one-left">
-              <div className="solutions-two__shape-2 zoominout">
-                <img src={solutions1} alt="" />
-              </div>
-              <div className="solutions-two__content-one-title-box">
-                <p>AI LinkedIn Presence</p>
-                <h3>
-                  Generate ✍️ Better LinkedIn Posts Instantly, The Future of AI-Powered Presence is Here
-                </h3>
-              </div>
-              <p className="solutions-two__content-one-text-1">
-                Mastering the Art of LinkedIn Engagement: Unleash AI to generate, schedule, and post directly while previewing content before it goes live.
-              </p>
-              <ul className="solutions-two__content-one-points">
-                <li>
-                  <div className="icon">
-                    <i className="fa fa-check"></i>
-                  </div>
-                  <div className="text">
-                    <p>
-                      Generate high-quality posts automatically from trending LinkedIn news.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div className="icon">
-                    <i className="fa fa-check"></i>
-                  </div>
-                  <div className="text">
-                    <p>
-                      Schedule and post directly to LinkedIn with just one click.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div className="icon">
-                    <i className="fa fa-check"></i>
-                  </div>
-                  <div className="text">
-                    <p>
-                      Preview and customize your post before publishing to ensure perfection.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-              <div className="solutions-two__content-one-btn-box">
-                <Link to="https://ai.brannovate.com/" className="thm-btn solutions-two__content-one-btn">
-                  <FontAwesomeIcon icon={faPlus} /> Get Started
-                </Link>
+            <div className="col-xl-6 col-lg-6">
+              <div className="solutions-two__content-one-left">
+                <div className="solutions-two__shape-2 zoominout">
+                  <img src={solutions1} alt="" />
+                </div>
+                <div className="solutions-two__content-one-title-box">
+                  <p>AI LinkedIn Presence</p>
+                  <h3>
+                    Generate ✍️ Better LinkedIn Posts Instantly, The Future of AI-Powered Presence is Here
+                  </h3>
+                </div>
+                <p className="solutions-two__content-one-text-1">
+                  Mastering the Art of LinkedIn Engagement: Unleash AI to generate, schedule, and post directly while previewing content before it goes live.
+                </p>
+                <ul className="solutions-two__content-one-points">
+                  <li>
+                    <div className="icon">
+                      <i className="fa fa-check"></i>
+                    </div>
+                    <div className="text">
+                      <p>
+                        Generate high-quality posts automatically from trending LinkedIn news.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="icon">
+                      <i className="fa fa-check"></i>
+                    </div>
+                    <div className="text">
+                      <p>
+                        Schedule and post directly to LinkedIn with just one click.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="icon">
+                      <i className="fa fa-check"></i>
+                    </div>
+                    <div className="text">
+                      <p>
+                        Preview and customize your post before publishing to ensure perfection.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <div className="solutions-two__content-one-btn-box">
+                  <Link to="https://ai.brannovate.com/" className="thm-btn solutions-two__content-one-btn">
+                    <FontAwesomeIcon icon={faPlus} /> Get Started
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
             <div className="col-xl-6 col-lg-6">
               <div className="solutions-two__content-one-right">
                 <div className="solutions-two__content-one-img-box">
@@ -113,7 +113,7 @@ const Solutions = () => {
             </div>
           </div>
         </div>
-
+  
         {/* Content Two */}
         {/* <div className="solutions-two__content-two">
           <div className="row">
@@ -121,15 +121,15 @@ const Solutions = () => {
               <div className="solutions-two__content-two-single">
                 <div className="solutions-two__content-two-top">
                   <div className="solutions-two__content-two-title-box">
-                    <p>AI Chat Bot</p>
-                    <h3>With FlowAI, you can chat 🤖 smarter, not harder.</h3>
+                    <p>AI Content Assistant</p>
+                    <h3>Streamline Your LinkedIn Content with AI</h3>
                   </div>
                   <p className="solutions-two__content-two-text-1">
-                    Mastering the Art of AI Content Writing: Unleashing the Power of Automated Creativity"
+                    Generate relevant and engaging content for your LinkedIn network based on global trends, while keeping your voice intact.
                   </p>
                   <div className="solutions-two__content-two-btn">
                     <Link to="/contact">
-                      Start Chat<span className="icon-up-right-arrow"></span>
+                      Start Generating<span className="icon-up-right-arrow"></span>
                     </Link>
                   </div>
                 </div>
@@ -143,20 +143,20 @@ const Solutions = () => {
                 </div>
               </div>
             </div>
-
+  
             <div className="col-xl-6 col-lg-6 wow fadeInRight" data-wow-delay="100ms">
               <div className="solutions-two__content-two-single solutions-two__content-two-single-2">
                 <div className="solutions-two__content-two-top">
                   <div className="solutions-two__content-two-title-box">
-                    <p>AI Video Generator</p>
-                    <h3>A wonderful video may be created by anyone. That includes you.</h3>
+                    <p>AI Post Preview</p>
+                    <h3>Preview Your Post Before Publishing to Ensure Perfection</h3>
                   </div>
                   <p className="solutions-two__content-two-text-1">
-                    By listening to our leading AI text to speech reader, you can breeze through papers, articles, PDFs, and emails.
+                    See exactly how your post will appear on LinkedIn and make edits before going live.
                   </p>
                   <div className="solutions-two__content-two-btn">
                     <Link to="/about">
-                      Try AI Video<span className="icon-up-right-arrow"></span>
+                      Try Post Preview<span className="icon-up-right-arrow"></span>
                     </Link>
                   </div>
                 </div>
@@ -169,165 +169,7 @@ const Solutions = () => {
             </div>
           </div>
         </div> */}
-
-        {/* Content Three */}
-        {/* <div className="solutions-two__content-three wow fadeInUp" data-wow-delay="100ms">
-          <div
-            className="solutions-two__content-three-shape-1"
-            style={{ backgroundImage: `url(${shapeContentThree})` }}
-          ></div>
-          <div className="row">
-            <div className="col-xl-6">
-              <div className="solutions-two__content-three-left">
-                <ul className="solutions-two__browser-dot">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-                <div className="solutions-two__content-three-shape-2"></div>
-                <ul className="row solutions-two__content-three-img-list">
-                  <li className="col-xl-3 col-lg-3 col-md-3">
-                    <div className="solutions-two__content-three-img-single">
-                      <div className="solutions-two__content-three-img">
-                        <img src={solThreeImg1} alt="" />
-                      </div>
-                    </div>
-                    <div className="solutions-two__content-three-img-single">
-                      <div className="solutions-two__content-three-img">
-                        <img src={solThreeImg2} alt="" />
-                      </div>
-                    </div>
-                  </li>
-                  <li className="col-xl-3 col-lg-3 col-md-3">
-                    <div className="solutions-two__content-three-img-single">
-                      <div className="solutions-two__content-three-img">
-                        <img src={solThreeImg3} alt="" />
-                      </div>
-                    </div>
-                    <div className="solutions-two__content-three-img-single">
-                      <div className="solutions-two__content-three-img">
-                        <img src={solThreeImg4} alt="" />
-                      </div>
-                    </div>
-                    <div className="solutions-two__content-three-img-single">
-                      <div className="solutions-two__content-three-img">
-                        <img src={solThreeImg5} alt="" />
-                      </div>
-                    </div>
-                  </li>
-                  <li className="col-xl-3 col-lg-3 col-md-3">
-                    <div className="solutions-two__content-three-img-single">
-                      <div className="solutions-two__content-three-img">
-                        <img src={solThreeImg6} alt="" />
-                      </div>
-                    </div>
-                    <div className="solutions-two__content-three-img-single">
-                      <div className="solutions-two__content-three-img">
-                        <img src={solThreeImg7} alt="" />
-                      </div>
-                    </div>
-                    <div className="solutions-two__content-three-img-single">
-                      <div className="solutions-two__content-three-img">
-                        <img src={solThreeImg8} alt="" />
-                      </div>
-                    </div>
-                  </li>
-                  <li className="col-xl-3 col-lg-3 col-md-3">
-                    <div className="solutions-two__content-three-img-single">
-                      <div className="solutions-two__content-three-img">
-                        <img src={solThreeImg9} alt="" />
-                      </div>
-                    </div>
-                    <div className="solutions-two__content-three-img-single">
-                      <div className="solutions-two__content-three-img">
-                        <img src={solThreeImg10} alt="" />
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-xl-6">
-              <div className="solutions-two__content-three-right">
-                <div className="solutions-two__content-three-title-box">
-                  <p>AI Writing Tools</p>
-                  <h3>Generate Outstanding AI Images Just Using Prompt 🌄</h3>
-                </div>
-                <p className="solutions-two__content-three-text-1">
-                  <span>AIMug</span> is an artificial art generator that turns your ideas into one-of-a kind artwork and photographs in seconds. Finally, you'll have the perfect image to go with your statement.
-                </p>
-                <div className="solutions-two__content-three-points-box">
-                  <ul className="solutions-two__content-three-points list-unstyled">
-                    <li>
-                      <div className="icon">
-                        <span className="icon-check"></span>
-                      </div>
-                      <div className="text">
-                        <p>1000+ Styles</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="icon">
-                        <span className="icon-check"></span>
-                      </div>
-                      <div className="text">
-                        <p>Custom Sizes</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="icon">
-                        <span className="icon-check"></span>
-                      </div>
-                      <div className="text">
-                        <p>Oil Painting</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="icon">
-                        <span className="icon-check"></span>
-                      </div>
-                      <div className="text">
-                        <p>+ And Much More</p>
-                      </div>
-                    </li>
-                  </ul>
-                  <ul className="solutions-two__content-three-points solutions-two__content-three-points-2 list-unstyled">
-                    <li>
-                      <div className="icon">
-                        <span className="icon-check"></span>
-                      </div>
-                      <div className="text">
-                        <p>Photo-realistic scenes</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="icon">
-                        <span className="icon-check"></span>
-                      </div>
-                      <div className="text">
-                        <p>Graphics</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="icon">
-                        <span className="icon-check"></span>
-                      </div>
-                      <div className="text">
-                        <p>Isometric Vector Graphics</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div className="solutions-two__content-three-btn-box">
-                  <Link to="/about" className="thm-btn solutions-two__content-three-btn">
-                    <FontAwesomeIcon icon={faPlus} /> Generate AI Image
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
+  
         {/* Rating Box */}
         <div className="feature-one__rating-box">
           <div className="d-flex gap-8 align-center justify-center mt-12 review-badges">
@@ -338,6 +180,8 @@ const Solutions = () => {
       </div>
     </section>
   );
+  
+  
 };
 
 export default Solutions;

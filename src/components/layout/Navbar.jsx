@@ -148,7 +148,7 @@ const Navbar = () => {
                 to="https://ai.brannovate.com/"
                 className="btn btn-outline-primary"
               >
-                Get started
+                Get started Free
               </NavLink>
             </div>
           </div>

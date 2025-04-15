@@ -6,8 +6,8 @@ const FeaturesSection = () => {
       <div className="container">
         <div className="text-center mb-18">
           <h1 className="mb-0" data-aos="fade-up-sm" data-aos-delay="50">
-            AI-Driven Personal Branding <br className="d-none d-lg-block" />
-            That Works for you
+          AI-Powered Personal Branding <br className="d-none d-lg-block" />
+          Tailored for Professionals
           </h1>
         </div>
 
@@ -29,7 +29,7 @@ const FeaturesSection = () => {
 
         <div className="text-center mt-12">
           <a href="https://ai.brannovate.com/" className="btn btn-primary">
-            Try a demo
+            Free Trial
           </a>
         </div>
       </div>
@@ -39,9 +39,9 @@ const FeaturesSection = () => {
 
 const features = [
   {
-    title: "Strategic Content Architecture",
+    title: "Stay Ahead With Trending Topics",
     description:
-      "Custom-crafted insights that position you as the authority your audience seeks.",
+      "Get top-performing topics across 7+ categories from 28+ countries — always fresh, always relevant. Pick one. Done.",
     icon: (
       <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
         <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
@@ -51,9 +51,9 @@ const features = [
     ),
   },
   {
-    title: "24/7 Digital Strategist",
+    title: "Create Magnetic Posts — Instantly",
     description:
-      "Our AI Agent scours trending news and industry shifts to create high-impact content aligned with your voice.",
+      "One click = one polished, professional post. No brainstorming. No writer’s block. No fluff.",
     icon: (
       <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
         <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
@@ -64,9 +64,45 @@ const features = [
     ),
   },
   {
-    title: "Exponential Visibility",
+    title: "Tailor Content to Reflect You",
     description:
-      "Systematic amplification that transforms your expertise into influence that resonates industry-wide.",
+      "Tell the agent your thoughts or personal perspective — and watch your post get rewritten with your voice, your ideas, your tone.",
+    icon: (
+      <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
+        <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
+          <path d="M10 29.334 6.667 27.5v-4.166m0-6.668V12.5L10 10.666m6.667-3.833L20 5l3.334 1.833M30 10.666l3.333 1.834v4.166m0 6.668V27.5L30 29.367m-6.666 3.799L20 35l-3.333-1.834M20 20l3.333-1.834M30 14.333l3.333-1.833M20 20v4.167m0 6.667V35m0-15-3.333-1.867M10 14.333 6.667 12.5" />
+        </g>
+      </svg>
+    ),
+  },
+  {
+    title: "Edit & Format Like a Pro",
+    description:
+      "Want to tweak it? Add emojis, bullet points, or bold highlights? You’re in full control of how it looks.",
+    icon: (
+      <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
+        <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
+          <path d="M10 29.334 6.667 27.5v-4.166m0-6.668V12.5L10 10.666m6.667-3.833L20 5l3.334 1.833M30 10.666l3.333 1.834v4.166m0 6.668V27.5L30 29.367m-6.666 3.799L20 35l-3.333-1.834M20 20l3.333-1.834M30 14.333l3.333-1.833M20 20v4.167m0 6.667V35m0-15-3.333-1.867M10 14.333 6.667 12.5" />
+        </g>
+      </svg>
+    ),
+  },
+  {
+    title: "Add Visuals in a Snap",
+    description:
+      "Upload a picture and the AI agent makes sure it complements your post perfectly.",
+    icon: (
+      <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
+        <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
+          <path d="M10 29.334 6.667 27.5v-4.166m0-6.668V12.5L10 10.666m6.667-3.833L20 5l3.334 1.833M30 10.666l3.333 1.834v4.166m0 6.668V27.5L30 29.367m-6.666 3.799L20 35l-3.333-1.834M20 20l3.333-1.834M30 14.333l3.333-1.833M20 20v4.167m0 6.667V35m0-15-3.333-1.867M10 14.333 6.667 12.5" />
+        </g>
+      </svg>
+    ),
+  },
+  {
+    title: "Real-Time LinkedIn Preview",
+    description:
+      "See exactly how your post will appear once live — before hitting publish.",
     icon: (
       <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
         <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">

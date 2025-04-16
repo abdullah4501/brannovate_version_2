@@ -1,8 +1,15 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const FAQSection = () => {
+  // Custom font family styles
+  const fontFamily = {
+    fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'
+  };
+
   return (
-    <section className="py-10 py-lg-15">
+    <section className="py-10 py-lg-15" style={fontFamily}>
       <div className="container">
         <div className="row justify-center mb-18">
           <div className="col-lg-10">
@@ -88,7 +95,7 @@ const FAQSection = () => {
                   data-bs-parent="#faqAccordion"
                 >
                   <div className="accordion-body">
-                    There is no set limit. Brannovate’s AI can generate as many LinkedIn posts as you need, ensuring you consistently engage your audience.
+                    There is no set limit. Brannovate's AI can generate as many LinkedIn posts as you need, ensuring you consistently engage your audience.
                   </div>
                 </div>
               </div>
@@ -138,7 +145,7 @@ const FAQSection = () => {
                   data-bs-parent="#faqAccordion"
                 >
                   <div className="accordion-body">
-                    New users register via our signup form and are then redirected to a secure payment page. After completing payment, you’re taken to your dashboard where you can instantly connect your LinkedIn account and start generating, scheduling, and posting content.
+                    New users register via our signup form and are then redirected to a secure payment page. After completing payment, you're taken to your dashboard where you can instantly connect your LinkedIn account and start generating, scheduling, and posting content.
                   </div>
                 </div>
               </div>
@@ -146,6 +153,13 @@ const FAQSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Global style for the font family */}
+      <style jsx global>{`
+        body {
+          font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+      `}</style>
     </section>
   );
 };

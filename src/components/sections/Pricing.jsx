@@ -24,26 +24,25 @@ const PricingSection = () => {
         <div className="row g-6 pricing-table">
           <div className="col-md-6 col-lg-4" data-aos="fade-up-sm" data-aos-delay="50">
           <div className="pricing-card p-6 px-lg-10 py-lg-8 rounded-4 h-full bg-whitedark">
-  <h3 className="text-primary fw-medium mb-0">AI Starter</h3>
-  <h1 className="display-2 fw-semibold mb-0 mt-4">$2.99</h1>
-  <p className="lead fw-normal mt-4 mb-0">
-    <span style={{color:'#ff0000'}}>Perfect for: </span> Busy professionals dipping their toes into personal branding
-  </p>
-  <a
-    href="https://ai.brannovate.com/sign-up"
-    className="pricing-btn btn btn-lg w-full fs-4 lh-sm mt-9 btn-lite-blue-2"
-  >
-    Choose AI Starter
-  </a>
-  <ul className="pricing-list d-flex flex-column gap-5 fs-lg mt-9 mb-0">
-    <li><i className='fa fa-check'></i><span><b>AI-Generated LinkedIn Posts:</b> 2 polished posts/week + 1 carousel post.</span></li>
-    <li><i className='fa fa-check'></i><span><b>Trending Topic Integration:</b> Auto-aligned with industry trends and news.</span></li>
-    <li><i className='fa fa-check'></i><span><b>AI-Powered Post Customization:</b> Personalize your posts with your unique voice and insights.</span></li>
-    <li><i className='fa fa-check'></i><span><b>Real-Time LinkedIn Preview:</b> See how your posts will appear before publishing.</span></li>
-    <li><i className='fa fa-check'></i><span><b>Effortless Scheduling:</b> Schedule posts to be published at optimal times for engagement.</span></li>
-    <li><i className='fa fa-check'></i><span><b>Basic Analytics:</b> Track engagement and growth with weekly reports.</span></li>
-  </ul>
-</div>
+            <h3 className="text-primary fw-medium mb-0">AI Starter</h3>
+            <h1 className="display-2 fw-semibold mb-0 mt-4">$2.99</h1>
+            <p className="lead fw-normal mt-4 mb-0">
+              <span style={{color:'#ff0000'}}>Perfect for: </span> Busy professionals dipping their toes into personal branding
+            </p>
+            <a
+              href="https://ai.brannovate.com/sign-up"
+              className="pricing-btn btn btn-lg w-full fs-4 lh-sm mt-9 btn-lite-blue-2"
+            >
+              Choose AI Starter
+            </a>
+            <ul className="pricing-list d-flex flex-column gap-5 fs-lg mt-9 mb-0">
+              <li><i className='fa fa-check'></i><span><b>AI-Generated LinkedIn Posts:</b> AI-crafted LinkedIn posts in one click</span></li>
+              <li><i className='fa fa-check'></i><span><b>Access to Global Trending Topics:</b> Global trending topics from 28+ countries</span></li>
+              <li><i className='fa fa-check'></i><span><b>Edit, Personalize & Preview:</b> Edit, personalize & preview before posting</span></li>
+              <li><i className='fa fa-check'></i><span><b>Schedule or Publish Instantly:</b> Plan ahead or post in real time — your content, your timing.</span></li>
+              <li><i className='fa fa-check'></i><span><b>Effortless Scheduling:</b> Schedule posts to be published at optimal times for engagement.</span></li>
+            </ul>
+          </div>
 
           </div>
           <div className="col-md-6 col-lg-4" data-aos="fade-up-sm" data-aos-delay="100">

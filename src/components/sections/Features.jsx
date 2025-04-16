@@ -7,9 +7,9 @@ import img3 from '../../assets/images/illustrations/feature-illustration-3-blue.
 const featuresData = [
   {
     id: 1,
-    title: "SMART START - Build Your Digital Presence with Ease",
+    title: "Choose a trending topic",
     description:
-      "Perfect for professionals looking to establish their voice online. Our AI-powered solution helps you:\n• Generate AI-curated posts based on trending news.\n• Optimize your LinkedIn presence with engaging content.\n• Schedule and publish seamlessly with our AI-powered automation.\n\nLet AI do the work for you!",
+      "Select from AI-curated topics that are performing well in your industry right now, or input your own idea.",
     points: [
       "Generate AI-curated posts based on trending news",
       "Optimize your LinkedIn presence with engaging content",
@@ -17,31 +17,35 @@ const featuresData = [
     ],
     image: img1,
     linkText: "Get Started Free",
-    linkHref: "/login",
+    linkHref: "https://ai.brannovate.com/sign-up",
   },
   {
     id: 2,
-    title: "THOUGHT LEADER - Own Your Niche & Stand Out",
+    title: "Generate your post",
     description:
-      "For professionals ready to take the next step in personal branding. This package includes everything in Smart Start, plus:\n\n• AI-driven content strategy tailored to your industry.\n• Automated post scheduling to boost engagement.\n• Insights & analytics to refine your digital branding.\n\nPosition yourself as an authority in your field.",
-    // No 'points' array here to keep the same structure
+      "One click and the AI creates a professional, engaging post tailored to your style and voice.",
+      points: [
+        "Posts are generated instantly based on best practices from top-performing LinkedIn influencers.",
+        "Intelligent structure ensures readability, engagement, and clarity.",
+        "Built for thought leadership, brand building, and audience connection.",
+      ],
     image: img2,
-    linkText: "Request A Demo",
-    linkHref: "/login",
+    linkText: "Get Started Free",
+    linkHref: "https://ai.brannovate.com/sign-up",
   },
   {
     id: 3,
-    title: "INFLUENCE AMPLIFIER - Build a Lasting Digital Legacy",
+    title: "Edit and personalize",
     description:
-      "For leaders and executives looking to cement their influence. Includes everything in Thought Leader, plus advanced AI-generated content and media strategies, VIP support for hands-free personal branding, and high-level engagement tools to ensure long-term impact. Transform your expertise into an enduring digital legacy.",
-    points: [
-      "Advanced AI-generated content and media strategies",
-      "VIP support for hands-free personal branding",
-      "High-level engagement tools to ensure long-term impact",
-    ],
+      "Tweak the content, add your personal touch, and see a live preview of how it will look on LinkedIn.",
+      points: [
+        "Add or replace phrases to reflect your ideas, opinions, or experience.",
+        "Format text with highlights, lists, emojis, or even insert media.",
+        "Real-time preview shows exactly how the post will appear on LinkedIn.",
+      ],
     image: img3,
     linkText: "Get Started Free",
-    linkHref: "/login",
+    linkHref: "https://ai.brannovate.com/sign-up",
   },
 ];
 

@@ -121,7 +121,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link" href="/#section-about">
-                  About
+                  Features
                 </a>
               </li>
               <li className="nav-item">
@@ -145,7 +145,7 @@ const Navbar = () => {
             </ul>
             <div>
               <NavLink
-                to="https://ai.brannovate.com/"
+                to="https://ai.brannovate.com/sign-up"
                 className="btn btn-outline-primary"
               >
                 Get started Free

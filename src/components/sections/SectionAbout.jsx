@@ -5,6 +5,7 @@ import { RxTarget } from "react-icons/rx";
 import { RiEditBoxLine } from "react-icons/ri";
 import { FaRegMessage } from "react-icons/fa6";
 import { TbTableSpark } from "react-icons/tb";
+import { HiMiniArrowLongRight } from "react-icons/hi2";
 
 
 const FeaturesSection = () => {
@@ -35,8 +36,8 @@ const FeaturesSection = () => {
         </div>
 
         <div className="text-center mt-5">
-          <a href="https://ai.brannovate.com/" className="btn btn-primary">
-            Free Trial
+          <a href="https://ai.brannovate.com/sign-up" className="btn btn-primary">
+            Try Now - It's Free to Start <HiMiniArrowLongRight />
           </a>
         </div>
       </div>

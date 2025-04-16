@@ -4,12 +4,12 @@ import "aos/dist/aos.css";
 
 // Icon images
 import icon1 from "../../assets/images/icons/ai-content-writing.png";
-import icon2 from "../../assets/images/icons/ai-image.png";
-import icon3 from "../../assets/images/icons/ai-code.png";
+import icon2 from "../../assets/images/icons/schedule.png";
+import icon3 from "../../assets/images/icons/countries.png";
 import icon4 from "../../assets/images/icons/cpu.png";
 import icon5 from "../../assets/images/icons/ai-chat.png";
-import aiAudioIcon from "../../assets/images/icons/ai-audio.png";
-import aiSpeechIcon from "../../assets/images/icons/ai-speech.png";
+import icon6 from "../../assets/images/icons/trending.png";
+import icon7 from "../../assets/images/icons/post.png";
 import star1 from "../../assets/images/shapes/feature-one-star-1.png";
 import star2 from "../../assets/images/shapes/feature-one-star-2.png";
 import star3 from "../../assets/images/shapes/feature-one-star-3.png";
@@ -49,7 +49,7 @@ const FeatureOne = () => {
             Introducing our personal AI LinkedIn Agent, built for professionals like you<br /> who want to show up — smartly, consistently, and authentically.
           </p>
           <div className="feature-one__btn-box">
-            <a href="https://ai.brannovate.com/" className="thm-btn feature-one__btn">
+            <a href="https://ai.brannovate.com/sign-up" className="thm-btn feature-one__btn">
               <i className="fa fa-plus"></i> Get Started Free
             </a>
           </div>
@@ -62,7 +62,7 @@ const FeatureOne = () => {
                 />
             </div>
           </div>
-          <h2 className="feature-one__title mt-10">
+          <h2 className="feature-one__title mt-12">
           From content struggle to <br />LinkedIn <span style={{color:'#ff0000'}}>success</span>
           </h2>
           <p className="text-center">
@@ -77,10 +77,10 @@ const FeatureOne = () => {
                 <li>
                   <div className="feature-one__single">
                     <div className="feature-one__icon">
-                      <img src={icon5} alt="Trending Topics Icon" />
+                      <img src={icon6} alt="Trending Topics Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
-                      <a href="about.html">Global Trending <br />Topics</a>
+                      Global Trending <br />Topics
                     </h5>
                   </div>
                 </li>
@@ -90,7 +90,7 @@ const FeatureOne = () => {
                       <img src={icon1} alt="Content Generation Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
-                      <a href="about.html">One-Click Post <br />Generation</a>
+                      One-Click Post <br />Generation
                     </h5>
                   </div>
                 </li>
@@ -113,7 +113,7 @@ const FeatureOne = () => {
                       <img src={icon3} alt="Select Topic Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
-                      <a href="about.html">28+ <br />Countries</a>
+                      28+ <br />Countries
                     </h5>
                   </div>
                 </li>
@@ -128,7 +128,7 @@ const FeatureOne = () => {
                       <img src={icon2} alt="Schedule Posts Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
-                      <a href="about.html">Schedule & Automate</a>
+                      Schedule & Automate
                     </h5>
                   </div>
                 </li>
@@ -146,20 +146,20 @@ const FeatureOne = () => {
                 <li>
                   <div className="feature-one__single">
                     <div className="feature-one__icon">
-                      <img src={aiAudioIcon} alt="Post Generation Icon" />
+                      <img src={icon5} alt="Post Generation Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
-                      <a href="about.html">Preview & <br />Publish</a>
+                      Preview & <br />Publish
                     </h5>
                   </div>
                 </li>
                 <li>
                   <div className="feature-one__single">
                     <div className="feature-one__icon">
-                      <img src={aiSpeechIcon} alt="Post Scheduling Icon" />
+                      <img src={icon7} alt="Post Scheduling Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
-                      <a href="about.html">Post Directly <br />or Schedule</a>
+                      Post Directly <br />or Schedule
                     </h5>
                   </div>
                 </li>

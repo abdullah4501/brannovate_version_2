@@ -39,7 +39,7 @@ const Trial = () => {
               No Credit Card Required
             </p>
             <div className="free-trail__btn-box">
-              <a href="https://ai.brannovate.com/" className="thm-btn-two free-trail__btn">
+              <a href="https://ai.brannovate.com/sign-up" className="thm-btn-two free-trail__btn">
                 Get Started Free <i className="icon-up-right-arrow"></i>
               </a>
             </div>

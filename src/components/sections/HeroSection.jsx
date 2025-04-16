@@ -71,7 +71,7 @@ const HeroSection = () => {
                   </span>
                 </h1>
                 <a
-                  href="https://ai.brannovate.com/"
+                  href="https://ai.brannovate.com/sign-up"
                   className="btn btn-lg btn-gradient-1"
                   data-aos="fade-up-sm"
                   data-aos-delay="200"
@@ -148,7 +148,7 @@ const HeroSection = () => {
                       </ul>
                     </div>
                     {/* <div className="solutions-two__content-one-btn-box">
-                      <Link to="https://ai.brannovate.com/" className="thm-btn solutions-two__content-one-btn">
+                      <Link to="https://ai.brannovate.com/sign-up" className="thm-btn solutions-two__content-one-btn">
                         <FontAwesomeIcon icon={faPlus} /> Get Started
                       </Link>
                     </div> */}

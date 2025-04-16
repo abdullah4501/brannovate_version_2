@@ -146,7 +146,7 @@ const Features = ({ extraClassList = "" }) => {
             className="solutions-two__shape-1"
             style={{ backgroundImage: `url(${shapeOne})` }}
           ></div>
-          <div className="row">
+          <div className="row" style={{alignItems: 'center'}}>
             <div className="col-xl-6 col-lg-6">
               <div className="solutions-two__content-one-left">
                 <div className="solutions-two__shape-2 zoominout">

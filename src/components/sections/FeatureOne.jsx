@@ -10,21 +10,16 @@ import icon4 from "../../assets/images/icons/cpu.png";
 import icon5 from "../../assets/images/icons/ai-chat.png";
 import aiAudioIcon from "../../assets/images/icons/ai-audio.png";
 import aiSpeechIcon from "../../assets/images/icons/ai-speech.png";
-
-// Star images for middle section (numbers: 1,2,3,5,6,7)
 import star1 from "../../assets/images/shapes/feature-one-star-1.png";
 import star2 from "../../assets/images/shapes/feature-one-star-2.png";
 import star3 from "../../assets/images/shapes/feature-one-star-3.png";
 import star5 from "../../assets/images/shapes/feature-one-star-5.png";
 import star6 from "../../assets/images/shapes/feature-one-star-6.png";
 import star7 from "../../assets/images/shapes/feature-one-star-7.png";
-
-// Star images for bottom section
 import star4 from "../../assets/images/shapes/feature-one-star-4.png";
 import star8 from "../../assets/images/shapes/feature-one-star-8.png";
+import solutions3 from "../../assets/images/illustrations/ill_hero_1.png";
 
-// Optionally, if you have additional images to import for shapes, you can import them here as well.
-// For example, if your "solutions-two-shape-2.png" is used elsewhere.
 
 const starMapping = {
   1: star1,
@@ -44,18 +39,35 @@ const FeatureOne = () => {
     <section className="feature-one">
       <div className="container">
         <div className="feature-one__inner">
+          <p className="color-topheading text-center" data-aos="fade-up-sm">
+            Sound familiar?
+          </p>
           <h2 className="feature-one__title">
-            Unlock Your LinkedIn Content Potential <br />with <span>Brannovate</span>
+          You’re not alone & <br />you don’t have to guess <span>anymore</span>
           </h2>
           <p className="text-center">
-            Transform the way you engage on LinkedIn. Our AI tool delivers trending post ideas, <br />
-            generates content that truly reflects your voice, and allows seamless scheduling and publishing.
+            Introducing our personal AI LinkedIn Agent, built for professionals like you<br /> who want to show up — smartly, consistently, and authentically.
           </p>
           <div className="feature-one__btn-box">
             <a href="https://ai.brannovate.com/" className="thm-btn feature-one__btn">
               <i className="fa fa-plus"></i> Get Started Free
             </a>
           </div>
+          <div data-aos="fade-up-sm" data-aos-delay="300">
+            <div className="image-with-shape">
+                <img
+                  className="img-fluid d-inline-block"
+                  src={solutions3}
+                  alt=""
+                />
+            </div>
+          </div>
+          <h2 className="feature-one__title mt-10">
+          From content struggle to <br />LinkedIn <span style={{color:'#ff0000'}}>success</span>
+          </h2>
+          <p className="text-center">
+            Let our AI agent handle the heavy lifting while you focus on building meaningful professional relationships.
+          </p>
           <div className="feature-one__main-content-box">
             <div className="feature-one__color-overly-1 flaot-bob-y"></div>
             <div className="feature-one__color-overly-2 flaot-bob-x"></div>
@@ -68,7 +80,7 @@ const FeatureOne = () => {
                       <img src={icon5} alt="Trending Topics Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
-                      <a href="about.html">Fetch Trending Topics</a>
+                      <a href="about.html">Global Trending <br />Topics</a>
                     </h5>
                   </div>
                 </li>
@@ -78,7 +90,7 @@ const FeatureOne = () => {
                       <img src={icon1} alt="Content Generation Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
-                      <a href="about.html">Generate LinkedIn Posts</a>
+                      <a href="about.html">One-Click Post <br />Generation</a>
                     </h5>
                   </div>
                 </li>
@@ -101,7 +113,7 @@ const FeatureOne = () => {
                       <img src={icon3} alt="Select Topic Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
-                      <a href="about.html">Select Any Topic</a>
+                      <a href="about.html">28+ <br />Countries</a>
                     </h5>
                   </div>
                 </li>
@@ -116,7 +128,7 @@ const FeatureOne = () => {
                       <img src={icon2} alt="Schedule Posts Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
-                      <a href="about.html">Schedule Posts</a>
+                      <a href="about.html">Schedule & Automate</a>
                     </h5>
                   </div>
                 </li>
@@ -137,7 +149,7 @@ const FeatureOne = () => {
                       <img src={aiAudioIcon} alt="Post Generation Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
-                      <a href="about.html">AI Generates Posts</a>
+                      <a href="about.html">Preview & <br />Publish</a>
                     </h5>
                   </div>
                 </li>
@@ -147,7 +159,7 @@ const FeatureOne = () => {
                       <img src={aiSpeechIcon} alt="Post Scheduling Icon" />
                     </div>
                     <h5 className="feature-one__title-2">
-                      <a href="about.html">Post Directly or Schedule</a>
+                      <a href="about.html">Post Directly <br />or Schedule</a>
                     </h5>
                   </div>
                 </li>

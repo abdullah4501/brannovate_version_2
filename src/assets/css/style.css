@@ -2754,7 +2754,7 @@ textarea.form-control {
 
 .border-primary {
     --gen-border-opacity: 1;
-    border-color: rgba(var(--gen-primary-rgb), var(--gen-border-opacity)) !important
+    border-color: #0000ff !important
 }
 
 .border-white {
@@ -4666,4 +4666,20 @@ article img {
     font-size: 16px !important;
     display: flex;
     align-items: center;
+}
+.additional_hero_sec{
+    margin-top: 85px;
+}
+@media screen and (min-width: 768px) {
+    .image-with-shape{
+        width: 80%;
+        margin: auto;
+    }
+}
+.align-items-center{
+    align-items: center !important;
+}
+.additional_hero_sec .solutions-two__content-one-points li .icon i{
+    border-color: #ff0000;
+    color: #ff0000;
 }

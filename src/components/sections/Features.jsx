@@ -50,17 +50,22 @@ const Features = ({ extraClassList = "" }) => {
   return (
     <section className={`py-10 py-lg-15 ${extraClassList}`}>
       <div className="container">
+        <div className="text-center">
+          <h2>How it works</h2>
+          <p>
+          Our AI agent makes LinkedIn content creation simple, fast and effective. No more staring at a blank screen.
+          </p>
+        </div>
         {featuresData.map((feature, index) => (
           <div
             key={feature.id}
-            className={`row g-6 gx-lg-14 gx-xl-20 align-center mt-10 ${
+            className={`row g-6 gx-lg-14 gx-xl-20 align-center ${
               index === 1 ? "flex-row-reverse" : ""
             }`}
           >
             <div className="col-lg-6" data-aos="fade-up-sm" data-aos-delay="150">
               <div className="content">
-                <p className="color-topheading">Service {feature.id}</p>
-                <h1 className="mb-8">{feature.title}</h1>
+                <h3 className="mb-8">{feature.title}</h3>
                 <p className="mb-6">{feature.description}</p>
                 {feature.points && (
                   <ul className="list-unstyled list-check mb-8">

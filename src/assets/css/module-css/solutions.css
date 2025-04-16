@@ -649,7 +649,13 @@
 	}
 }
 
-
+.additional_hero_sec .solutions-two__content-one-points li .text p{
+ color: unset;
+ font-size: 16px;
+}
+.additional_hero_sec .solutions-two__content-one-text-1{
+ color: unset;
+}
 
 
 

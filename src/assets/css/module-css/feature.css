@@ -8,7 +8,6 @@
 .feature-one {
 	position: relative;
 	display: block;
-	padding: 50px 0;
 	z-index: 1;
 }
 
@@ -27,7 +26,7 @@
 }
 
 .feature-one__title span {
-	color: var(--gen-red);
+	color: var(--gen-primary);
 }
 
 .feature-one__btn-box {

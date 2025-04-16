@@ -37,9 +37,10 @@ const Solutions = () => {
           <div className="section-title__tagline-box">
             <span className="section-title__tagline">Dominate LinkedIn</span>
           </div>
-          <h2 className="section-title__title">
-            Generate, Schedule, and Preview<br />Your LinkedIn Posts Instantly with <span>Brannovate</span>
+          <h2 className="feature-one__title">
+            Build Consistency. Gain Visibility.<br /> Grow Your <span>Brand.</span>
           </h2>
+          <p>No more staring at the blinking cursor. No more overthinking what to say. Your professional voice deserves to be heard — without the hassle.</p>
         </div>
   
         {/* Content One */}
@@ -169,14 +170,6 @@ const Solutions = () => {
             </div>
           </div>
         </div> */}
-  
-        {/* Rating Box */}
-        <div className="feature-one__rating-box">
-          <div className="d-flex gap-8 align-center justify-center mt-12 review-badges">
-            <img className="img-fluid" src={reviewLogo1} alt="" />
-            <img className="img-fluid" src={reviewLogo2} alt="" />
-          </div>
-        </div>
       </div>
     </section>
   );

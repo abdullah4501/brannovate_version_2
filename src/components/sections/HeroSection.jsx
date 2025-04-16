@@ -4,6 +4,10 @@ import Typed from 'typed.js';
 import 'aos/dist/aos.css';
 import image from '../../assets/images/screens/screen-1.png';
 import svg from '../../assets/images/shapes/blurry-shape-1.svg';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck, faPlus } from '@fortawesome/free-solid-svg-icons';
+import solutions2 from "../../assets/images/illustrations/ill_hero_2.png";
 const HeroSection = () => {
   // Create a ref for the element that will be typed
   const typedElement = useRef(null);
@@ -50,18 +54,18 @@ const HeroSection = () => {
     <section className="hero-section style-1 overflow-hidden gradient-bg pt-30 pb-15 pb-lg-20 pt-xl-36">
       <div className="container">
         <div className="row justify-center">
-          <div className="col-lg-9">
+          <div className="col-lg-12">
             <div className="text-center">
               <div className="position-relative z-1">
                 <p className="color-topheading" data-aos="fade-up-sm">
-                  Build Your LinkedIn Presence Without Overthinking
+                Your LinkedIn Growth Partner
                 </p>
                 <h1 className="text-dark mb-8" data-aos="fade-up-sm" data-aos-delay="150">
-                  Your Brand. Your Voice.<br />One AI Agent to Make It All Happen. <br />
+                Build Your LinkedIn Presence<br />Without Overthinking <br />
                   <span
                     ref={typedElement}
                     className="fw-bold text-gradient-1 typed-animation"
-                    data-strings='["Stay Ahead with Trending Topics", "Instant Post Generation", "Effortless Scheduling & Instant Publishing"]'
+                    data-strings='["Your Brand", "Your Voice", "One AI Agent to Make It All Happen"]'
                   >
                     Product Description
                   </span>
@@ -96,6 +100,68 @@ const HeroSection = () => {
                 <li>Generate Posts in One Click</li>
                 <li>Schedule and Publish Posts Instantly</li>
               </ul>
+            </div>
+            <div className="additional_hero_sec wow fadeInUp" data-wow-delay="100ms">
+              <div className="row align-items-center">
+                <div className="col-xl-6 col-lg-6">
+                  <div className="">
+                    <h3>
+                    You're a professional. You know the value of being active on <span style={{color:'#0000ff'}}>LinkedIn.</span>
+                    </h3>
+                    <p>Growing your reach, shaping your professional brand, building credibility in your circle.</p>
+                    <p style={{color:'#0000ff', fontWeight: '600'}}>But there's a catch.</p>
+                    <div className='box'>
+                      <h4>
+                        You ask yourself:
+                      </h4>
+                      <ul className="solutions-two__content-one-points">
+                        <li>
+                          <div className="icon">
+                            <i className="fa fa-check"></i>
+                          </div>
+                          <div className="text">
+                            <p>
+                            What should I post today?
+                            </p>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="icon">
+                            <i className="fa fa-check"></i>
+                          </div>
+                          <div className="text">
+                            <p>
+                            Is this topic even relevant?
+                            </p>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="icon">
+                            <i className="fa fa-check"></i>
+                          </div>
+                          <div className="text">
+                            <p>
+                            How do I write something that actually gets noticed?
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    {/* <div className="solutions-two__content-one-btn-box">
+                      <Link to="https://ai.brannovate.com/" className="thm-btn solutions-two__content-one-btn">
+                        <FontAwesomeIcon icon={faPlus} /> Get Started
+                      </Link>
+                    </div> */}
+                  </div>
+                </div>
+                <div className="col-xl-6 col-lg-6">
+                    <div className="">
+                      <div className="solutions-two__content-one-img">
+                        <img src={solutions2} alt="" />
+                      </div>
+                    </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

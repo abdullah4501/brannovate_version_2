@@ -1,13 +1,20 @@
 import React from 'react';
+import { FiTrendingUp } from "react-icons/fi";
+import { LuSparkles } from "react-icons/lu";
+import { RxTarget } from "react-icons/rx";
+import { RiEditBoxLine } from "react-icons/ri";
+import { FaRegMessage } from "react-icons/fa6";
+import { TbTableSpark } from "react-icons/tb";
+
 
 const FeaturesSection = () => {
   return (
     <section className="py-10 py-lg-15" id="section-about">
       <div className="container">
         <div className="text-center mb-18">
-          <h1 className="mb-0" data-aos="fade-up-sm" data-aos-delay="50">
-          AI-Powered Personal Branding <br className="d-none d-lg-block" />
-          Tailored for Professionals
+          <h1 className="feature-one__title mb-0" data-aos="fade-up-sm" data-aos-delay="50">
+          What our AI Agent can do for you<br className="d-none d-lg-block" />
+          
           </h1>
         </div>
 
@@ -27,7 +34,7 @@ const FeaturesSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-5">
           <a href="https://ai.brannovate.com/" className="btn btn-primary">
             Free Trial
           </a>
@@ -43,11 +50,7 @@ const features = [
     description:
       "Get top-performing topics across 7+ categories from 28+ countries — always fresh, always relevant. Pick one. Done.",
     icon: (
-      <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
-        <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
-          <path d="M30.167 10c-1.833 4.855-3.167 8.188-4 10m0 0c-3.132 6.813-6.188 10-10 10-4 0-8-4-8-10s4-10 8-10c3.778 0 6.892 3.31 10 10Zm0 0c.853 1.837 2.187 5.17 4 10" />
-        </g>
-      </svg>
+      <FiTrendingUp size={20}/>
     ),
   },
   {
@@ -55,12 +58,7 @@ const features = [
     description:
       "One click = one polished, professional post. No brainstorming. No writer’s block. No fluff.",
     icon: (
-      <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
-        <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
-          <path d="M3.333 20 20 32.37 36.666 20" />
-          <path d="M11.667 15 20 21.667 28.334 15m-10.001-5L20 11.333 21.666 10 20 8.666 18.333 10Z" />
-        </g>
-      </svg>
+      <LuSparkles size={20}/>
     ),
   },
   {
@@ -68,11 +66,7 @@ const features = [
     description:
       "Tell the agent your thoughts or personal perspective — and watch your post get rewritten with your voice, your ideas, your tone.",
     icon: (
-      <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
-        <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
-          <path d="M10 29.334 6.667 27.5v-4.166m0-6.668V12.5L10 10.666m6.667-3.833L20 5l3.334 1.833M30 10.666l3.333 1.834v4.166m0 6.668V27.5L30 29.367m-6.666 3.799L20 35l-3.333-1.834M20 20l3.333-1.834M30 14.333l3.333-1.833M20 20v4.167m0 6.667V35m0-15-3.333-1.867M10 14.333 6.667 12.5" />
-        </g>
-      </svg>
+      <RxTarget size={20}/>
     ),
   },
   {
@@ -80,35 +74,23 @@ const features = [
     description:
       "Want to tweak it? Add emojis, bullet points, or bold highlights? You’re in full control of how it looks.",
     icon: (
-      <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
-        <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
-          <path d="M10 29.334 6.667 27.5v-4.166m0-6.668V12.5L10 10.666m6.667-3.833L20 5l3.334 1.833M30 10.666l3.333 1.834v4.166m0 6.668V27.5L30 29.367m-6.666 3.799L20 35l-3.333-1.834M20 20l3.333-1.834M30 14.333l3.333-1.833M20 20v4.167m0 6.667V35m0-15-3.333-1.867M10 14.333 6.667 12.5" />
-        </g>
-      </svg>
+      <RiEditBoxLine size={20}/>
     ),
   },
   {
-    title: "Add Visuals in a Snap",
+    title: "Got an Idea? Say It.",
     description:
-      "Upload a picture and the AI agent makes sure it complements your post perfectly.",
+      "Have a topic in mind? Just tell the agent — it'll shape your raw thought into a polished, engaging post that stands out.",
     icon: (
-      <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
-        <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
-          <path d="M10 29.334 6.667 27.5v-4.166m0-6.668V12.5L10 10.666m6.667-3.833L20 5l3.334 1.833M30 10.666l3.333 1.834v4.166m0 6.668V27.5L30 29.367m-6.666 3.799L20 35l-3.333-1.834M20 20l3.333-1.834M30 14.333l3.333-1.833M20 20v4.167m0 6.667V35m0-15-3.333-1.867M10 14.333 6.667 12.5" />
-        </g>
-      </svg>
+      <FaRegMessage size={20}/>
     ),
   },
   {
-    title: "Real-Time LinkedIn Preview",
+    title: "Posts That Don't Feel AI-Written",
     description:
-      "See exactly how your post will appear once live — before hitting publish.",
+      "Inspired by the top LinkedIn voices in your industry, your content is generated to feel real, relevant, and relatable. No robotic text — only posts worth reading.",
     icon: (
-      <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40">
-        <g stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
-          <path d="M10 29.334 6.667 27.5v-4.166m0-6.668V12.5L10 10.666m6.667-3.833L20 5l3.334 1.833M30 10.666l3.333 1.834v4.166m0 6.668V27.5L30 29.367m-6.666 3.799L20 35l-3.333-1.834M20 20l3.333-1.834M30 14.333l3.333-1.833M20 20v4.167m0 6.667V35m0-15-3.333-1.867M10 14.333 6.667 12.5" />
-        </g>
-      </svg>
+      <TbTableSpark size={20}/>
     ),
   },
 ];

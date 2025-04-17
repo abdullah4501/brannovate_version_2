@@ -26,8 +26,13 @@ const FAQSection = () => {
     },
     {
       id: 'faq5',
-      question: "What is the payment process to start using Brannovate?",
-      answer: "New users register via our signup form and are then redirected to a secure payment page. After completing payment, you're taken to your dashboard where you can instantly connect your LinkedIn account and start generating, scheduling, and posting content."
+      question: "How do I start using Brannovate?",
+      answer: "Simply sign up and add your card to get 30 days of free access. After the trial, you'll be charged $2.99/month unless canceled."
+    },
+    {
+      id: 'faq6',
+      question: "How do I cancel my subscription?",
+      answer: "You can cancel your subscription anytime directly from your dashboard."
     }
   ];
 

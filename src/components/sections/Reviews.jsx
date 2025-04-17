@@ -170,10 +170,10 @@ const Review = () => {
         <div className="row justify-center mb-18">
           <div className="col-lg-9">
             <div className="text-center">
-              <h1 data-aos="fade-up-sm" data-aos-delay="50">
+              <h2 data-aos="fade-up-sm" data-aos-delay="50">
                 <span className="text-primary">Brannovate </span>
                  Received <img src={star} alt="star" /> 4.9/5 Stars in Over 10,000+ Reviews.
-              </h1>
+              </h2>
             </div>
           </div>
         </div>

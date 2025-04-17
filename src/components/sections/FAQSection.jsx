@@ -59,15 +59,10 @@ const FAQSection = () => {
             maxWidth: '830px'
           }}>
             <div style={{ textAlign: 'center' }}>
-              <h1 style={{ 
-                marginBottom: '0',
-                fontSize: '2.5rem',
-                fontWeight: '600',
-                lineHeight: '1.2'
-              }}>
-                Questions About Brannovate? <br style={{ display: 'none' }} />
-                We Have Answers!
-              </h1>
+              <h2 className="mb-5" data-aos="fade-up-sm" data-aos-delay="100">
+                  Questions About <span style={{color:'#0000ff'}}>Brannovate?</span>
+              </h2>
+              <p>Everything you need to know about our LinkedIn AI Agent</p>
             </div>
           </div>
         </div>
@@ -92,31 +87,18 @@ const FAQSection = () => {
                   overflow: 'hidden'
                 }}>
                   <h2 style={{ margin: '0' }}>
-                    <button
-                      style={{
-                        width: '100%',
-                        padding: '16px 20px',
-                        textAlign: 'left',
-                        backgroundColor: openIndex === index ? '#f8f9fa' : '#fff',
-                        border: 'none',
-                        cursor: 'pointer',
-                        fontSize: '1rem',
-                        fontWeight: '500',
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                        alignItems: 'center',
-                        transition: 'background-color 0.2s ease'
-                      }}
-                      onClick={() => toggleAccordion(index)}
-                      aria-expanded={openIndex === index}
-                    >
-                      <span>{faq.question}</span>
-                      <span style={{ 
-                        fontSize: '1.2rem',
-                        transition: 'transform 0.2s ease',
-                        transform: openIndex === index ? 'rotate(45deg)' : 'rotate(0)'
-                      }}>+</span>
-                    </button>
+                  <button
+                    className={`faqTab ${openIndex === index ? 'open' : ''}`}
+                    onClick={() => toggleAccordion(index)}
+                    aria-expanded={openIndex === index}
+                  >
+                    <span>{faq.question}</span>
+                    <span style={{
+                      fontSize: '1.2rem',
+                      transition: 'transform 0.2s ease',
+                      transform: openIndex === index ? 'rotate(45deg)' : 'rotate(0)'
+                    }}>+</span>
+                  </button>
                   </h2>
                   <div
                     style={{

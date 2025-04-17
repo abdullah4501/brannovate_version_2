@@ -11,10 +11,10 @@ const PricingSection = () => {
               <p className="color-topheading" data-aos="fade-up-sm" data-aos-delay="50">
                 Pricing Plan
               </p>
-              <h1 className="mb-5" data-aos="fade-up-sm" data-aos-delay="100">
-                Ready to Get Started? <br />
-                Don't Worry, We'll Keep You Under Budget
-              </h1>
+              <h2 className="mb-5" data-aos="fade-up-sm" data-aos-delay="100">
+                Ready to Get <span style={{color:'#0000ff'}}>Started?</span> <br />
+                Don't Worry, We'll Keep You Under <span style={{color:'#ff0000'}}>Budget</span>
+              </h2>
               <p className="mb-0" data-aos="fade-up-sm" data-aos-delay="150">
                 Get started with a 30-days trial, Cancel anytime.
               </p>

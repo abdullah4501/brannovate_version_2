@@ -16,7 +16,7 @@ const PricingSection = () => {
                 Don't Worry, We'll Keep You Under Budget
               </h1>
               <p className="mb-0" data-aos="fade-up-sm" data-aos-delay="150">
-                Get started with a 5-day trial, Cancel anytime.
+                Get started with a 30-days trial, Cancel anytime.
               </p>
             </div>
           </div>
@@ -48,7 +48,7 @@ const PricingSection = () => {
           <div className="col-md-6 col-lg-4" data-aos="fade-up-sm" data-aos-delay="100">
             <div className="pricing-card p-6 px-lg-10 py-lg-8 rounded-4 h-full bg-whitedark">
               <h3 className="text-primary fw-medium mb-0">Premium Accelerate</h3>
-              <h1 className="display-2 fw-semibold mb-0 mt-4">$250</h1>
+              <h1 className="display-2 fw-semibold mb-0 mt-4">$249</h1>
               <p className="lead fw-normal mt-4 mb-0">
               <span style={{color:'#ff0000'}}>Perfect for: </span> Leaders ready to stand out with hybrid AI + human brilliance
               </p>
@@ -97,7 +97,7 @@ const PricingSection = () => {
             <div className="pricing-card p-6 px-lg-10 py-lg-8 rounded-4 h-full bg-whitedark">
               <span className="badge text-bg-red px-4 py-2 rounded-end-0">Most Popular</span>
               <h3 className="text-primary fw-medium mb-0">Icon Suite</h3>
-              <h1 className="display-2 fw-semibold mb-0 mt-4">$1,500</h1>
+              <h1 className="display-2 fw-semibold mb-0 mt-4">$1,499</h1>
               <p className="lead fw-normal mt-4 mb-0">
               <span style={{color:'#ff0000'}}>Perfect for: </span> Visionaries cementing their legacy as industry icons.
               </p>

@@ -147,11 +147,6 @@ const HeroSection = () => {
                         </li>
                       </ul>
                     </div>
-                    {/* <div className="solutions-two__content-one-btn-box">
-                      <Link to="https://ai.brannovate.com/sign-up" className="thm-btn solutions-two__content-one-btn">
-                        <FontAwesomeIcon icon={faPlus} /> Get Started
-                      </Link>
-                    </div> */}
                   </div>
                 </div>
                 <div className="col-xl-6 col-lg-6">

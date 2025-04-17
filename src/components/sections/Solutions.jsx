@@ -7,6 +7,23 @@ import { faCheck, faPlus } from '@fortawesome/free-solid-svg-icons';
 import shapeOne from "../../assets/images/shapes/solutions-two-shape-1.png";
 import solutions1 from "../../assets/images/shapes/solutions-two-shape-2.png";
 import solutions2 from "../../assets/images/screens/screen-2.png";
+import solutions3 from "../../assets/images/shapes/solutions-two-content-two-shape-1.png";
+import solutions4 from "../../assets/images/resource/solutions-two-content-two-img-1.jpg";
+import solutions5 from "../../assets/images/resource/solutions-two-content-two-img-2.jpg";
+import shapeContentThree from "../../assets/images/shapes/solutions-two-content-three-shape-1.png";
+
+// Content Three image list imports
+import solThreeImg1 from "../../assets/images/resource/solutions-two-content-three-img-1-1.jpg";
+import solThreeImg2 from "../../assets/images/resource/solutions-two-content-three-img-1-2.jpg";
+import solThreeImg3 from "../../assets/images/resource/solutions-two-content-three-img-1-3.jpg";
+import solThreeImg4 from "../../assets/images/resource/solutions-two-content-three-img-1-4.jpg";
+import solThreeImg5 from "../../assets/images/resource/solutions-two-content-three-img-1-5.jpg";
+import solThreeImg6 from "../../assets/images/resource/solutions-two-content-three-img-1-6.jpg";
+import solThreeImg7 from "../../assets/images/resource/solutions-two-content-three-img-1-7.jpg";
+import solThreeImg8 from "../../assets/images/resource/solutions-two-content-three-img-1-8.jpg";
+import solThreeImg9 from "../../assets/images/resource/solutions-two-content-three-img-1-9.jpg";
+import solThreeImg10 from "../../assets/images/resource/solutions-two-content-three-img-1-10.jpg";
+
 
 const Solutions = () => {
   return (
@@ -93,6 +110,60 @@ const Solutions = () => {
             </div>
           </div>
         </div>
+        {/* <div className="solutions-two__content-two">
+          <div className="row">
+            <div className="col-xl-6 col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
+              <div className="solutions-two__content-two-single">
+                <div className="solutions-two__content-two-top">
+                  <div className="solutions-two__content-two-title-box">
+                    <p>AI Chat Bot</p>
+                    <h3>With FlowAI, you can chat 🤖 smarter, not harder.</h3>
+                  </div>
+                  <p className="solutions-two__content-two-text-1">
+                    Mastering the Art of AI Content Writing: Unleashing the Power of Automated Creativity"
+                  </p>
+                  <div className="solutions-two__content-two-btn">
+                    <Link to="/contact">
+                      Start Chat<span className="icon-up-right-arrow"></span>
+                    </Link>
+                  </div>
+                </div>
+                <div className="solutions-two__content-two-img-box">
+                  <div className="solutions-two__content-two-shape-1">
+                    <img src={solutions3} alt="" />
+                  </div>
+                  <div className="solutions-two__content-two-img">
+                    <img src={solutions4} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-xl-6 col-lg-6 wow fadeInRight" data-wow-delay="100ms">
+              <div className="solutions-two__content-two-single solutions-two__content-two-single-2">
+                <div className="solutions-two__content-two-top">
+                  <div className="solutions-two__content-two-title-box">
+                    <p>AI Video Generator</p>
+                    <h3>A wonderful video may be created by anyone. That includes you.</h3>
+                  </div>
+                  <p className="solutions-two__content-two-text-1">
+                    By listening to our leading AI text to speech reader, you can breeze through papers, articles, PDFs, and emails.
+                  </p>
+                  <div className="solutions-two__content-two-btn">
+                    <Link to="/about">
+                      Try AI Video<span className="icon-up-right-arrow"></span>
+                    </Link>
+                  </div>
+                </div>
+                <div className="solutions-two__content-two-img-box">
+                  <div className="solutions-two__content-two-img">
+                    <img src={solutions5} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
       </div>
     </section>
   );

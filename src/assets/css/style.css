@@ -4683,3 +4683,25 @@ article img {
     border-color: #ff0000;
     color: #ff0000;
 }
+.premiumContent .icon{
+    flex-shrink: 0;
+    background: #dbeafe;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0000ff;
+}
+.preiumFeatures{
+    background-color: #f8fbff;
+    padding: 95px 0;
+}
+.preiumFeatures .left{
+    background: #fff;
+    padding: 32px;
+    border-radius: 30px;
+    box-shadow: 0 10px 15px -3px #d7d7d7;
+    margin: 45px 0;
+}

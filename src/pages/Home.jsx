@@ -11,6 +11,7 @@ import Reviews from '../components/sections/Reviews.jsx';
 import Pricing from '../components/sections/Pricing.jsx';
 import FAQSection from '../components/sections/FAQSection.jsx';
 import Trial from '../components/sections/Trial.jsx';
+import PremiumFeatures from '../components/sections/PremiumFeatures.jsx';
 // Import other sections as needed
 
 const Home = () => {
@@ -25,7 +26,7 @@ const Home = () => {
         <FeatureOne />
         <SectionAbout />
         <Solutions />
-        {/* <FAQSection /> */}
+        < PremiumFeatures />
         <Features />
         {/* <Carousel /> */}
         <Reviews />

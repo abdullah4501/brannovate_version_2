@@ -61,7 +61,7 @@ const Contact = () => {
 
       <main className="flex-grow-1">
         {/* Page Title Start */}
-        <section className="page-title">
+        <section className="page-title" style={{marginTop: '35px'}}>
           <div className="container">
             <div className="page-title__inner">
               <div
@@ -69,14 +69,16 @@ const Contact = () => {
                 style={{ backgroundImage: `url(${bgImg})` }}
               ></div>
               <div className="page-title__title-box">
-                <p className="page-title__sub-title">Contact Us</p>
-                <h3 className="page-title__title">
-                  Our Dynamic Team are Waiting <br /> for Reach you
-                </h3>
+                <p className="color-topheading" data-aos="fade-up-sm">
+                Contact Us
+                </p>
+                <h1 className="text-dark mb-8" data-aos="fade-up-sm" data-aos-delay="150">
+                Our Dynamic Team are Waiting <br /> for you
+                </h1>
               </div>
               <p className="page-title__text">
                 Discover how Brannovate transforms your professional image with effortless, data-driven AI content strategies.<br />
-                Let’s start your journey to dominating LinkedIn.
+               <strong > Let’s start your journey  to dominating <span style={{color:'#0000ff'}}>LinkedIn.</span></strong>
               </p>
             </div>
           </div>
@@ -91,7 +93,7 @@ const Contact = () => {
                 <div className="contact-one__left">
                   <div className="contact-one__left-content">
                     <div className="contact-one__title-box">
-                      <h3>Drop A Message</h3>
+                      <h3>Drop A <span style={{color:'#0000ff'}}>Message</span></h3>
                       <p>
                         At Brannovate, we transform your professional narrative with AI-powered insights and tailored content strategies. Reach out today to discover how our innovative tools generate, schedule, and optimize your LinkedIn posts—ensuring you consistently stand out and engage your network.
                       </p>
@@ -99,21 +101,11 @@ const Contact = () => {
                     <ul className="contact-one__contact-list">
                       <li>
                         <div className="icon">
-                          <span className="icon-call"></span>
-                        </div>
-                        <div className="text">
-                          <p>
-                            <a href="tel:60355501234422">+1 (615) 988-0800</a>
-                          </p>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="icon">
                           <span className="icon-map"></span>
                         </div>
                         <div className="text">
                           <p>
-                            2785 E GRAND BLVD UNIT<br />653 DETROIT, MI 48211,<br />Detroit, Michigan US
+                            2785 E GRAND BLVD UNIT 653 DETROIT, MI 48211, Detroit, Michigan US
                           </p>
                         </div>
                       </li>
@@ -134,7 +126,7 @@ const Contact = () => {
               <div className="col-xl-7 col-lg-6">
                 <div className="contact-one__right">
                   <div className="contact-one__form-box">
-                    <h3 className="contact-one__form-title">Send us a message</h3>
+                    <h3 className="contact-one__form-title">Send us a <span style={{color:'#0000ff'}}>message</span></h3>
                     <form id="contact-form" onSubmit={handleSubmit}>
                       <div className="form-group">
                         <p className="contact-one__form-label">Name*</p>

@@ -4,7 +4,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { ImFacebook } from "react-icons/im";
 import { FaPinterestP } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-
+import logo from "../../assets/images/logo.png";
 const Footer = () => {
   return (
     <footer className="footer bg-striped pt-10 pt-lg-15">
@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="col-lg-3 me-auto ">
             <div className="footer-widget text-center text-lg-start">
               <a href="">
-                <img src="src/assets/images/logo.png" alt="" className="img-fluid" />
+                <img src={logo} alt="" className="img-fluid" />
               </a>
               <p className="fs-sm mb-0 mt-4">
                 Empowering brands with innovative digital solutions. Committed to excellence, dedicated to your growth. Partner with Brannovate for results that matter.
@@ -101,7 +101,7 @@ const Footer = () => {
 
         <div className="text-center py-6 mt-8">
           <p className="fs-sm mb-0">
-            Copyright &copy; <span className="text-primary">Brannovate</span>. All Rights Reserved
+            Copyright &copy; <a className="text-primary" href='https://brannovate.com/'>Brannovate</a>. All Rights Reserved
           </p>
         </div>
       </div>

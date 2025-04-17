@@ -89,7 +89,7 @@ const Navbar = () => {
       className="navbar navbar-expand-lg fixed-top bg-hover-scroll on-over"
     >
       <div className="container">
-        <NavLink className="navbar-brand" to="/">
+        <NavLink className="navbar-brand p-0 m-0" to="/">
           <img src={logo} alt="Logo" />
         </NavLink>
 

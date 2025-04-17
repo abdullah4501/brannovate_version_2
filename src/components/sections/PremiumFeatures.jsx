@@ -28,7 +28,7 @@ const Features = ({ extraClassList = "" }) => {
             className={`row g-6 gx-lg-14 gx-xl-20 align-center`}
           >
             <div className="col-lg-6 left" data-aos="fade-up-sm" data-aos-delay="150">
-              <h4 className="mb-8">Imagine a world-class team working in lockstep</h4>
+              <h4 className="mb-8 mt-5">Imagine a world-class team working in lockstep</h4>
               <div className="premiumContent d-flex align-items-start gap-4">
               <div className="icon">
                 <LuBookOpen  size={20}/>

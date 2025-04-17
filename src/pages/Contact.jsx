@@ -72,7 +72,7 @@ const Contact = () => {
                 <p className="color-topheading" data-aos="fade-up-sm">
                 Contact Us
                 </p>
-                <h1 className="text-dark mb-8" data-aos="fade-up-sm" data-aos-delay="150">
+                <h1 className="text-dark mb-8">
                 Our Dynamic Team are Waiting <br /> for you
                 </h1>
               </div>

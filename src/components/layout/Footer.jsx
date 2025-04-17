@@ -4,7 +4,8 @@ import { BsTwitterX } from "react-icons/bs";
 import { ImFacebook } from "react-icons/im";
 import { FaPinterestP } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import logo from "../../assets/images/logo.png";
+import logo from '../../assets/images/logo.gif';
+
 const Footer = () => {
   return (
     <footer className="footer bg-striped pt-10 pt-lg-15">

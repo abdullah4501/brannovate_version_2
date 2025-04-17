@@ -94,7 +94,7 @@ const Features = ({ extraClassList = "" }) => {
               </div>
             </div>
             <div className="col-lg-6" data-aos="fade-up-sm" data-aos-delay="250">
-              <div className="feature-img">
+              <div className="feature-img d-flex">
                 <img src={feature.image} alt="Feature" className="img-fluid" />
               </div>
             </div>

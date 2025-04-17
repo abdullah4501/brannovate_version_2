@@ -36,8 +36,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section style={{
-      padding: '60px 0',
+    <section className="py-10 py-lg-15" style={{
       fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'
     }}>
       <div style={{

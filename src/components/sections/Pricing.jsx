@@ -36,11 +36,12 @@ const PricingSection = () => {
               Choose AI Starter
             </a>
             <ul className="pricing-list d-flex flex-column gap-5 fs-lg mt-9 mb-0">
-              <li><i className='fa fa-check'></i><span><b>AI-Generated LinkedIn Posts:</b> AI-crafted LinkedIn posts in one click</span></li>
-              <li><i className='fa fa-check'></i><span><b>Access to Global Trending Topics:</b> Global trending topics from 28+ countries</span></li>
-              <li><i className='fa fa-check'></i><span><b>Edit, Personalize & Preview:</b> Edit, personalize & preview before posting</span></li>
-              <li><i className='fa fa-check'></i><span><b>Schedule or Publish Instantly:</b> Plan ahead or post in real time — your content, your timing.</span></li>
-              <li><i className='fa fa-check'></i><span><b>Effortless Scheduling:</b> Schedule posts to be published at optimal times for engagement.</span></li>
+              <li><i className='fa fa-check'></i><span><b>Trending Topics:</b> Get top trending topics from 7+ categories across 28+ countries.</span></li>
+              <li><i className='fa fa-check'></i><span><b>One-Click Post Creation:</b> Create posts on any topic with just one click.</span></li>
+              <li><i className='fa fa-check'></i><span><b>Customizable Content:</b> Edit and personalize the generated posts to match your style.</span></li>
+              <li><i className='fa fa-check'></i><span><b>Incorporate Your Voice:</b> Share your views, and let the AI rewrite the post to include your perspective.</span></li>
+              <li><i className='fa fa-check'></i><span><b>Leader-Inspired:</b> Content Inspired by Leading LinkedIn Voices – Stand out, not just AI-generated</span></li>
+              <li><i className='fa fa-check'></i><span><b>Provide Personal Ideas:</b> Create posts from your own ideas.</span></li>
             </ul>
           </div>
 

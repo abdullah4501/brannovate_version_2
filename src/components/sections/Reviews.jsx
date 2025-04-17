@@ -165,7 +165,7 @@ const Review = () => {
   );
 
   return (
-    <section className="overflow-hidden pt-20 pt-lg-30 pb-10 pb-lg-15">
+    <section className="overflow-hidden py-10 py-lg-15">
       <div className="container">
         <div className="row justify-center mb-18">
           <div className="col-lg-9">

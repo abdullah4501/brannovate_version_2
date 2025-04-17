@@ -27,7 +27,7 @@ import solThreeImg10 from "../../assets/images/resource/solutions-two-content-th
 
 const Solutions = () => {
   return (
-    <section className="solutions-two" id="tools">
+    <section className="solutions-two py-10 py-lg-15" id="tools">
       <div className="container">
         {/* Section Title */}
         <div className="section-title text-center">

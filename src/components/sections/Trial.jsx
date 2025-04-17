@@ -5,7 +5,7 @@ import image3 from "../../assets/images/shapes/free-trail-start-3.png";
 import image4 from "../../assets/images/shapes/free-trail-start-4.png";
 const Trial = () => {
   return (
-    <section className="free-trail">
+    <section className="free-trail py-10 py-lg-15">
       <div className="container">
         <div className="free-trail__wrap">
           <div

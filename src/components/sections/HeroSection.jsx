@@ -67,7 +67,7 @@ const HeroSection = () => {
                     className="fw-bold text-gradient-1 typed-animation"
                     data-strings='["Your Brand", "Your Voice", "AI That Handles It All"]'
                   >
-                    Product Description
+                    {/* Product Description */}
                   </span>
                 </h1>
                 <a

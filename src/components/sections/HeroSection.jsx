@@ -65,7 +65,7 @@ const HeroSection = () => {
                   <span
                     ref={typedElement}
                     className="fw-bold text-gradient-1 typed-animation"
-                    data-strings='["Your Brand", "Your Voice", "One AI Agent To Make It All Happen"]'
+                    data-strings='["Your Brand", "Your Voice", "AI That Handles It All"]'
                   >
                     Product Description
                   </span>

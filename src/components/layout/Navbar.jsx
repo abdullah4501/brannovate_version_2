@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import Headroom from 'headroom.js';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo.gif';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

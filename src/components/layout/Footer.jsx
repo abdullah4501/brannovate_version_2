@@ -35,9 +35,6 @@ const Footer = () => {
                     <li>
                       <a href="https://ai.brannovate.com/sign-up">Register</a>
                     </li>
-                    <li>
-                      <a href="/contact">Contact</a>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -101,7 +98,7 @@ const Footer = () => {
 
         <div className="text-center py-6 mt-8">
           <p className="fs-sm mb-0">
-            Copyright &copy; <span className="text-primary">Brannovate</span>. All Rights Reserved
+            Copyright 2025 &copy; <span className="text-primary">Brannovate</span>. All Rights Reserved
           </p>
         </div>
       </div>

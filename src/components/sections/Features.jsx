@@ -17,7 +17,7 @@ const featuresData = [
     ],
     image: img2,
     linkText: "Get Started Free",
-    linkHref: "https://ai.brannovate.com/sign-up",
+    linkHref: "/contact",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const featuresData = [
       ],
     image: img1,
     linkText: "Get Started Free",
-    linkHref: "https://ai.brannovate.com/sign-up",
+    linkHref: "/contact",
   },
 ];
 

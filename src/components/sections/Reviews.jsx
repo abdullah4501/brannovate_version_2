@@ -94,45 +94,45 @@ const Review = () => {
       id: 1,
       name: "Wade Warrent",
       role: "Marketing Coordinator",
-      text: "We needed an app to streamline our operations, and Brannovate was perfect for the job. They delivered a powerful app with fantastic features, and our feedback was incorporated seamlessly. Couldn’t be happier!",
+      text: "Brannovate’s AI-powered LinkedIn Agent transformed the way we approach content creation. It saved us so much time by instantly generating posts on trending topics, and the ability to customize them with our voice made them feel authentic. Truly a game-changer!",
       image: image
     },
     {
       id: 2,
       name: "Dianne Russell",
       role: "Content Creator",
-      text: "Elevate Brannovate was phenomenal. They were able to develop a robust e-commerce platform for us that has transformed our sales. Their studio team also created beautiful brand visuals. Their attention to detail is impeccable!",
+      text: "With Brannovate’s AI tool, creating high-quality LinkedIn posts has never been easier. The trending topics feature allowed us to stay ahead of the curve, and the instant post generation helped us engage with our audience more consistently. Highly recommend it!",
       image: image2
     },
     {
       id: 3,
       name: "Jenny Wilson",
       role: "Product Designer",
-      text: "From start to finish, working with Brannovate was smooth and efficient. They kept us updated throughout the project, and the final product surpassed our expectations. Would definitely recommend them!",
+      text: "I’m blown away by the ease of use of Brannovate’s AI. I provided a simple idea, and the tool created a professional, compelling post that perfectly aligned with our brand’s voice. It’s a must-have for anyone serious about building a strong LinkedIn presence.",
       image: image3
     },
     {
       id: 4,
       name: "Guy Hawkins",
       role: "Digital Marketer",
-      text: "Brannovate exceeded our expectations in every way. Their team turned our vision into a reality with an intuitive website and a sleek app. They were incredibly responsive, and the entire project stayed on schedule. I’d recommend them without hesitation",
+      text: "Brannovate’s AI tool not only generates top-tier LinkedIn content but also gives us the ability to schedule and manage posts with ease. The real-time preview feature ensures we’re always confident in our posts before going live. This tool is essential for marketing teams.",
       image: image4
     },
     {
       id: 5,
       name: "Bessie Cooper",
       role: "SEO Expert",
-      text: "We had a complex project and needed expertise to pull it off. Brannovate team not only delivered but also helped us enhance our original ideas. The app they developed is high-performing and very user-friendly. Great service overall!",
+      text: "As an SEO expert, content quality and consistency are key, and Brannovate’s AI agent delivers both. I’m able to effortlessly generate posts that are tailored to my audience, and I’m impressed by how it helps with SEO optimization, too!",
       image: image
     },
     {
       id: 6,
       name: "Jessica Monroe",
       role: "Marketing Expert",
-      text: "Working with Brannovate was a game-changer for our business. They designed a beautiful website that captures our brand perfectly, and their studio services added that extra touch to our promotional materials. Amazing team and exceptional quality.",
+      text: "Brannovate’s AI tool revolutionized the way we manage LinkedIn content. From one-click post generation to easy scheduling, the platform makes it so much easier to maintain a strong and consistent presence. The posts don’t feel robotic—they’re tailored to our voice, and that’s a huge win.",
       image: image5
     }
-  ];
+  ];  
 
   // Star SVG component
   const StarIcon = () => (

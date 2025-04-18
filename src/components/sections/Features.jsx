@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img1 from '../../assets/images/illustrations/feature-illustration-1-blue.svg';
-import img2 from '../../assets/images/illustrations/feature-illustration-2-blue.svg';
-import img3 from '../../assets/images/illustrations/feature-illustration-3-blue.svg';
+import img1 from '../../assets/images/illustrations/ill_features_2.png';
+import img2 from '../../assets/images/illustrations/ill_features_3.png';
 
 const featuresData = [
   {

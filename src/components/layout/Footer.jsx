@@ -28,7 +28,7 @@ const Footer = () => {
                   <h6 className=" mb-2">Links</h6>
                   <ul className="link-list list-unstyled mb-0">
                     <li>
-                      <a href="https://ai.brannovate.com/">BrandBot</a>
+                      <a href="https://ai.brannovate.com/">Brannovate</a>
                     </li>
                     <li>
                       <a href="https://ai.brannovate.com/">Sign in</a>

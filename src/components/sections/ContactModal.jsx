@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Dialog from "@mui/material/Dialog";
 import IconButton from "@mui/material/IconButton";
 import { styled } from "@mui/material/styles";
 import toast, { Toaster } from "react-hot-toast";
+import axios from "axios";
 import {
-  AiOutlineClose,
   AiOutlineUser,
   AiOutlineMail,
-  AiFillLinkedin,
   AiOutlinePhone,
+  AiFillLinkedin,
+  AiOutlineClose
 } from 'react-icons/ai';
 
 // Styled wrapper to tweak the modal card
@@ -21,35 +22,57 @@ const StyledDialog = styled(Dialog)(({ theme }) => ({
 }));
 
 export default function ContactModal({ isOpen, onClose, selectedPackage }) {
-  const [formData, setFormData] = React.useState({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     linkedinProfile: "",
-    phoneNumber: "",
+    phone: "",
   });
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleChange = e => {
+    const { name, value } = e.target;
+    setFormData(fd => ({ ...fd, [name]: value }));
+  };
+
+  const handleSubmit = async e => {
     e.preventDefault();
-    // Simple validation
-    const { name, email, linkedinProfile, phoneNumber } = formData;
-    if (!name || !email || !linkedinProfile || !phoneNumber) {
-      toast.error("Please fill in all fields!");
+    const { name, email, linkedinProfile, phone } = formData;
+
+    if (!name || !email ) {
+      toast.error("Please fill in all required fields!");
       return;
     }
-    toast.success(`Request for ${selectedPackage} submitted!`);
-    onClose();
-    setFormData({ name: "", email: "", linkedinProfile: "", phoneNumber: "" });
+
+    setSubmitting(true);
+    toast.loading("Sending request…", { id: "submit" });
+
+    try {
+      await axios.post("http://127.0.0.1:8000/api/contact-request", {
+        name,
+        email,
+        phone,
+        linkedin_url: linkedinProfile,
+        selected_package: selectedPackage,
+      });
+      toast.success(`Request for ${selectedPackage} submitted!`, { id: "submit" });
+      onClose();
+      setFormData({ name: "", email: "", linkedinProfile: "", phone: "" });
+    } catch (err) {
+      console.error(err);
+      toast.error(
+        err.response?.data?.message || "Submission failed—please try again.",
+        { id: "submit" }
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
     <>
       <Toaster position="top-right" />
-      <Dialog
-        open={isOpen}
-        onClose={onClose}
-        fullWidth
-        maxWidth="sm"
-      >
+      <Dialog open={isOpen} onClose={onClose} fullWidth maxWidth="sm">
 
         <div className="contact-one__form-box">
         <IconButton
@@ -59,77 +82,95 @@ export default function ContactModal({ isOpen, onClose, selectedPackage }) {
         >
           <AiOutlineClose size={24} />
         </IconButton>
-          <h3 className="contact-one__form-title">Get started with<br /><span style={{color:'#0000ff'}}>{selectedPackage}</span></h3>
-          <form id="contact-form">
+          <h3 className="contact-one__form-title">
+            Get started with<br />
+            <span style={{ color: '#0000ff' }}>{selectedPackage}</span>
+          </h3>
+
+          <form onSubmit={handleSubmit}>
+            {/* Name */}
             <div className="form-group">
               <p className="contact-one__form-label">Name*</p>
-              <input 
-                type="text" 
-                name="name" 
+              <input
+                type="text"
+                name="name"
                 placeholder="John Smith"
-                required 
+                value={formData.name}
+                onChange={handleChange}
               />
               <div className="contact-one__form-icon">
-                <i className="fas fa-user"></i>
+                <AiOutlineUser size={20} />
               </div>
             </div>
+
+            {/* Email */}
             <div className="form-group">
               <p className="contact-one__form-label">Email*</p>
-              <input 
-                type="email" 
-                name="email" 
+              <input
+                type="email"
+                name="email"
                 placeholder="info@brannovate.com"
-                required 
+                value={formData.email}
+                onChange={handleChange}
               />
               <div className="contact-one__form-icon">
-                <i className="far fa-envelope"></i>
+                <AiOutlineMail size={20} />
               </div>
             </div>
+
+            {/* Phone */}
             <div className="form-group">
               <p className="contact-one__form-label">Phone*</p>
-              <input 
-                type="text" 
-                name="phone" 
+              <input
+                type="text"
+                name="phone"
                 placeholder="(___) ___-____"
-                required 
+                value={formData.phone}
+                onChange={handleChange}
               />
               <div className="contact-one__form-icon">
-                <i className="far fa-envelope"></i>
+                <AiOutlinePhone size={20} />
               </div>
             </div>
+
+            {/* LinkedIn */}
             <div className="form-group">
-              <p className="contact-one__form-label">Linkedin Profile URL</p>
-              <input 
-                type="text" 
-                name="linkedinurl" 
-                placeholder="www.linkedin.com"
+              <p className="contact-one__form-label">LinkedIn Profile URL</p>
+              <input
+                type="text"
+                name="linkedinProfile"
+                placeholder="www.linkedin.com/your-profile"
+                value={formData.linkedinProfile}
+                onChange={handleChange}
               />
               <div className="contact-one__form-icon">
-                <i className="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin"></i>
               </div>
             </div>
+
+            {/* Selected Package */}
             <div className="form-group">
               <p className="contact-one__form-label">Selected Package</p>
-              <input 
-                type="text" 
-                name="selected_package" 
+              <input
+                type="text"
+                name="selected_package"
                 value={selectedPackage}
-                style={{color:'#000'}}
                 disabled
               />
               <div className="contact-one__form-icon">
                 <i className="fas fa-tags"></i>
               </div>
             </div>
+
+            {/* Submit Button */}
             <div className="form-group">
-              {/* Button Box */}
               <div className="button-box">
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   className="thm-btn contact-one__btn"
-                  data-loading-text="Please wait..."
+                  disabled={submitting}
                 >
-                  Submit Request
+                  {submitting ? "Submitting…" : "Submit Request"}
                 </button>
               </div>
             </div>

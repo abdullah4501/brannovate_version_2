@@ -43,15 +43,14 @@ export default function ContactModal({ isOpen, onClose, selectedPackage }) {
   return (
     <>
       <Toaster position="top-right" />
-      <StyledDialog
+      <Dialog
         open={isOpen}
         onClose={onClose}
         fullWidth
         maxWidth="sm"
-        style={{backgroundColor:'transparent'}}
       >
         <div className="contact-one__form-box">
-          <h3 className="contact-one__form-title">Send us a <span style={{color:'#0000ff'}}>message</span></h3>
+          <h3 className="contact-one__form-title">Get started with<br /><span style={{color:'#0000ff'}}>{selectedPackage}</span></h3>
           <form id="contact-form">
             <div className="form-group">
               <p className="contact-one__form-label">Name*</p>
@@ -97,7 +96,20 @@ export default function ContactModal({ isOpen, onClose, selectedPackage }) {
                 placeholder="www.linkedin.com"
               />
               <div className="contact-one__form-icon">
-                <i className="far fa-envelope"></i>
+                <i className="far fa-linkedin"></i>
+              </div>
+            </div>
+            <div className="form-group">
+              <p className="contact-one__form-label">Selected Package</p>
+              <input 
+                type="text" 
+                name="selected_package" 
+                value={selectedPackage}
+                style={{color:'#000'}}
+                disabled
+              />
+              <div className="contact-one__form-icon">
+                <i className="fas fa-tags"></i>
               </div>
             </div>
             <div className="form-group">
@@ -114,7 +126,7 @@ export default function ContactModal({ isOpen, onClose, selectedPackage }) {
             </div>
           </form>
         </div>
-      </StyledDialog>
+      </Dialog>
     </>
   );
 }

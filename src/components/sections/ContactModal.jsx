@@ -1,5 +1,6 @@
 import React from "react";
 import Dialog from "@mui/material/Dialog";
+import IconButton from "@mui/material/IconButton";
 import { styled } from "@mui/material/styles";
 import toast, { Toaster } from "react-hot-toast";
 import {
@@ -49,7 +50,15 @@ export default function ContactModal({ isOpen, onClose, selectedPackage }) {
         fullWidth
         maxWidth="sm"
       >
+
         <div className="contact-one__form-box">
+        <IconButton
+          aria-label="close"
+          onClick={onClose}
+          sx={{ position: "absolute", top: 8, right: 8, color: "rgba(0,0,0,0.54)" }}
+        >
+          <AiOutlineClose size={24} />
+        </IconButton>
           <h3 className="contact-one__form-title">Get started with<br /><span style={{color:'#0000ff'}}>{selectedPackage}</span></h3>
           <form id="contact-form">
             <div className="form-group">
@@ -96,7 +105,7 @@ export default function ContactModal({ isOpen, onClose, selectedPackage }) {
                 placeholder="www.linkedin.com"
               />
               <div className="contact-one__form-icon">
-                <i className="far fa-linkedin"></i>
+                <i className="fab fa-linkedin"></i>
               </div>
             </div>
             <div className="form-group">

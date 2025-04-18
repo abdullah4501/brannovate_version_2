@@ -4699,7 +4699,7 @@ article img {
 }
 .preiumFeatures{
     background-color: #f8fbff;
-    padding: 95px 0;
+    padding: 50px 0;
 }
 .preiumFeatures .left{
     background: #fff;
@@ -4708,10 +4708,10 @@ article img {
     box-shadow: 0 10px 15px -3px #d7d7d7;
     margin: 45px 0;
 }
-.feature-img img{
+/* .feature-img img{
     height: 510px;
     margin: auto;
-}
+} */
 .faqTab {
     width: 100%;
     padding: 16px 20px;
@@ -4731,4 +4731,8 @@ article img {
     background-color: #f8f9fa;
     color: #0000ff;  /* Text color when open */
   }
-  
+  @media screen and (max-width: 460px) {
+    .navbar-brand img{
+        max-width: 200px;
+    }
+  }

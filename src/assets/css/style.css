@@ -4739,4 +4739,6 @@ article img {
 
   .css-16htz67-MuiPaper-root-MuiDialog-paper{
     background-color: unset !important;
+    margin: 0 !important;
+    width: 100% !important;
   }

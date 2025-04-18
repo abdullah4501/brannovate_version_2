@@ -1,67 +1,69 @@
-import React from "react";
-import axios from "axios";
+import React, { useState } from "react";
 import Dialog from "@mui/material/Dialog";
 import { styled } from "@mui/material/styles";
 import toast, { Toaster } from "react-hot-toast";
+import axios from "axios";
 import {
-  AiOutlineClose,
   AiOutlineUser,
   AiOutlineMail,
-  AiFillLinkedin,
   AiOutlinePhone,
-} from "react-icons/ai";
+  AiFillLinkedin,
+} from 'react-icons/ai';
 
-/* ---------- styled wrapper ---------- */
+// Styled wrapper to tweak the modal card
 const StyledDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiPaper-root": {
     borderRadius: theme.spacing(2),
     padding: theme.spacing(2),
-    overflow: "visible",
+    overflow: 'visible',
   },
 }));
 
-/* ---------- component ---------- */
 export default function ContactModal({ isOpen, onClose, selectedPackage }) {
-  const [loading, setLoading] = React.useState(false);
-  const [formData, setFormData] = React.useState({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     linkedinProfile: "",
-    phoneNumber: "",
+    phone: "",
   });
+  const [submitting, setSubmitting] = useState(false);
 
-  /* handle changes */
-  const onChange = (e) =>
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  const handleChange = e => {
+    const { name, value } = e.target;
+    setFormData(fd => ({ ...fd, [name]: value }));
+  };
 
-  /* submit */
-  const handleSubmit = async (e) => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    const { name, email, linkedinProfile, phoneNumber } = formData;
+    const { name, email, linkedinProfile, phone } = formData;
 
-    /* basic front‑end guard */
-    if (!name || !email || !phoneNumber) {
-      toast.error("Name, email & phone are required.");
+    if (!name || !email ) {
+      toast.error("Please fill in all required fields!");
       return;
     }
+
+    setSubmitting(true);
+    toast.loading("Sending request…", { id: "submit" });
+
     try {
-      setLoading(true);
-
-      await axios.post(
-        `http://127.0.0.1:8000/api/contact-request`,
-        { ...formData, selectedPackage },
-        { headers: { "Content-Type": "application/json" } }
-      );
-
-      toast.success(`Request for ${selectedPackage} submitted!`);
-      setFormData({ name: "", email: "", linkedinProfile: "", phoneNumber: "" });
+      await axios.post("http://127.0.0.1:8000/api/contact-request", {
+        name,
+        email,
+        phone,
+        linkedin_url: linkedinProfile,
+        selected_package: selectedPackage,
+      });
+      toast.success(`Request for ${selectedPackage} submitted!`, { id: "submit" });
       onClose();
+      setFormData({ name: "", email: "", linkedinProfile: "", phone: "" });
     } catch (err) {
+      console.error(err);
       toast.error(
-        err.response?.data?.message || "Something went wrong. Please try again."
+        err.response?.data?.message || "Submission failed—please try again.",
+        { id: "submit" }
       );
     } finally {
-      setLoading(false);
+      setSubmitting(false);
     }
   };
 
@@ -71,7 +73,8 @@ export default function ContactModal({ isOpen, onClose, selectedPackage }) {
       <StyledDialog open={isOpen} onClose={onClose} fullWidth maxWidth="sm">
         <div className="contact-one__form-box">
           <h3 className="contact-one__form-title">
-            Send&nbsp;us&nbsp;a&nbsp;<span style={{ color: "#0000ff" }}>message</span>
+            Get started with<br />
+            <span style={{ color: '#0000ff' }}>{selectedPackage}</span>
           </h3>
 
           <form onSubmit={handleSubmit}>
@@ -83,9 +86,11 @@ export default function ContactModal({ isOpen, onClose, selectedPackage }) {
                 name="name"
                 placeholder="John Smith"
                 value={formData.name}
-                onChange={onChange}
-                required
+                onChange={handleChange}
               />
+              <div className="contact-one__form-icon">
+                <AiOutlineUser size={20} />
+              </div>
             </div>
 
             {/* Email */}
@@ -96,9 +101,11 @@ export default function ContactModal({ isOpen, onClose, selectedPackage }) {
                 name="email"
                 placeholder="info@brannovate.com"
                 value={formData.email}
-                onChange={onChange}
-                required
+                onChange={handleChange}
               />
+              <div className="contact-one__form-icon">
+                <AiOutlineMail size={20} />
+              </div>
             </div>
 
             {/* Phone */}
@@ -106,35 +113,56 @@ export default function ContactModal({ isOpen, onClose, selectedPackage }) {
               <p className="contact-one__form-label">Phone*</p>
               <input
                 type="text"
-                name="phoneNumber"
-                placeholder="(___) ___‑____"
-                value={formData.phoneNumber}
-                onChange={onChange}
-                required
+                name="phone"
+                placeholder="(___) ___-____"
+                value={formData.phone}
+                onChange={handleChange}
               />
+              <div className="contact-one__form-icon">
+                <AiOutlinePhone size={20} />
+              </div>
             </div>
 
-            {/* LinkedIn (optional) */}
+            {/* LinkedIn */}
             <div className="form-group">
               <p className="contact-one__form-label">LinkedIn Profile URL</p>
               <input
-                type="url"
+                type="text"
                 name="linkedinProfile"
-                placeholder="https://www.linkedin.com/in/johnsmith"
+                placeholder="www.linkedin.com/your-profile"
                 value={formData.linkedinProfile}
-                onChange={onChange}
+                onChange={handleChange}
               />
+              <div className="contact-one__form-icon">
+                <AiFillLinkedin size={20} />
+              </div>
             </div>
 
-            {/* Button */}
+            {/* Selected Package */}
             <div className="form-group">
-              <button
-                type="submit"
-                className="thm-btn contact-one__btn"
-                disabled={loading}
-              >
-                {loading ? "Please wait…" : "Submit Request"}
-              </button>
+              <p className="contact-one__form-label">Selected Package</p>
+              <input
+                type="text"
+                name="selected_package"
+                value={selectedPackage}
+                disabled
+              />
+              <div className="contact-one__form-icon">
+                <i className="fas fa-tags"></i>
+              </div>
+            </div>
+
+            {/* Submit Button */}
+            <div className="form-group">
+              <div className="button-box">
+                <button
+                  type="submit"
+                  className="thm-btn contact-one__btn"
+                  disabled={submitting}
+                >
+                  {submitting ? "Submitting…" : "Submit Request"}
+                </button>
+              </div>
             </div>
           </form>
         </div>

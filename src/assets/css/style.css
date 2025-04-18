@@ -3455,8 +3455,8 @@ a {
     -webkit-background-clip: text
 }
 @media screen and (max-width: 420px) {
-    .text-gradient-1{
-        font-size: 20px;
+    .hero-section h1{
+        font-size: 24px;
     }
 }
 .btn-gradient-1 {

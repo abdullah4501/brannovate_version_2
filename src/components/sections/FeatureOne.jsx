@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import icon1 from "../../assets/images/icons/ai-content-writing.png";
 import icon2 from "../../assets/images/icons/schedule.png";
 import icon3 from "../../assets/images/icons/countries.png";
-import icon4 from "../../assets/images/icons/cpu.png";
+import icon4 from "../../assets/images/glitch.gif";
 import icon5 from "../../assets/images/icons/ai-chat.png";
 import icon6 from "../../assets/images/icons/trending.png";
 import icon7 from "../../assets/images/icons/post.png";

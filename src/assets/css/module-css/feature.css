@@ -249,8 +249,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 218px;
-	width: 218px;
+	height: 185px;
+	width: 185px;
 	background-color: rgba(255, 255, 255, 0.02);
 	border: 1px solid #c2c2c2;
 	backdrop-filter: blur(10px);

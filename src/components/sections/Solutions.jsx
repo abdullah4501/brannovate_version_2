@@ -7,22 +7,6 @@ import { faCheck, faPlus } from '@fortawesome/free-solid-svg-icons';
 import shapeOne from "../../assets/images/shapes/solutions-two-shape-1.png";
 import solutions1 from "../../assets/images/shapes/solutions-two-shape-2.png";
 import solutions2 from "../../assets/images/screens/screen-2.png";
-import solutions3 from "../../assets/images/shapes/solutions-two-content-two-shape-1.png";
-import solutions4 from "../../assets/images/resource/solutions-two-content-two-img-1.jpg";
-import solutions5 from "../../assets/images/resource/solutions-two-content-two-img-2.jpg";
-import shapeContentThree from "../../assets/images/shapes/solutions-two-content-three-shape-1.png";
-
-// Content Three image list imports
-import solThreeImg1 from "../../assets/images/resource/solutions-two-content-three-img-1-1.jpg";
-import solThreeImg2 from "../../assets/images/resource/solutions-two-content-three-img-1-2.jpg";
-import solThreeImg3 from "../../assets/images/resource/solutions-two-content-three-img-1-3.jpg";
-import solThreeImg4 from "../../assets/images/resource/solutions-two-content-three-img-1-4.jpg";
-import solThreeImg5 from "../../assets/images/resource/solutions-two-content-three-img-1-5.jpg";
-import solThreeImg6 from "../../assets/images/resource/solutions-two-content-three-img-1-6.jpg";
-import solThreeImg7 from "../../assets/images/resource/solutions-two-content-three-img-1-7.jpg";
-import solThreeImg8 from "../../assets/images/resource/solutions-two-content-three-img-1-8.jpg";
-import solThreeImg9 from "../../assets/images/resource/solutions-two-content-three-img-1-9.jpg";
-import solThreeImg10 from "../../assets/images/resource/solutions-two-content-three-img-1-10.jpg";
 
 
 const Solutions = () => {

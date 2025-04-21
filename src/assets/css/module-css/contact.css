@@ -129,7 +129,7 @@
     background-color: #fafcff;
     /* border: 1px solid #0000ff; */
     border-radius: var(--thm-border-radius);
-    padding: 93px 65px 100px;
+    padding: 40px;
     box-shadow: 0 10px 15px -3px #d5d9df;
 }
 

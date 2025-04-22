@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { GrLinkedinOption } from "react-icons/gr";
 import { BsTwitterX } from "react-icons/bs";
 import { ImFacebook } from "react-icons/im";
@@ -35,6 +36,11 @@ const Footer = () => {
                     </li>
                     <li>
                       <a href="https://ai.brannovate.com/sign-up">Register</a>
+                    </li>
+                    <li>
+                      <NavLink to="/contact">
+                        Contact
+                      </NavLink>
                     </li>
                   </ul>
                 </div>

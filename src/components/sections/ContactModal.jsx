@@ -48,7 +48,7 @@ export default function ContactModal({ isOpen, onClose, selectedPackage }) {
     toast.loading("Sending request…", { id: "submit" });
 
     try {
-      await axios.post("http://127.0.0.1:8000/api/contact-request", {
+      await axios.post("https://ai.brannovate.com/api/contact-request", {
         name,
         email,
         phone,

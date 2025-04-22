@@ -8,6 +8,9 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faPlus } from '@fortawesome/free-solid-svg-icons';
 import solutions2 from "../../assets/images/illustrations/ill_hero_2.png";
+import q3 from "../../assets/images/illustrations/q3.png";
+import q2 from "../../assets/images/illustrations/q2.png";
+import q1 from "../../assets/images/illustrations/q1.png";
 const HeroSection = () => {
   // Create a ref for the element that will be typed
   const typedElement = useRef(null);
@@ -102,19 +105,20 @@ const HeroSection = () => {
               </ul>
             </div>
             <div className="additional_hero_sec wow fadeInUp" data-wow-delay="100ms">
+
               <div className="row align-items-center">
-                <div className="col-xl-6 col-lg-6">
-                  <div className="">
+                <div className="col-xl-12 col-lg-12">
+                  <div className="text-center">
                     <h3>
                     You're a professional. You know the value of being active on <span style={{color:'#0000ff'}}>LinkedIn.</span>
                     </h3>
                     <p>Growing your reach, shaping your professional brand, building credibility in your circle.</p>
                     <p style={{color:'#0000ff', fontWeight: '600'}}>But there's a catch.</p>
                     <div className='box'>
-                      <h4>
+                      <h4 className='mb-3'>
                         You ask yourself:
                       </h4>
-                      <ul className="solutions-two__content-one-points">
+                      {/* <ul className="solutions-two__content-one-points">
                         <li>
                           <div className="icon">
                             <i className="fa fa-check"></i>
@@ -145,17 +149,73 @@ const HeroSection = () => {
                             </p>
                           </div>
                         </li>
-                      </ul>
+                      </ul> */}
+                      <div className="row">
+                        <div className="col-lg-4">
+                          <div className="usp-card p-5 ">
+                            <div className='illustration'>
+                              <img src={q1} alt="" />
+                            </div>
+                            <div className='head '>
+                              <div className="d-flex">
+                                <div className="icon">
+                                      <i className="fa fa-check"></i>
+                                </div>
+                                <h3>What should I post today?</h3>
+                              </div>
+                              <p>You’ve got ideas swirling but can’t settle on a topic—nothing feels quite “right.”
+                              Don’t worry, we’ve got you covered.</p>
+                              <h5>Find Your Perfect Topic </h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-lg-4">
+                          <div className="usp-card p-5 " style={{borderColor:'#f2cf19'}}>
+                            <div className='illustration'>
+                              <img src={q2} alt="" />
+                            </div>
+                            <div className='head '>
+                              <div className="d-flex">
+                                <div className="icon">
+                                      <i className="fa fa-check"></i>
+                                </div>
+                                <h3>Is this topic even relevant?</h3>
+                              </div>
+                              <p>That sudden “aha” idea leaves you second‑guessing: will anyone care about this now?
+                              Rest easy—we’ll clear up that doubt.</p>
+                              <h5>Validate Its Relevance</h5>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-lg-4">
+                          <div className="usp-card p-5 " style={{borderColor:'#0000ff4f'}}>
+                            <div className='illustration'>
+                              <img src={q3} alt="" />
+                            </div>
+                            <div className='head text-left'>
+                              <div className="d-flex">
+                                <div className="icon">
+                                      <i className="fa fa-check"></i>
+                                </div>
+                                <h3>How do I write something that actually gets noticed?</h3>
+                              </div>
+                              <p>You finally write something, then pause, wondering if it’ll vanish into the feed.
+                              Relax—we know how to make it stand out.</p>
+                              <h5>Capture Attention</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="col-xl-6 col-lg-6">
+                {/* <div className="col-xl-6 col-lg-6">
                     <div className="">
                       <div className="solutions-two__content-one-img">
                         <img src={solutions2} alt="" />
                       </div>
                     </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

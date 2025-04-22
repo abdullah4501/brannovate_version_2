@@ -4749,3 +4749,43 @@ article img {
     background-color: #0000ff !important;
     color: #fff !important;
   }
+  .usp{
+    padding: 25px;
+  }
+  .head .icon i{
+    font-size: 30px;
+    color: red;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ff0000;
+    border-radius: 50%;
+    font-size: 7px;
+    top: 4px;
+  }
+  .head h3{
+    font-size: 22px;
+    margin-left: 10px;
+}
+  .head h5{
+    font-size: 18px;
+}
+.usp-card{
+    border: 1px solid #ff000038;
+    padding: 57px 35px;
+    border-radius: 14px;
+    padding-top: 0;
+    max-height: 560px;
+}
+.usp-card .illustration img{
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+.usp-card .head{
+    margin-top: 15px;
+    text-align: left;
+}

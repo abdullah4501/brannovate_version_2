@@ -33,7 +33,7 @@ const PrivacyPolicy = () => {
                 </h1>
               </div>
               <p className="page-title__text">
-              We respect your privacy and are committed to keeping your information safe. This policy explains how we handle & protect your<br />
+              We respect your privacy & are committed to keeping your information safe. This policy explains how we handle & protect your<br />
                <strong > payment details, account information, & LinkedIn credentials.</strong>
               </p>
             </div>

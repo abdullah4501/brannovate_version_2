@@ -40,12 +40,12 @@ const Home = () => {
         {/* ... other sections ... */}
         <Hero />
         <FeatureOne />
-        <SectionAbout />
+        <div id="section-features">
+          <SectionAbout />
+        </div>
         <Solutions />
         < PremiumFeatures />
-        <div id="section-features">
         <Features />
-      </div>
         {/* <Carousel /> */}
         <Reviews />
         <div id="section-pricing">

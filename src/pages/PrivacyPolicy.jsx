@@ -51,8 +51,10 @@ const PrivacyPolicy = () => {
             
                     <h4><span className="text-primary">Section 1:</span> Secure Payment Details</h4>
                     <p>
-                    When you add your card, your payment information is kept safe. We use trusted payment services so that your card details are never exposed or stored in plain form on our servers.
+                      When you add your card, your payment information is processed through Stripe, a trusted payment gateway.  
+                      Your card details are never exposed or stored on our servers—Stripe handles all sensitive data securely.
                     </p>
+
                     <p>
                     You can feel confident that your payment information is handled with care and kept strictly confidential.
                     </p>
@@ -67,10 +69,8 @@ const PrivacyPolicy = () => {
             
                     <h4><span className="text-primary">Section 3:</span> LinkedIn Credential Security</h4>
                     <p>
-                    When you connect your LinkedIn account, we protect your login information and never store your password. Your credentials are encrypted and used solely for posting content as you authorize.
-                    </p>
-                    <p>
-                    You remain in control and can disconnect your LinkedIn account at any time.
+                      We’ve integrated LinkedIn’s official API to securely connect your profile with Brannovate.  
+                      This API, provided and maintained by LinkedIn, ensures a safe, encrypted connection—your LinkedIn password is never stored on our servers.
                     </p>
             
                     <p>

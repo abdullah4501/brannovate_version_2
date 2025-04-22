@@ -120,14 +120,14 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link" href="/#section-about">
-                  Features
-                </a>
+              <NavLink className={getNavLinkClass} to="/features">
+                Features
+              </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#pricing">
-                  Pricing
-                </a>
+              <NavLink className={getNavLinkClass} to="/pricing">
+                Pricing
+              </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className={getNavLinkClass} to="/contact">

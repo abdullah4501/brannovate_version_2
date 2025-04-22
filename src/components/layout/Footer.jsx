@@ -42,6 +42,11 @@ const Footer = () => {
                         Contact
                       </NavLink>
                     </li>
+                    <li>
+                      <NavLink to="/privacy-policy">
+                        Privacy Policy
+                      </NavLink>
+                    </li>
                   </ul>
                 </div>
               </div>

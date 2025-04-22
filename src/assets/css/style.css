@@ -4778,7 +4778,7 @@ article img {
     padding: 57px 35px;
     border-radius: 14px;
     padding-top: 0;
-    max-height: 560px;
+    min-height: 620px;
 }
 .usp-card .illustration img{
     width: 100%;
@@ -4788,4 +4788,9 @@ article img {
 .usp-card .head{
     margin-top: 15px;
     text-align: left;
+}
+@media screen and (max-width: 768px) {
+    .usp-card{
+       padding: 35px 15px;
+    }
 }

@@ -151,7 +151,7 @@ const HeroSection = () => {
                         </li>
                       </ul> */}
                       <div className="row">
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mb-4">
                           <div className="usp-card p-5 ">
                             <div className='illustration'>
                               <img src={q1} alt="" />
@@ -169,7 +169,7 @@ const HeroSection = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mb-4">
                           <div className="usp-card p-5 " style={{borderColor:'#f2cf19'}}>
                             <div className='illustration'>
                               <img src={q2} alt="" />
@@ -187,7 +187,7 @@ const HeroSection = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mb-4">
                           <div className="usp-card p-5 " style={{borderColor:'#0000ff4f'}}>
                             <div className='illustration'>
                               <img src={q3} alt="" />

@@ -163,8 +163,8 @@ const HeroSection = () => {
                                 </div>
                                 <h3>What should I post today?</h3>
                               </div>
-                              <p>You’ve got ideas swirling but can’t settle on a topic—nothing feels quite “right.”
-                              Don’t worry, we’ve got you covered.</p>
+                              <p>You stare at a blank screen, mind completely empty—and it’s frustrating.
+                              We bring you top trending topics from 7+ categories across 28+ countries, so you never worry about ideas again.</p>
                               <h5>Find Your Perfect Topic </h5>
                             </div>
                           </div>
@@ -181,8 +181,11 @@ const HeroSection = () => {
                                 </div>
                                 <h3>Is this topic even relevant?</h3>
                               </div>
-                              <p>That sudden “aha” idea leaves you second‑guessing: will anyone care about this now?
-                              Rest easy—we’ll clear up that doubt.</p>
+                              <p>
+                              You nail a topic then fear it’ll go unnoticed—and it’s deflating. Nothing to worry about,
+                                Our Agent employs 10 top LinkedIn personas to ensure your posts pack professional impact.
+                              </p>
+
                               <h5>Validate Its Relevance</h5>
                             </div>
                           </div>
@@ -197,11 +200,11 @@ const HeroSection = () => {
                                 <div className="icon">
                                       <i className="fa fa-check"></i>
                                 </div>
-                                <h3>How do I write something that actually gets noticed?</h3>
+                                <h3>How will my post look?</h3>
                               </div>
-                              <p>You finally write something, then pause, wondering if it’ll vanish into the feed.
-                              Relax—we know how to make it stand out.</p>
-                              <h5>Capture Attention</h5>
+                              <p>You finalize a draft then worry if the formatting reads smoothly and the layout looks polished—and it’s distracting.<br />
+                                Relax. Preview, tweak the style and schedule or post directly to LinkedIn.</p>
+                              <h5>Fine-Tune & Publish</h5>
                             </div>
                           </div>
                         </div>

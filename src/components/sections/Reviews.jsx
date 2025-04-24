@@ -90,13 +90,7 @@ const Review = () => {
 
   // Review data
   const reviews = [
-    {
-      id: 1,
-      name: "Wade Warrent",
-      role: "Marketing Coordinator",
-      text: "Brannovate’s AI-powered LinkedIn Agent transformed the way we approach content creation. It saved us so much time by instantly generating posts on trending topics, and the ability to customize them with our voice made them feel authentic. Truly a game-changer!",
-      image: image
-    },
+
     {
       id: 2,
       name: "Dianne Russell",

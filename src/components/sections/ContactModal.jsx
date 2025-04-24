@@ -156,9 +156,10 @@ export default function ContactModal({ isOpen, onClose, selectedPackage }) {
                 name="selected_package"
                 value={selectedPackage}
                 disabled
+                style={{color: '#7781a687'}}
               />
               <div className="contact-one__form-icon">
-                <i className="fas fa-tags"></i>
+                <i className="fas fa-tags" style={{color:'#7781a687'}}></i>
               </div>
             </div>
 

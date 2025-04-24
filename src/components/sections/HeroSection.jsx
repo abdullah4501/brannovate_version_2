@@ -163,7 +163,7 @@ const HeroSection = () => {
                                 </div>
                                 <h3>What should I post today?</h3>
                               </div>
-                              <p>You stare at a blank screen, mind completely empty—and it’s frustrating.
+                              <p>You stare at a blank screen, mind completely empty—and it’s frustrating.<br />
                               We bring you top trending topics from 7+ categories across 28+ countries, so you never worry about ideas again.</p>
                               <h5>Find Your Perfect Topic </h5>
                             </div>
@@ -179,14 +179,14 @@ const HeroSection = () => {
                                 <div className="icon">
                                       <i className="fa fa-check"></i>
                                 </div>
-                                <h3>Is this topic even relevant?</h3>
+                                <h3>Stuck on how to write it?</h3>
                               </div>
                               <p>
-                              You nail a topic then fear it’ll go unnoticed—and it’s deflating. Nothing to worry about,
-                                Our Agent employs 10 top LinkedIn personas to ensure your posts pack professional impact.
+                              You have a topic but can’t get the words out and it’s taking too long.<br />
+                                Don’t worry. Click a trending topic or type your own, and our tool will write a ready-to-post LinkedIn update in seconds.
                               </p>
 
-                              <h5>Validate Its Relevance</h5>
+                              <h5>Generate Your Post</h5>
                             </div>
                           </div>
                         </div>
@@ -200,11 +200,11 @@ const HeroSection = () => {
                                 <div className="icon">
                                       <i className="fa fa-check"></i>
                                 </div>
-                                <h3>How will my post look?</h3>
+                                <h3>Think It Might Go Unnoticed?</h3>
                               </div>
-                              <p>You finalize a draft then worry if the formatting reads smoothly and the layout looks polished—and it’s distracting.<br />
-                                Relax. Preview, tweak the style and schedule or post directly to LinkedIn.</p>
-                              <h5>Fine-Tune & Publish</h5>
+                              <p>You worry your post won’t get noticed or will sound too “AI.” <br />
+                              Don’t worry. Our tool writes in the voice of top LinkedIn influencers—you can even pick your favorite to make it feel genuine.</p>
+                              <h5>Publish with Confidence</h5>
                             </div>
                           </div>
                         </div>

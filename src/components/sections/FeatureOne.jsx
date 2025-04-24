@@ -19,6 +19,9 @@ import star7 from "../../assets/images/shapes/feature-one-star-7.png";
 import star4 from "../../assets/images/shapes/feature-one-star-4.png";
 import star8 from "../../assets/images/shapes/feature-one-star-8.png";
 import solutions3 from "../../assets/images/illustrations/ill_hero_1.png";
+import q3 from "../../assets/images/illustrations/q3new.png";
+import q2 from "../../assets/images/illustrations/q2new.png";
+import q1 from "../../assets/images/illustrations/q1new.png";
 
 
 const starMapping = {
@@ -48,6 +51,62 @@ const FeatureOne = () => {
           <p className="text-center">
             Introducing our personal AI LinkedIn Agent, built for professionals like you<br /> who want to show up — smartly, consistently, and authentically.
           </p>
+          <div className="row" style={{marginTop: '25px', marginBottom: '25px'}}>
+            <div className="col-lg-4 mb-4">
+              <div className="usp-card p-5 ">
+                <div className='illustration'>
+                  <img src={q1} alt="" />
+                </div>
+                <div className='head '>
+                  <div className="d-flex">
+                    <div className="icon">
+                          <i className="fa fa-check"></i>
+                    </div>
+                    <h3>Find Trending Topics in Seconds</h3>
+                  </div>
+                  <p>Instantly browse top topics from 7+ categories in 28+ countries—so you always know exactly what to post next.</p>
+                  <h5>Find Your Perfect Topic </h5>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 mb-4">
+              <div className="usp-card p-5 " style={{borderColor:'#f2cf19'}}>
+                <div className='illustration'>
+                  <img src={q2} alt="" />
+                </div>
+                <div className='head '>
+                  <div className="d-flex">
+                    <div className="icon">
+                          <i className="fa fa-check"></i>
+                    </div>
+                    <h3>Create Posts with One Click</h3>
+                  </div>
+                  <p>
+                  Our AI agent transforms any topic into a complete LinkedIn post in seconds—just hit “Generate” and skip the writing headache.
+                  </p>
+
+                  <h5>Generate Your Post</h5>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 mb-4">
+              <div className="usp-card p-5 " style={{borderColor:'#0000ff4f'}}>
+                <div className='illustration'>
+                  <img src={q3} alt="" />
+                </div>
+                <div className='head text-left'>
+                  <div className="d-flex">
+                    <div className="icon">
+                          <i className="fa fa-check"></i>
+                    </div>
+                    <h3>Stand Out with Influencer Posts</h3>
+                  </div>
+                  <p>Write in the style of leading LinkedIn voices so your content feels authentic and engaging—no generic AI fluff.</p>
+                  <h5>Publish with Confidence</h5>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="feature-one__btn-box">
             <a href="https://ai.brannovate.com/sign-up" className="thm-btn feature-one__btn">
               <i className="fa fa-plus"></i> Get Started Free

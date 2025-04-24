@@ -163,9 +163,8 @@ const HeroSection = () => {
                                 </div>
                                 <h3>What should I post today?</h3>
                               </div>
-                              <p>You stare at a blank screen, mind completely empty—and it’s frustrating.<br />
-                              We bring you top trending topics from 7+ categories across 28+ countries, so you never worry about ideas again.</p>
-                              <h5>Find Your Perfect Topic </h5>
+                              <p>You stare at a blank screen, mind completely empty—and it’s frustrating.
+                              </p>
                             </div>
                           </div>
                         </div>
@@ -182,11 +181,8 @@ const HeroSection = () => {
                                 <h3>Stuck on how to write it?</h3>
                               </div>
                               <p>
-                              You have a topic but can’t get the words out and it’s taking too long.<br />
-                                Don’t worry. Click a trending topic or type your own, and our tool will write a ready-to-post LinkedIn update in seconds.
+                              You have a topic but can’t get the words out and it’s taking too long.
                               </p>
-
-                              <h5>Generate Your Post</h5>
                             </div>
                           </div>
                         </div>
@@ -202,9 +198,7 @@ const HeroSection = () => {
                                 </div>
                                 <h3>Think It Might Go Unnoticed?</h3>
                               </div>
-                              <p>You worry your post won’t get noticed or will sound too “AI.” <br />
-                              Don’t worry. Our tool writes in the voice of top LinkedIn influencers—you can even pick your favorite to make it feel genuine.</p>
-                              <h5>Publish with Confidence</h5>
+                              <p>You worry your post won’t get noticed or will sound too “AI.”</p>
                             </div>
                           </div>
                         </div>

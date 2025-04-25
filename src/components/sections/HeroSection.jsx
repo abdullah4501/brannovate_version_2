@@ -110,9 +110,9 @@ const HeroSection = () => {
                 <div className="col-xl-12 col-lg-12">
                   <div className="text-center">
                     <h3>
-                    You're a professional. You know the value of being active on <span style={{color:'#0000ff'}}>LinkedIn.</span>
+                    You're a professional. You know the value of being<br />active on <span style={{color:'#0000ff'}}>LinkedIn.</span>
                     </h3>
-                    <p>Growing your reach, shaping your professional brand, building credibility in your circle.</p>
+                    <p className='mt-5'>Growing your reach, shaping your professional brand, building credibility in your circle.</p>
                     <p style={{color:'#0000ff', fontWeight: '600'}}>But there's a catch.</p>
                     <div className='box'>
                       <h4 className='mb-3'>

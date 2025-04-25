@@ -51,7 +51,12 @@ const FeatureOne = () => {
           <p className="text-center">
             Introducing our personal AI LinkedIn Agent, built for professionals like you<br /> who want to show up — smartly, consistently, and authentically.
           </p>
-          <div className="row" style={{marginTop: '25px', marginBottom: '25px'}}>
+          <div className="feature-one__btn-box">
+            <a href="https://ai.brannovate.com/sign-up" className="thm-btn feature-one__btn">
+              <i className="fa fa-plus"></i> Get Started Free
+            </a>
+          </div>
+          <div className="row" style={{marginTop: '45px', marginBottom: '25px'}}>
             <div className="col-lg-4 mb-4">
               <div className="usp-card p-5 ">
                 <div className='illustration'>
@@ -108,11 +113,7 @@ const FeatureOne = () => {
               </div>
             </div>
           </div>
-          <div className="feature-one__btn-box">
-            <a href="https://ai.brannovate.com/sign-up" className="thm-btn feature-one__btn">
-              <i className="fa fa-plus"></i> Get Started Free
-            </a>
-          </div>
+
           {/* <div data-aos="fade-up-sm" data-aos-delay="300">
             <div className="image-with-shape">
                 <img
@@ -122,7 +123,7 @@ const FeatureOne = () => {
                 />
             </div>
           </div> */}
-          <h2 className="feature-one__title mt-12">
+          {/* <h2 className="feature-one__title mt-12">
           From content struggle to <br />LinkedIn <span style={{color:'#ff0000'}}>success</span>
           </h2>
           <p className="text-center">
@@ -156,7 +157,6 @@ const FeatureOne = () => {
                 </li>
               </ul>
             </div>
-            {/* Middle Section */}
             <div className="feature-one__main-content-middle">
               { [1, 2, 3, 5, 6, 7].map((num) => (
                 <div
@@ -194,7 +194,6 @@ const FeatureOne = () => {
                 </li>
               </ul>
             </div>
-            {/* Bottom Section */}
             <div className="feature-one__main-content-bottom">
               <div className="feature-one__start-4 zoominout">
                 <img src={star4} alt="Star 4" />
@@ -225,7 +224,7 @@ const FeatureOne = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

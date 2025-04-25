@@ -11,7 +11,7 @@ import solutions2 from "../../assets/images/screens/screen-2.png";
 
 const Solutions = () => {
   return (
-    <section className="solutions-two py-10 py-lg-15" id="tools">
+    <section className="solutions-two py-10 py-lg-15 pt-0" id="tools">
       <div className="container">
         {/* Section Title */}
         <div className="section-title text-center">

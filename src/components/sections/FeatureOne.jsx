@@ -72,7 +72,8 @@ const FeatureOne = () => {
             <div className="col-lg-4 mb-4">
               <div className="usp-card p-5 " style={{borderColor:'#f2cf19'}}>
                 <div className='illustration'>
-                  <img src={q2} alt="" />
+                  <img src={q2} alt="" 
+                  />
                 </div>
                 <div className='head '>
                   <div className="d-flex">
@@ -112,7 +113,7 @@ const FeatureOne = () => {
               <i className="fa fa-plus"></i> Get Started Free
             </a>
           </div>
-          <div data-aos="fade-up-sm" data-aos-delay="300">
+          {/* <div data-aos="fade-up-sm" data-aos-delay="300">
             <div className="image-with-shape">
                 <img
                   className="img-fluid d-inline-block"
@@ -120,7 +121,7 @@ const FeatureOne = () => {
                   alt=""
                 />
             </div>
-          </div>
+          </div> */}
           <h2 className="feature-one__title mt-12">
           From content struggle to <br />LinkedIn <span style={{color:'#ff0000'}}>success</span>
           </h2>

@@ -1,13 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FiTrendingUp } from "react-icons/fi";
-import { LuSparkles } from "react-icons/lu";
-import { RxTarget } from "react-icons/rx";
-import { RiEditBoxLine } from "react-icons/ri";
-import { FaRegMessage } from "react-icons/fa6";
-import { TbTableSpark } from "react-icons/tb";
-import { HiMiniArrowLongRight } from "react-icons/hi2";
 import icon1 from "../../assets/images/icons/ai-content-writing.png";
 import icon2 from "../../assets/images/icons/schedule.png";
 import icon3 from "../../assets/images/icons/countries.png";
@@ -23,7 +16,6 @@ import star6 from "../../assets/images/shapes/feature-one-star-6.png";
 import star7 from "../../assets/images/shapes/feature-one-star-7.png";
 import star4 from "../../assets/images/shapes/feature-one-star-4.png";
 import star8 from "../../assets/images/shapes/feature-one-star-8.png";
-import solutions3 from "../../assets/images/illustrations/ill_hero_1.png";
 
 const starMapping = {
   1: star1,
@@ -41,6 +33,8 @@ const FeaturesSection = () => {
     }, []);
   return (
     <section className="py-10 py-lg-15" id="section-about">
+      <div className="container">
+
       {/* <div className="container">
         <div className="text-center mb-18">
           <h1 className="feature-one__title mb-0" data-aos="fade-up-sm" data-aos-delay="50">
@@ -171,6 +165,7 @@ const FeaturesSection = () => {
               </ul>
             </div>
           </div>
+      </div>
     </section>
   );
 };

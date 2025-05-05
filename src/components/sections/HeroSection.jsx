@@ -118,39 +118,7 @@ const HeroSection = () => {
                       <h4 className='mb-3'>
                         You ask yourself:
                       </h4>
-                      {/* <ul className="solutions-two__content-one-points">
-                        <li>
-                          <div className="icon">
-                            <i className="fa fa-check"></i>
-                          </div>
-                          <div className="text">
-                            <p>
-                            What should I post today?
-                            </p>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="icon">
-                            <i className="fa fa-check"></i>
-                          </div>
-                          <div className="text">
-                            <p>
-                            Is this topic even relevant?
-                            </p>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="icon">
-                            <i className="fa fa-check"></i>
-                          </div>
-                          <div className="text">
-                            <p>
-                            How do I write something that actually gets noticed?
-                            </p>
-                          </div>
-                        </li>
-                      </ul> */}
-                      <div className="row">
+                      <div className="row align-items-stretch">
                         <div className="col-lg-4 mb-4">
                           <div className="usp-card p-5 ">
                             <div className='illustration'>
@@ -206,13 +174,6 @@ const HeroSection = () => {
                     </div>
                   </div>
                 </div>
-                {/* <div className="col-xl-6 col-lg-6">
-                    <div className="">
-                      <div className="solutions-two__content-one-img">
-                        <img src={solutions2} alt="" />
-                      </div>
-                    </div>
-                </div> */}
               </div>
             </div>
           </div>

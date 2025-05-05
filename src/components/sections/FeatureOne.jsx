@@ -47,7 +47,7 @@ const FeatureOne = () => {
               <i className="fa fa-plus"></i> Get Started Free
             </a>
           </div>
-          <div className="row" style={{marginTop: '45px', marginBottom: '25px'}}>
+          <div className="row align-items-stretch" style={{marginTop: '45px', marginBottom: '25px'}}>
             <div className="col-lg-4 mb-4">
               <div className="usp-card p-5 ">
                 <div className='illustration'>
